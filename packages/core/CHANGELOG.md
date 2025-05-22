@@ -51,7 +51,7 @@
 
   ```ts
   import { source } from '@/lib/source';
-  import { createFromSource } from 'fumadocs-core/search/server';
+  import { createFromSource } from 'nopends-core/search/server';
 
   // from
   export const { GET } = createFromSource(
@@ -206,7 +206,7 @@
 
 ### Patch Changes
 
-- 3534a10: Move `fumadocs-core` highlighting utils to `fumadocs-core/highlight` and `fumadocs-core/highlight/client`
+- 3534a10: Move `nopends-core` highlighting utils to `nopends-core/highlight` and `nopends-core/highlight/client`
 - 93952db: Generate a `$id` attribute to page tree nodes
 
 ## 15.0.11
@@ -255,7 +255,7 @@
   **before:**
 
   ````mdx
-  import { Tab, Tabs } from 'fumadocs-ui/components/tabs';
+  import { Tab, Tabs } from 'nopends-ui/components/tabs';
 
   <Tabs items={["Tab 1", "Tab 2"]}>
 
@@ -273,7 +273,7 @@
   **after:**
 
   ````mdx
-  import { Tab, Tabs } from 'fumadocs-ui/components/tabs';
+  import { Tab, Tabs } from 'nopends-ui/components/tabs';
 
   ```ts tab="Tab 1"
   console.log('A');
@@ -445,9 +445,9 @@
 
 ### Major Changes
 
-- e45bc67: **Remove deprecated `fumadocs-core/middleware` export**
+- e45bc67: **Remove deprecated `nopends-core/middleware` export**
 
-  **migrate:** Use `fumadocs-core/i18n`.
+  **migrate:** Use `nopends-core/i18n`.
 
 - d9e908e: **Remove deprecated `languages` and `defaultLanguage` option from loader**
 
@@ -462,7 +462,7 @@
   Pass client option, it can be algolia, static, or fetch (default).
 
   ```ts
-  import { useDocsSearch } from 'fumadocs-core/search/client';
+  import { useDocsSearch } from 'nopends-core/search/client';
 
   const { search, setSearch, query } = useDocsSearch({
     type: 'fetch',
@@ -477,7 +477,7 @@
   **migrate:**
 
   ```ts
-  import { useDocsSearch } from 'fumadocs-core/search/client';
+  import { useDocsSearch } from 'nopends-core/search/client';
 
   const { search, setSearch, query } = useDocsSearch({
     type: 'algolia',
@@ -486,9 +486,9 @@
   });
   ```
 
-- 9a0b09f: **Refactor import path of `fumadocs-core/search-algolia/server` to `fumadocs-core/search/algolia`**
+- 9a0b09f: **Refactor import path of `nopends-core/search-algolia/server` to `nopends-core/search/algolia`**
 - d9e908e: Improved usage for `createI18nSearchAPI` (replaced `createI18nSearchAPIExperimental`)
-- d9e908e: Replace `fumadocs-core/search/shared` with `fumadocs-core/server`
+- d9e908e: Replace `nopends-core/search/shared` with `nopends-core/server`
 
 ### Minor Changes
 
@@ -585,7 +585,7 @@
 - fd46eb6: Export new `createI18nSearchAPIExperimental` API for i18n config
 - fd46eb6: Introduce `i18n` config for Core APIs
 - fd46eb6: Deprecated `languages` and `defaultLanguage` option on Source API, replaced with `i18n` config
-- fd46eb6: Move I18n middleware to `fumadocs-core/i18n`
+- fd46eb6: Move I18n middleware to `nopends-core/i18n`
 - 9aae448: Support multiple toc active items
 - c542561: Use cookie to store active locale on `always` mode
 
@@ -665,7 +665,7 @@
   Instead of
 
   ```tsx
-  import * as Base from 'fumadocs-core/toc';
+  import * as Base from 'nopends-core/toc';
 
   return (
     <Base.TOCProvider>
@@ -677,7 +677,7 @@
   Use
 
   ```tsx
-  import * as Base from 'fumadocs-core/toc';
+  import * as Base from 'nopends-core/toc';
 
   return (
     <Base.AnchorProvider>
@@ -808,7 +808,7 @@
 - 0a377a9: **Support writing code blocks as a `<Tab />` element.**
 
   ````mdx
-  import { Tabs } from 'fumadocs-ui/components/tabs';
+  import { Tabs } from 'nopends-ui/components/tabs';
 
   <Tabs items={["Tab 1", "Tab 2"]}>
 
@@ -953,7 +953,7 @@
 
 ### Patch Changes
 
-- 7b61b2f: Migrate `fumadocs-ui` to fully ESM, adding support for ESM `tailwind.config` file
+- 7b61b2f: Migrate `nopends-ui` to fully ESM, adding support for ESM `tailwind.config` file
 
 ## 11.0.3
 
@@ -997,11 +997,11 @@
   });
   ```
 
-- f75287d: **Introduce `fumadocs-docgen` package.**
+- f75287d: **Introduce `nopends-docgen` package.**
 
   Offer a better authoring experience for advanced use cases.
 
-  - Move `remark-dynamic-content` and `remark-install` plugins to the new package `fumadocs-docgen`.
+  - Move `remark-dynamic-content` and `remark-install` plugins to the new package `nopends-docgen`.
   - Support Typescript generator by default
 
   **Usage**
@@ -1009,7 +1009,7 @@
   Add the `remarkDocGen` plugin to your remark plugins.
 
   ```ts
-  import { remarkDocGen, fileGenerator } from 'fumadocs-docgen';
+  import { remarkDocGen, fileGenerator } from 'nopends-docgen';
 
   remark().use(remarkDocGen, { generators: [fileGenerator()] });
   ```
@@ -1039,7 +1039,7 @@
   For `remarkInstall`, it remains the same:
 
   ```ts
-  import { remarkInstall } from 'fumadocs-docgen';
+  import { remarkInstall } from 'nopends-docgen';
   ```
 
 - 2d8df75: Remove support for `getTableOfContentsFromPortableText`
@@ -1084,7 +1084,7 @@
 
 ### Patch Changes
 
-- 10e099a: Remove deprecated options from `fumadocs-core/toc`
+- 10e099a: Remove deprecated options from `nopends-core/toc`
 
 ## 10.0.1
 
@@ -1098,15 +1098,15 @@
 
 ### Major Changes
 
-- 321d1e1f: **Move Typescript integrations to `fumadocs-typescript`**
+- 321d1e1f: **Move Typescript integrations to `nopends-typescript`**
 
   why: It is now a stable feature
 
-  migrate: Use `fumadocs-typescript` instead.
+  migrate: Use `nopends-typescript` instead.
 
   ```diff
-  - import { AutoTypeTable } from "fumadocs-ui/components/auto-type-table"
-  + import { AutoTypeTable } from "fumadocs-typescript/ui"
+  - import { AutoTypeTable } from "nopends-ui/components/auto-type-table"
+  + import { AutoTypeTable } from "nopends-typescript/ui"
   ```
 
 ### Minor Changes
@@ -1145,7 +1145,7 @@
 
 ### Patch Changes
 
-- 6c5a39a: Rename Git repository to `fumadocs`
+- 6c5a39a: Rename Git repository to `nopends`
 
 ## 8.0.0
 
@@ -1185,27 +1185,27 @@
 
   migrate:
 
-  Install `fumadocs-contentlayer`.
+  Install `nopends-contentlayer`.
 
   ```diff
-  - import { createContentlayerSource } from "fumadocs-core/contentlayer"
-  + import { createContentlayerSource } from "fumadocs-contentlayer"
+  - import { createContentlayerSource } from "nopends-core/contentlayer"
+  + import { createContentlayerSource } from "nopends-contentlayer"
 
-  - import { createConfig } from "fumadocs-core/contentlayer/configuration"
-  + import { createConfig } from "fumadocs-contentlayer/configuration"
+  - import { createConfig } from "nopends-core/contentlayer/configuration"
+  + import { createConfig } from "nopends-contentlayer/configuration"
   ```
 
 - 2b11c20: **Rename to Fumadocs**
 
-  `next-docs-zeta` -> `fumadocs-core`
+  `next-docs-zeta` -> `nopends-core`
 
-  `next-docs-ui` -> `fumadocs-ui`
+  `next-docs-ui` -> `nopends-ui`
 
-  `next-docs-mdx` -> `fumadocs-mdx`
+  `next-docs-mdx` -> `nopends-mdx`
 
-  `@fuma-docs/openapi` -> `fumadocs-openapi`
+  `@fuma-docs/openapi` -> `nopends-openapi`
 
-  `create-next-docs-app` -> `create-fumadocs-app`
+  `create-next-docs-app` -> `create-nopends-app`
 
 ### Minor Changes
 

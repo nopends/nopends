@@ -65,7 +65,7 @@ export default async function Page() {
         Fumadocs.
       </p>
       <a
-        href="https://github.com/sponsors/fuma-nama"
+        href="https://github.com/sponsors/nopends"
         rel="noreferrer noopener"
         target="_blank"
         className={cn(

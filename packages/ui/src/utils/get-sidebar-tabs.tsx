@@ -1,4 +1,4 @@
-import type { PageTree } from 'fumadocs-core/server';
+import type { PageTree } from 'nopends-core/server';
 import type { Option } from '@/components/layout/root-toggle';
 
 export interface GetSidebarTabsOptions {

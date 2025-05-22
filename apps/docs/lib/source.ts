@@ -1,8 +1,8 @@
-import { createMDXSource } from 'fumadocs-mdx';
-import type { InferMetaType, InferPageType } from 'fumadocs-core/source';
-import { loader } from 'fumadocs-core/source';
+import { createMDXSource } from 'nopends-mdx';
+import type { InferMetaType, InferPageType } from 'nopends-core/source';
+import { loader } from 'nopends-core/source';
 import { icons } from 'lucide-react';
-import { attachFile, createOpenAPI } from 'fumadocs-openapi/server';
+import { attachFile, createOpenAPI } from 'nopends-openapi/server';
 import { createElement } from 'react';
 import { blog as blogPosts, docs } from '@/.source';
 

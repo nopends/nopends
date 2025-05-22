@@ -1,4 +1,4 @@
-import type { BaseLayoutProps } from 'fumadocs-ui/layouts/shared';
+import type { BaseLayoutProps } from 'nopends-ui/layouts/shared';
 import { Logo } from '@/app/logo';
 
 export const baseOptions: BaseLayoutProps = {

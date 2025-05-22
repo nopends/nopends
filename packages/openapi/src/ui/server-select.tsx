@@ -13,7 +13,7 @@ import {
 } from '@/ui/components/select';
 import { Input, labelVariants } from '@/ui/components/input';
 import { type HTMLAttributes, useEffect, useState } from 'react';
-import { cn } from 'fumadocs-ui/utils/cn';
+import { cn } from 'nopends-ui/utils/cn';
 import {
   Dialog,
   DialogContent,
@@ -25,7 +25,7 @@ import {
 import { getUrl } from '@/utils/server-url';
 import { FormProvider, useController, useForm } from 'react-hook-form';
 import type { OpenAPIV3_1 } from 'openapi-types';
-import { buttonVariants } from 'fumadocs-ui/components/ui/button';
+import { buttonVariants } from 'nopends-ui/components/ui/button';
 
 export default function ServerSelect(props: HTMLAttributes<HTMLDivElement>) {
   const { servers } = useApiContext();

@@ -1,4 +1,4 @@
-.shiki:not(.not-fumadocs-codeblock *) {
+.shiki:not(.not-nopends-codeblock *) {
   code span {
     color: var(--shiki-light);
   }
@@ -68,7 +68,7 @@
   }
 }
 
-.dark .shiki:not(.not-fumadocs-codeblock *) {
+.dark .shiki:not(.not-nopends-codeblock *) {
   code span {
     color: var(--shiki-dark);
   }

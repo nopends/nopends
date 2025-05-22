@@ -11,7 +11,7 @@ description: Auto-generated type table
     /**
      * Markdown syntax like links, \`code\` are supported.
      *
-     * See https://fumadocs.vercel.app/docs/ui/components/type-table
+     * See https://docs.nopends.com/docs/ui/components/type-table
      */
     name: string;
 
@@ -35,16 +35,16 @@ It generates a table for your docs based on TypeScript definitions.
 ## Usage
 
 ```package-install
-fumadocs-typescript
+nopends-typescript
 ```
 
 Initialize the TypeScript compiler and add it as a MDX component.
 
 ```tsx title="mdx-components.tsx"
-import defaultComponents from 'fumadocs-ui/mdx';
+import defaultComponents from 'nopends-ui/mdx';
 import type { MDXComponents } from 'mdx/types';
-import { createGenerator } from 'fumadocs-typescript';
-import { AutoTypeTable } from 'fumadocs-typescript/ui';
+import { createGenerator } from 'nopends-typescript';
+import { AutoTypeTable } from 'nopends-typescript/ui';
 
 const generator = createGenerator();
 
@@ -86,7 +86,7 @@ You cannot use this in a client component.
 You can specify the type to generate, without an actual TypeScript file.
 
 ```mdx
-import { AutoTypeTable } from 'fumadocs-typescript/ui';
+import { AutoTypeTable } from 'nopends-typescript/ui';
 
 <AutoTypeTable type="{ hello: string }" />
 ```

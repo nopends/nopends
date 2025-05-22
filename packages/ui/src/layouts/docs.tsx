@@ -1,4 +1,4 @@
-import type { PageTree } from 'fumadocs-core/server';
+import type { PageTree } from 'nopends-core/server';
 import { type HTMLAttributes, type ReactNode, useMemo } from 'react';
 import { Languages, Sidebar as SidebarIcon } from 'lucide-react';
 import { cn } from '@/utils/cn';
@@ -41,7 +41,7 @@ import {
   type PageStyles,
   StylesProvider,
 } from '@/contexts/layout';
-import Link from 'fumadocs-core/link';
+import Link from 'nopends-core/link';
 import {
   LargeSearchToggle,
   SearchToggle,

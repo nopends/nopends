@@ -7,13 +7,13 @@
     "build:docs": "node ./scripts/generate-docs.mjs",
     "dev": "next dev",
     "start": "next start",
-    "types:check": "fumadocs-mdx && tsc --noEmit"
+    "types:check": "nopends-mdx && tsc --noEmit"
   },
   "dependencies": {
-    "fumadocs-core": "workspace:*",
-    "fumadocs-mdx": "workspace:*",
-    "fumadocs-openapi": "workspace:*",
-    "fumadocs-ui": "workspace:*",
+    "nopends-core": "workspace:*",
+    "nopends-mdx": "workspace:*",
+    "nopends-openapi": "workspace:*",
+    "nopends-ui": "workspace:*",
     "next": "15.3.2",
     "react": "19.1.0",
     "react-dom": "19.1.0"

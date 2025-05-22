@@ -1,6 +1,6 @@
 'use client';
 import { ChevronDown, ExternalLink } from 'lucide-react';
-import { usePathname } from 'fumadocs-core/framework';
+import { usePathname } from 'nopends-core/framework';
 import {
   type ComponentProps,
   createContext,
@@ -12,8 +12,8 @@ import {
   useRef,
   useState,
 } from 'react';
-import Link, { type LinkProps } from 'fumadocs-core/link';
-import { useOnChange } from 'fumadocs-core/utils/use-on-change';
+import Link, { type LinkProps } from 'nopends-core/link';
+import { useOnChange } from 'nopends-core/utils/use-on-change';
 import { cn } from '@/utils/cn';
 import { ScrollArea, ScrollViewport } from '@/components/ui/scroll-area';
 import { isActive } from '@/utils/is-active';
@@ -29,9 +29,9 @@ import type {
   CollapsibleContentProps,
   CollapsibleTriggerProps,
 } from '@radix-ui/react-collapsible';
-import type { PageTree } from 'fumadocs-core/server';
+import type { PageTree } from 'nopends-core/server';
 import { useTreeContext, useTreePath } from '@/contexts/tree';
-import { useMediaQuery } from 'fumadocs-core/utils/use-media-query';
+import { useMediaQuery } from 'nopends-core/utils/use-media-query';
 import { RemoveScroll } from 'react-remove-scroll';
 import { Presence } from '@radix-ui/react-presence';
 

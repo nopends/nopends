@@ -1,6 +1,6 @@
 import type { BaseCollectionEntry, FileInfo, MarkdownProps } from '@/config';
 import type { StandardSchemaV1 } from '@standard-schema/spec';
-import type { MetaData, PageData, Source } from 'fumadocs-core/source';
+import type { MetaData, PageData, Source } from 'nopends-core/source';
 import type { LoadedConfig } from '@/utils/config';
 
 export interface RuntimeFile {

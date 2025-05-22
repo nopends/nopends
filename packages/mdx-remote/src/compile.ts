@@ -1,9 +1,9 @@
-import * as Plugins from 'fumadocs-core/mdx-plugins';
+import * as Plugins from 'nopends-core/mdx-plugins';
 import { type CompileOptions, createProcessor } from '@mdx-js/mdx';
 import type { MDXComponents } from 'mdx/types';
 import { parseFrontmatter, pluginOption, type ResolvePlugins } from './utils';
 import type { Compatible, VFile } from 'vfile';
-import type { TableOfContents } from 'fumadocs-core/server';
+import type { TableOfContents } from 'nopends-core/server';
 import { executeMdx, type MdxContent } from '@/render';
 import { pathToFileURL } from 'node:url';
 

@@ -6,8 +6,8 @@
 
 - a6c909b: Removed unused devDependencies and migrated from `fast-glob` to `tinyglobby`
 - Updated dependencies [a6c909b]
-  - @fumadocs/mdx-remote@1.3.2
-  - fumadocs-core@15.3.4
+  - @nopends/mdx-remote@1.3.2
+  - nopends-core@15.3.4
 
 ## 11.6.4
 
@@ -15,8 +15,8 @@
 
 - 4ae7b4a: Support MDX in codeblock tab value
 - Updated dependencies [4ae7b4a]
-  - @fumadocs/mdx-remote@1.3.1
-  - fumadocs-core@15.3.3
+  - @nopends/mdx-remote@1.3.1
+  - nopends-core@15.3.3
 
 ## 11.6.3
 
@@ -24,7 +24,7 @@
 
 - 4de7fe7: Fix `meta.{locale}` file being excluded from `defineDocs`
 - Updated dependencies [c05dc03]
-  - fumadocs-core@15.3.0
+  - nopends-core@15.3.0
 
 ## 11.6.2
 
@@ -32,14 +32,14 @@
 
 - 16c7566: Improve error handling logic on parsing meta entries
 - 7b89faa: Add `page.data.content` to sync mode
-  - fumadocs-core@15.2.13
+  - nopends-core@15.2.13
 
 ## 11.6.1
 
 ### Patch Changes
 
 - 434ccb2: Improve performance
-  - fumadocs-core@15.2.9
+  - nopends-core@15.2.9
 
 ## 11.6.0
 
@@ -51,7 +51,7 @@
 
 - Updated dependencies [ec85a6c]
 - Updated dependencies [e1a61bf]
-  - fumadocs-core@15.2.7
+  - nopends-core@15.2.7
 
 ## 11.5.8
 
@@ -59,7 +59,7 @@
 
 - 6c5e47a: add default types for collection without schema
 - Updated dependencies [1057957]
-  - fumadocs-core@15.2.4
+  - nopends-core@15.2.4
 
 ## 11.5.7
 
@@ -71,22 +71,22 @@
 - Updated dependencies [f3cde4f]
 - Updated dependencies [7c8a690]
 - Updated dependencies [b812457]
-  - fumadocs-core@15.1.1
-  - @fumadocs/mdx-remote@1.2.1
+  - nopends-core@15.1.1
+  - @nopends/mdx-remote@1.2.1
 
 ## 11.5.6
 
 ### Patch Changes
 
 - 927ee8b: Fix hot reload
-  - fumadocs-core@15.0.9
+  - nopends-core@15.0.9
 
 ## 11.5.5
 
 ### Patch Changes
 
 - e6df8aa: Improve performance
-  - fumadocs-core@15.0.8
+  - nopends-core@15.0.8
 
 ## 11.5.4
 
@@ -94,7 +94,7 @@
 
 - fc5d7c0: Compile Meta files into inline JSON objects
 - Updated dependencies [5deaf40]
-  - fumadocs-core@15.0.7
+  - nopends-core@15.0.7
 
 ## 11.5.3
 
@@ -108,7 +108,7 @@
 
 - c571417: Improve performance
 - be3acf4: Improve types
-  - fumadocs-core@15.0.5
+  - nopends-core@15.0.5
 
 ## 11.5.1
 
@@ -126,15 +126,15 @@
 ### Patch Changes
 
 - Updated dependencies [69f20cb]
-  - @fumadocs/mdx-remote@1.2.0
-  - fumadocs-core@15.0.3
+  - @nopends/mdx-remote@1.2.0
+  - nopends-core@15.0.3
 
 ## 11.4.1
 
 ### Patch Changes
 
 - a8e9e1f: Bump deps
-  - fumadocs-core@15.0.2
+  - nopends-core@15.0.2
 
 ## 11.4.0
 
@@ -145,7 +145,7 @@
 ### Patch Changes
 
 - 421166a: Fix Fumadocs 14 compatibility issues
-  - fumadocs-core@15.0.1
+  - nopends-core@15.0.1
 
 ## 11.3.2
 
@@ -156,7 +156,7 @@
 - Updated dependencies [5b8cca8]
 - Updated dependencies [a763058]
 - Updated dependencies [581f4a5]
-  - fumadocs-core@15.0.0
+  - nopends-core@15.0.0
 
 ## 11.3.1
 
@@ -165,7 +165,7 @@
 - 69bd4fe: Fix nested references for `<include />`
 - Updated dependencies [bb73a72]
 - Updated dependencies [69bd4fe]
-  - fumadocs-core@14.7.4
+  - nopends-core@14.7.4
 
 ## 11.3.0
 
@@ -183,7 +183,7 @@
 
 - 0a5b08c: Fix alias imports
 - Updated dependencies [72dc093]
-  - fumadocs-core@14.7.1
+  - nopends-core@14.7.1
 
 ## 11.2.2
 
@@ -191,7 +191,7 @@
 
 - 97ed36c: Improve default settings
 - Updated dependencies [97ed36c]
-  - fumadocs-core@14.7.0
+  - nopends-core@14.7.0
 
 ## 11.2.1
 
@@ -199,7 +199,7 @@
 
 - 3445182: Fix `include` hot-reload issues
 - Updated dependencies [b71064a]
-  - fumadocs-core@14.6.4
+  - nopends-core@14.6.4
 
 ## 11.2.0
 
@@ -209,7 +209,7 @@
 
 ### Patch Changes
 
-- fumadocs-core@14.6.3
+- nopends-core@14.6.3
 
 ## 11.1.2
 
@@ -223,7 +223,7 @@
 
 - 164b9e6: Fix non-absolute `dir` option
 - Updated dependencies [1573d63]
-  - fumadocs-core@14.1.1
+  - nopends-core@14.1.1
 
 ## 11.1.0
 
@@ -239,7 +239,7 @@
 
 ### Patch Changes
 
-- fumadocs-core@14.0.1
+- nopends-core@14.0.1
 
 ## 10.1.0
 
@@ -272,7 +272,7 @@
 - Updated dependencies [15781f0]
 - Updated dependencies [be820c4]
 - Updated dependencies [d9e908e]
-  - fumadocs-core@14.0.0
+  - nopends-core@14.0.0
 
 ## 10.0.2
 
@@ -280,14 +280,14 @@
 
 - f21c871: Change cache path of manifest files
 - Updated dependencies [78e59e7]
-  - fumadocs-core@13.4.8
+  - nopends-core@13.4.8
 
 ## 10.0.1
 
 ### Patch Changes
 
 - 7e23388: Fix windows compatibility
-  - fumadocs-core@13.4.5
+  - nopends-core@13.4.5
 
 ## 10.0.0
 
@@ -312,7 +312,7 @@
   A `source.config.ts` is now required.
 
   ```ts
-  import { defineDocs, defineConfig } from 'fumadocs-mdx/config';
+  import { defineDocs, defineConfig } from 'nopends-mdx/config';
 
   export const { docs, meta } = defineDocs();
 
@@ -331,7 +331,7 @@
 - Updated dependencies [7dabbc1]
 - Updated dependencies [0c251e5]
 - Updated dependencies [3b56170]
-  - fumadocs-core@13.4.2
+  - nopends-core@13.4.2
 
 ## 9.0.4
 
@@ -339,14 +339,14 @@
 
 - 95dbba1: Support passing remark structure options
 - Updated dependencies [95dbba1]
-  - fumadocs-core@13.4.1
+  - nopends-core@13.4.1
 
 ## 9.0.3
 
 ### Patch Changes
 
 - c0d1faf: Store additional `_data` to search indexes
-  - fumadocs-core@13.4.0
+  - nopends-core@13.4.0
 
 ## 9.0.2
 
@@ -355,7 +355,7 @@
 - 61b91fa: Improve Fumadocs OpenAPI support
 - Updated dependencies [36b771b]
 - Updated dependencies [61b91fa]
-  - fumadocs-core@13.2.2
+  - nopends-core@13.2.2
 
 ## 9.0.1
 
@@ -363,7 +363,7 @@
 
 - c7aa090: Improve Fumadocs OpenAPI support
 - Updated dependencies [17fa173]
-  - fumadocs-core@13.2.1
+  - nopends-core@13.2.1
 
 ## 9.0.0
 
@@ -373,48 +373,48 @@
 
 ### Patch Changes
 
-- fumadocs-core@13.0.1
+- nopends-core@13.0.1
 
 ## 8.2.34
 
 ### Patch Changes
 
 - c2d956b: Support mirror pages for symlinks of MDX file
-  - fumadocs-core@12.5.3
+  - nopends-core@12.5.3
 
 ## 8.2.33
 
 ### Patch Changes
 
 - 78acd55: Use full mode on docs pages by default on OpenAPI generated pages
-  - fumadocs-core@12.2.1
+  - nopends-core@12.2.1
 
 ## 8.2.32
 
 ### Patch Changes
 
 - 2eb68c8: Force a release of content sources
-  - fumadocs-core@12.0.7
+  - nopends-core@12.0.7
 
 ## 8.2.31
 
 ### Patch Changes
 
-- 310e0ab: Move `fumadocs-core` to peer dependency
+- 310e0ab: Move `nopends-core` to peer dependency
 - Updated dependencies [053609d]
-  - fumadocs-core@12.0.3
+  - nopends-core@12.0.3
 
 ## 8.2.30
 
 ### Patch Changes
 
-- fumadocs-core@12.0.2
+- nopends-core@12.0.2
 
 ## 8.2.29
 
 ### Patch Changes
 
-- fumadocs-core@12.0.1
+- nopends-core@12.0.1
 
 ## 8.2.28
 
@@ -424,20 +424,20 @@
 - Updated dependencies [d88dfa6]
 - Updated dependencies [ba20694]
 - Updated dependencies [57eb762]
-  - fumadocs-core@12.0.0
+  - nopends-core@12.0.0
 
 ## 8.2.27
 
 ### Patch Changes
 
 - Updated dependencies [1b8e12b]
-  - fumadocs-core@11.3.2
+  - nopends-core@11.3.2
 
 ## 8.2.26
 
 ### Patch Changes
 
-- fumadocs-core@11.3.1
+- nopends-core@11.3.1
 
 ## 8.2.25
 
@@ -445,25 +445,25 @@
 
 - 17e162e: Add `mdx` to page extensions by default
 - Updated dependencies [917d87f]
-  - fumadocs-core@11.3.0
+  - nopends-core@11.3.0
 
 ## 8.2.24
 
 ### Patch Changes
 
-- fumadocs-core@11.2.2
+- nopends-core@11.2.2
 
 ## 8.2.23
 
 ### Patch Changes
 
-- fumadocs-core@11.2.1
+- nopends-core@11.2.1
 
 ## 8.2.22
 
 ### Patch Changes
 
-- fumadocs-core@11.2.0
+- nopends-core@11.2.0
 
 ## 8.2.21
 
@@ -473,13 +473,13 @@
 - Updated dependencies [88008b1]
 - Updated dependencies [944541a]
 - Updated dependencies [07a9312]
-  - fumadocs-core@11.1.3
+  - nopends-core@11.1.3
 
 ## 8.2.20
 
 ### Patch Changes
 
-- fumadocs-core@11.1.2
+- nopends-core@11.1.2
 
 ## 8.2.19
 
@@ -489,27 +489,27 @@
 - Updated dependencies [8ef2b68]
 - Updated dependencies [26f464d]
 - Updated dependencies [26f464d]
-  - fumadocs-core@11.1.1
+  - nopends-core@11.1.1
 
 ## 8.2.18
 
 ### Patch Changes
 
-- fumadocs-core@11.1.0
+- nopends-core@11.1.0
 
 ## 8.2.17
 
 ### Patch Changes
 
 - Updated dependencies [98258b5]
-  - fumadocs-core@11.0.8
+  - nopends-core@11.0.8
 
 ## 8.2.16
 
 ### Patch Changes
 
 - Updated dependencies [f7c2c5c]
-  - fumadocs-core@11.0.7
+  - nopends-core@11.0.7
 
 ## 8.2.15
 
@@ -519,39 +519,39 @@
 - 5653d5d: Support custom heading slugger
 - Updated dependencies [5653d5d]
 - Updated dependencies [5653d5d]
-  - fumadocs-core@11.0.6
+  - nopends-core@11.0.6
 
 ## 8.2.14
 
 ### Patch Changes
 
-- fumadocs-core@11.0.5
+- nopends-core@11.0.5
 
 ## 8.2.13
 
 ### Patch Changes
 
-- 7b61b2f: Migrate `fumadocs-ui` to fully ESM, adding support for ESM `tailwind.config` file
+- 7b61b2f: Migrate `nopends-ui` to fully ESM, adding support for ESM `tailwind.config` file
 - Updated dependencies [7b61b2f]
-  - fumadocs-core@11.0.4
+  - nopends-core@11.0.4
 
 ## 8.2.12
 
 ### Patch Changes
 
-- fumadocs-core@11.0.3
+- nopends-core@11.0.3
 
 ## 8.2.11
 
 ### Patch Changes
 
-- fumadocs-core@11.0.2
+- nopends-core@11.0.2
 
 ## 8.2.10
 
 ### Patch Changes
 
-- fumadocs-core@11.0.1
+- nopends-core@11.0.1
 
 ## 8.2.9
 
@@ -561,20 +561,20 @@
 - Updated dependencies [92cb12f]
 - Updated dependencies [f75287d]
 - Updated dependencies [2d8df75]
-  - fumadocs-core@11.0.0
+  - nopends-core@11.0.0
 
 ## 8.2.8
 
 ### Patch Changes
 
 - Updated dependencies [bbad52f]
-  - fumadocs-core@10.1.3
+  - nopends-core@10.1.3
 
 ## 8.2.7
 
 ### Patch Changes
 
-- fumadocs-core@10.1.2
+- nopends-core@10.1.2
 
 ## 8.2.6
 
@@ -583,13 +583,13 @@
 - Updated dependencies [779c599]
 - Updated dependencies [0c01300]
 - Updated dependencies [779c599]
-  - fumadocs-core@10.1.1
+  - nopends-core@10.1.1
 
 ## 8.2.5
 
 ### Patch Changes
 
-- fumadocs-core@10.1.0
+- nopends-core@10.1.0
 
 ## 8.2.4
 
@@ -597,27 +597,27 @@
 
 - e47c62f: Support customising included files in the map file
 - Updated dependencies [e47c62f]
-  - fumadocs-core@10.0.5
+  - nopends-core@10.0.5
 
 ## 8.2.3
 
 ### Patch Changes
 
-- fumadocs-core@10.0.4
+- nopends-core@10.0.4
 
 ## 8.2.2
 
 ### Patch Changes
 
 - Updated dependencies [6f321e5]
-  - fumadocs-core@10.0.3
+  - nopends-core@10.0.3
 
 ## 8.2.1
 
 ### Patch Changes
 
 - Updated dependencies [10e099a]
-  - fumadocs-core@10.0.2
+  - nopends-core@10.0.2
 
 ## 8.2.0
 
@@ -630,7 +630,7 @@
 - Updated dependencies [c9b7763]
 - Updated dependencies [0e78dc8]
 - Updated dependencies [d8483a8]
-  - fumadocs-core@10.0.1
+  - nopends-core@10.0.1
 
 ## 8.1.1
 
@@ -638,7 +638,7 @@
 
 - Updated dependencies [b5d16938]
 - Updated dependencies [321d1e1f]
-  - fumadocs-core@10.0.0
+  - nopends-core@10.0.0
 
 ## 8.1.0
 
@@ -651,19 +651,19 @@
 - Updated dependencies [909b0e35]
 - Updated dependencies [691f12aa]
 - Updated dependencies [1c388ca5]
-  - fumadocs-core@9.1.0
+  - nopends-core@9.1.0
 
 ## 8.0.5
 
 ### Patch Changes
 
-- fumadocs-core@9.0.0
+- nopends-core@9.0.0
 
 ## 8.0.4
 
 ### Patch Changes
 
-- fumadocs-core@8.3.0
+- nopends-core@8.3.0
 
 ## 8.0.3
 
@@ -671,23 +671,23 @@
 
 - 9bf5adb: Replace await imports with normal imports
 - Updated dependencies [5c24659]
-  - fumadocs-core@8.2.0
+  - nopends-core@8.2.0
 
 ## 8.0.2
 
 ### Patch Changes
 
-- fumadocs-core@8.1.1
+- nopends-core@8.1.1
 
 ## 8.0.1
 
 ### Patch Changes
 
-- 6c5a39a: Rename Git repository to `fumadocs`
+- 6c5a39a: Rename Git repository to `nopends`
 - Updated dependencies [6c5a39a]
 - Updated dependencies [eb028b4]
 - Updated dependencies [054ec60]
-  - fumadocs-core@8.1.0
+  - nopends-core@8.1.0
 
 ## 8.0.0
 
@@ -711,15 +711,15 @@
 
 - 2b11c20: **Rename to Fumadocs**
 
-  `next-docs-zeta` -> `fumadocs-core`
+  `next-docs-zeta` -> `nopends-core`
 
-  `next-docs-ui` -> `fumadocs-ui`
+  `next-docs-ui` -> `nopends-ui`
 
-  `next-docs-mdx` -> `fumadocs-mdx`
+  `next-docs-mdx` -> `nopends-mdx`
 
-  `@fuma-docs/openapi` -> `fumadocs-openapi`
+  `@fuma-docs/openapi` -> `nopends-openapi`
 
-  `create-next-docs-app` -> `create-fumadocs-app`
+  `create-next-docs-app` -> `create-nopends-app`
 
 ### Patch Changes
 
@@ -727,7 +727,7 @@
 - Updated dependencies [cdff313]
 - Updated dependencies [1a346a1]
 - Updated dependencies [2b11c20]
-  - fumadocs-core@8.0.0
+  - nopends-core@8.0.0
 
 ## 7.1.2
 

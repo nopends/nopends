@@ -3,8 +3,8 @@ import { CodeBlock, Pre } from '@/components/codeblock';
 import type {
   HighlightOptionsCommon,
   HighlightOptionsThemes,
-} from 'fumadocs-core/highlight';
-import { useShiki } from 'fumadocs-core/highlight/client';
+} from 'nopends-core/highlight';
+import { useShiki } from 'nopends-core/highlight/client';
 import { cn } from '@/utils/cn';
 
 const components = {

@@ -51,7 +51,7 @@ export default async function Page({
     },
     {
       type: 'text',
-      text: 'You can follow the instructions in https://fumadocs.vercel.app/docs/ui/internationalization#source section.',
+      text: 'You can follow the instructions in https://docs.nopends.com/docs/ui/internationalization#source section.',
     },
   ],
   async transform(ctx) {

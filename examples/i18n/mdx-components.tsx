@@ -1,4 +1,4 @@
-import defaultMdxComponents from 'fumadocs-ui/mdx';
+import defaultMdxComponents from 'nopends-ui/mdx';
 import type { MDXComponents } from 'mdx/types';
 
 export function getMDXComponents(components?: MDXComponents): MDXComponents {

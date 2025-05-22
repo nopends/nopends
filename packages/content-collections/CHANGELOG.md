@@ -1,4 +1,4 @@
-# @fumadocs/content-collections
+# @nopends/content-collections
 
 ## 1.2.0
 
@@ -9,7 +9,7 @@
 ### Patch Changes
 
 - df244e8: Prepare for Content Collections v1
-  - fumadocs-core@15.3.4
+  - nopends-core@15.3.4
 
 ## 1.1.8
 
@@ -18,7 +18,7 @@
 - a06af26: Support pages without `title`
 - Updated dependencies [08236e1]
 - Updated dependencies [a06af26]
-  - fumadocs-core@15.0.6
+  - nopends-core@15.0.6
 
 ## 1.1.7
 
@@ -28,14 +28,14 @@
 - Updated dependencies [5b8cca8]
 - Updated dependencies [a763058]
 - Updated dependencies [581f4a5]
-  - fumadocs-core@15.0.0
+  - nopends-core@15.0.0
 
 ## 1.1.6
 
 ### Patch Changes
 
 - 3550efc: Fix remark image default config
-  - fumadocs-core@14.6.3
+  - nopends-core@14.6.3
 
 ## 1.1.5
 
@@ -61,7 +61,7 @@
 - Updated dependencies [15781f0]
 - Updated dependencies [be820c4]
 - Updated dependencies [d9e908e]
-  - fumadocs-core@14.0.0
+  - nopends-core@14.0.0
 
 ## 1.1.4
 
@@ -71,7 +71,7 @@
 - Updated dependencies [7dabbc1]
 - Updated dependencies [0c251e5]
 - Updated dependencies [3b56170]
-  - fumadocs-core@13.4.2
+  - nopends-core@13.4.2
 
 ## 1.1.3
 
@@ -86,7 +86,7 @@
 - 758013f: Use Fumadocs Remark Image instead of `rehype-img-size`
 - Updated dependencies [36b771b]
 - Updated dependencies [61b91fa]
-  - fumadocs-core@13.2.2
+  - nopends-core@13.2.2
 
 ## 1.1.1
 
@@ -94,7 +94,7 @@
 
 - c7aa090: Improve Fumadocs OpenAPI support
 - Updated dependencies [17fa173]
-  - fumadocs-core@13.2.1
+  - nopends-core@13.2.1
 
 ## 1.1.0
 
@@ -106,7 +106,7 @@
 
 - Updated dependencies [fccdfdb]
 - Updated dependencies [2ffd5ea]
-  - fumadocs-core@12.5.4
+  - nopends-core@12.5.4
 
 ## 1.0.3
 
@@ -120,14 +120,14 @@
 ### Patch Changes
 
 - dd1e4f3: Change type definitions of built-in schemas
-  - fumadocs-core@12.4.1
+  - nopends-core@12.4.1
 
 ## 1.0.1
 
 ### Patch Changes
 
 - 8efc775: Fix Content Collections compatibility
-  - fumadocs-core@12.4.0
+  - nopends-core@12.4.0
 
 ## 1.0.0
 

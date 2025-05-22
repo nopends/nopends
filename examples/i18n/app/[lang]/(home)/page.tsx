@@ -1,4 +1,4 @@
-import { DynamicLink } from 'fumadocs-core/dynamic-link';
+import { DynamicLink } from 'nopends-core/dynamic-link';
 
 export default function HomePage() {
   return (

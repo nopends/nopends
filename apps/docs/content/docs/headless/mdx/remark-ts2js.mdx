@@ -8,13 +8,13 @@ description: A remark plugin to transform TypeScript codeblocks into two tabs of
 Install dependencies:
 
 ```package-install
-fumadocs-docgen oxc-transform
+nopends-docgen oxc-transform
 ```
 
 Add `oxc-transform` to `serverExternalPackages` in `next.config.mjs`:
 
 ```js title="next.config.mjs"
-import { createMDX } from 'fumadocs-mdx/next';
+import { createMDX } from 'nopends-mdx/next';
 
 /** @type {import('next').NextConfig} */
 const config = {
@@ -30,8 +30,8 @@ export default withMDX(config);
 Add the remark plugin:
 
 ```ts title="source.config.ts" tab="Fumadocs MDX"
-import { remarkTypeScriptToJavaScript } from 'fumadocs-docgen/remark-ts2js';
-import { defineConfig } from 'fumadocs-mdx/config';
+import { remarkTypeScriptToJavaScript } from 'nopends-docgen/remark-ts2js';
+import { defineConfig } from 'nopends-mdx/config';
 
 export default defineConfig({
   mdxOptions: {
@@ -41,7 +41,7 @@ export default defineConfig({
 ```
 
 ```ts tab="MDX Compiler"
-import { remarkTypeScriptToJavaScript } from 'fumadocs-docgen/remark-ts2js';
+import { remarkTypeScriptToJavaScript } from 'nopends-docgen/remark-ts2js';
 import { compile } from '@mdx-js/mdx';
 
 await compile('...', {
@@ -52,8 +52,8 @@ await compile('...', {
 Finally, make sure to define the required MDX components: `Tabs` and `Tab`.
 
 ```tsx title="mdx-components.tsx (Fumadocs UI)"
-import { Tab, Tabs } from 'fumadocs-ui/components/tabs';
-import defaultComponents from 'fumadocs-ui/mdx';
+import { Tab, Tabs } from 'nopends-ui/components/tabs';
+import defaultComponents from 'nopends-ui/mdx';
 import type { MDXComponents } from 'mdx/types';
 
 export function getMDXComponents(components?: MDXComponents): MDXComponents {

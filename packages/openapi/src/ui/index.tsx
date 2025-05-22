@@ -5,11 +5,11 @@ import {
   Collapsible,
   CollapsibleContent,
   CollapsibleTrigger,
-} from 'fumadocs-ui/components/ui/collapsible';
+} from 'nopends-ui/components/ui/collapsible';
 import { ChevronDown } from 'lucide-react';
 import { ApiProvider } from '@/ui/lazy';
-import { cn } from 'fumadocs-ui/utils/cn';
-import { buttonVariants } from 'fumadocs-ui/components/ui/button';
+import { cn } from 'nopends-ui/utils/cn';
+import { buttonVariants } from 'nopends-ui/components/ui/button';
 import type { MediaAdapter } from '@/media/adapter';
 
 export function Root({

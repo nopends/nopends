@@ -1,5 +1,5 @@
 ---
-'fumadocs-openapi': major
+'nopends-openapi': major
 ---
 
 **Redesign `generateFiles`**

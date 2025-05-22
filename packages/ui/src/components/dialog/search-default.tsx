@@ -1,8 +1,8 @@
 'use client';
 
-import { useDocsSearch } from 'fumadocs-core/search/client';
+import { useDocsSearch } from 'nopends-core/search/client';
 import { type ReactNode, useState } from 'react';
-import { useOnChange } from 'fumadocs-core/utils/use-on-change';
+import { useOnChange } from 'nopends-core/utils/use-on-change';
 import { useI18n } from '@/contexts/i18n';
 import {
   SearchDialog,

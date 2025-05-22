@@ -1,17 +1,17 @@
 import { createFileRoute, notFound } from '@tanstack/react-router';
-import { DocsLayout } from 'fumadocs-ui/layouts/docs';
+import { DocsLayout } from 'nopends-ui/layouts/docs';
 import { source } from '@/lib/source';
 import {
   DocsBody,
   DocsDescription,
   DocsPage,
   DocsTitle,
-} from 'fumadocs-ui/page';
-import { executeMdxSync } from '@fumadocs/mdx-remote/client';
-import defaultMdxComponents from 'fumadocs-ui/mdx';
+} from 'nopends-ui/page';
+import { executeMdxSync } from '@nopends/mdx-remote/client';
+import defaultMdxComponents from 'nopends-ui/mdx';
 import { createServerFn } from '@tanstack/react-start';
-import type { PageTree } from 'fumadocs-core/server';
-import { createCompiler } from '@fumadocs/mdx-remote';
+import type { PageTree } from 'nopends-core/server';
+import { createCompiler } from '@nopends/mdx-remote';
 import * as path from 'node:path';
 
 export const Route = createFileRoute('/docs/$')({

@@ -4,7 +4,7 @@ import {
   DocsBody,
   DocsTitle,
   DocsDescription,
-} from 'fumadocs-ui/page';
+} from 'nopends-ui/page';
 import { notFound } from 'next/navigation';
 import { metadataImage } from '@/lib/metadata';
 import { getMDXComponents } from '@/mdx-components';

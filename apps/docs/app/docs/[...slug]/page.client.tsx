@@ -3,8 +3,8 @@ import { useState } from 'react';
 import { Check, Copy } from 'lucide-react';
 import { cn } from '@/lib/cn';
 import { buttonVariants } from '@/components/ui/button';
-import { useCopyButton } from 'fumadocs-ui/utils/use-copy-button';
-import Link from 'fumadocs-core/link';
+import { useCopyButton } from 'nopends-ui/utils/use-copy-button';
+import Link from 'nopends-core/link';
 
 const cache = new Map<string, string>();
 

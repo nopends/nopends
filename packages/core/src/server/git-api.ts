@@ -8,7 +8,7 @@ type Response = {
 
 export interface GetGithubLastCommitOptions {
   /**
-   * Repository name, like "fumadocs"
+   * Repository name, like "nopends"
    */
   repo: string;
 

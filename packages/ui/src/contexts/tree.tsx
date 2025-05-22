@@ -1,8 +1,8 @@
 'use client';
-import type { PageTree } from 'fumadocs-core/server';
-import { createContext, usePathname } from 'fumadocs-core/framework';
+import type { PageTree } from 'nopends-core/server';
+import { createContext, usePathname } from 'nopends-core/framework';
 import { type ReactNode, useMemo, useRef } from 'react';
-import { searchPath } from 'fumadocs-core/breadcrumb';
+import { searchPath } from 'nopends-core/breadcrumb';
 
 type MakeRequired<O, K extends keyof O> = Omit<O, K> & Pick<Required<O>, K>;
 

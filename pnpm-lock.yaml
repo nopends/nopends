@@ -62,7 +62,7 @@ importers:
       '@ai-sdk/react':
         specifier: ^1.2.12
         version: 1.2.12(react@19.1.0)(zod@3.25.7)
-      '@fumadocs/mdx-remote':
+      '@nopends/mdx-remote':
         specifier: workspace:*
         version: link:../../packages/mdx-remote
       '@oramacloud/client':
@@ -92,25 +92,25 @@ importers:
       feed:
         specifier: ^5.0.1
         version: 5.0.1
-      fumadocs-core:
+      nopends-core:
         specifier: workspace:*
         version: link:../../packages/core
-      fumadocs-docgen:
+      nopends-docgen:
         specifier: workspace:^
         version: link:../../packages/doc-gen
-      fumadocs-mdx:
+      nopends-mdx:
         specifier: workspace:*
         version: link:../../packages/mdx
-      fumadocs-openapi:
+      nopends-openapi:
         specifier: workspace:^
         version: link:../../packages/openapi
-      fumadocs-twoslash:
+      nopends-twoslash:
         specifier: workspace:^
         version: link:../../packages/twoslash
-      fumadocs-typescript:
+      nopends-typescript:
         specifier: workspace:^
         version: link:../../packages/typescript
-      fumadocs-ui:
+      nopends-ui:
         specifier: workspace:*
         version: link:../../packages/ui
       hast-util-to-jsx-runtime:
@@ -177,7 +177,7 @@ importers:
         specifier: ^3.25.7
         version: 3.25.7
     devDependencies:
-      '@fumadocs/cli':
+      '@nopends/cli':
         specifier: workspace:*
         version: link:../../packages/cli
       '@next/bundle-analyzer':
@@ -246,13 +246,13 @@ importers:
 
   examples/content-collections:
     dependencies:
-      '@fumadocs/content-collections':
+      '@nopends/content-collections':
         specifier: workspace:*
         version: link:../../packages/content-collections
-      fumadocs-core:
+      nopends-core:
         specifier: workspace:*
         version: link:../../packages/core
-      fumadocs-ui:
+      nopends-ui:
         specifier: workspace:*
         version: link:../../packages/ui
       next:
@@ -292,13 +292,13 @@ importers:
       '@orama/tokenizers':
         specifier: ^3.1.6
         version: 3.1.7
-      fumadocs-core:
+      nopends-core:
         specifier: workspace:*
         version: link:../../packages/core
-      fumadocs-mdx:
+      nopends-mdx:
         specifier: workspace:*
         version: link:../../packages/mdx
-      fumadocs-ui:
+      nopends-ui:
         specifier: workspace:*
         version: link:../../packages/ui
       next:
@@ -326,13 +326,13 @@ importers:
 
   examples/next-mdx:
     dependencies:
-      fumadocs-core:
+      nopends-core:
         specifier: workspace:*
         version: link:../../packages/core
-      fumadocs-mdx:
+      nopends-mdx:
         specifier: workspace:*
         version: link:../../packages/mdx
-      fumadocs-ui:
+      nopends-ui:
         specifier: workspace:*
         version: link:../../packages/ui
       next:
@@ -369,16 +369,16 @@ importers:
 
   examples/openapi:
     dependencies:
-      fumadocs-core:
+      nopends-core:
         specifier: workspace:*
         version: link:../../packages/core
-      fumadocs-mdx:
+      nopends-mdx:
         specifier: workspace:*
         version: link:../../packages/mdx
-      fumadocs-openapi:
+      nopends-openapi:
         specifier: workspace:*
         version: link:../../packages/openapi
-      fumadocs-ui:
+      nopends-ui:
         specifier: workspace:*
         version: link:../../packages/ui
       next:
@@ -418,16 +418,16 @@ importers:
 
   examples/python:
     dependencies:
-      fumadocs-core:
+      nopends-core:
         specifier: workspace:*
         version: link:../../packages/core
-      fumadocs-mdx:
+      nopends-mdx:
         specifier: workspace:*
         version: link:../../packages/mdx
-      fumadocs-python:
+      nopends-python:
         specifier: workspace:*
         version: link:../../packages/python
-      fumadocs-ui:
+      nopends-ui:
         specifier: workspace:*
         version: link:../../packages/ui
       next:
@@ -467,7 +467,7 @@ importers:
 
   examples/react-router:
     dependencies:
-      '@fumadocs/mdx-remote':
+      '@nopends/mdx-remote':
         specifier: workspace:*
         version: link:../../packages/mdx-remote
       '@react-router/node':
@@ -476,10 +476,10 @@ importers:
       '@react-router/serve':
         specifier: ^7.6.0
         version: 7.6.0(react-router@7.6.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(typescript@5.8.3)
-      fumadocs-core:
+      nopends-core:
         specifier: workspace:*
         version: link:../../packages/core
-      fumadocs-ui:
+      nopends-ui:
         specifier: workspace:*
         version: link:../../packages/ui
       gray-matter:
@@ -534,13 +534,13 @@ importers:
 
   examples/remote-mdx:
     dependencies:
-      '@fumadocs/mdx-remote':
+      '@nopends/mdx-remote':
         specifier: workspace:*
         version: link:../../packages/mdx-remote
-      fumadocs-core:
+      nopends-core:
         specifier: workspace:*
         version: link:../../packages/core
-      fumadocs-ui:
+      nopends-ui:
         specifier: workspace:*
         version: link:../../packages/ui
       next:
@@ -571,7 +571,7 @@ importers:
 
   examples/tanstack-start:
     dependencies:
-      '@fumadocs/mdx-remote':
+      '@nopends/mdx-remote':
         specifier: workspace:*
         version: link:../../packages/mdx-remote
       '@tanstack/react-router':
@@ -580,10 +580,10 @@ importers:
       '@tanstack/react-start':
         specifier: ^1.120.3
         version: 1.120.5(@tanstack/react-router@1.120.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(@types/node@22.15.19)(babel-plugin-macros@3.1.0)(db0@0.3.2)(ioredis@5.6.1)(jiti@2.4.2)(lightningcss@1.30.1)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(terser@5.39.2)(tsx@4.19.4)(vite@6.3.5(@types/node@22.15.19)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.39.2)(tsx@4.19.4)(yaml@2.8.0))(webpack@5.99.9(esbuild@0.25.4))(yaml@2.8.0)
-      fumadocs-core:
+      nopends-core:
         specifier: workspace:*
         version: link:../../packages/core
-      fumadocs-ui:
+      nopends-ui:
         specifier: workspace:*
         version: link:../../packages/ui
       gray-matter:
@@ -678,7 +678,7 @@ importers:
       eslint-config-custom:
         specifier: workspace:*
         version: link:../eslint-config-custom
-      fumadocs-core:
+      nopends-core:
         specifier: workspace:*
         version: link:../core
       tsconfig:
@@ -1038,7 +1038,7 @@ importers:
         specifier: ^3.25.7
         version: 3.25.7
     devDependencies:
-      '@fumadocs/mdx-remote':
+      '@nopends/mdx-remote':
         specifier: workspace:*
         version: link:../mdx-remote
       '@types/cross-spawn':
@@ -1059,7 +1059,7 @@ importers:
       eslint-config-custom:
         specifier: workspace:*
         version: link:../eslint-config-custom
-      fumadocs-core:
+      nopends-core:
         specifier: workspace:*
         version: link:../core
       mdast-util-mdx-jsx:
@@ -1108,7 +1108,7 @@ importers:
       eslint-config-custom:
         specifier: workspace:*
         version: link:../eslint-config-custom
-      fumadocs-core:
+      nopends-core:
         specifier: workspace:*
         version: link:../core
       tinyglobby:
@@ -1147,10 +1147,10 @@ importers:
       class-variance-authority:
         specifier: ^0.7.1
         version: 0.7.1
-      fumadocs-core:
+      nopends-core:
         specifier: workspace:*
         version: link:../core
-      fumadocs-ui:
+      nopends-ui:
         specifier: workspace:*
         version: link:../ui
       github-slugger:
@@ -1251,10 +1251,10 @@ importers:
       eslint-config-custom:
         specifier: workspace:*
         version: link:../eslint-config-custom
-      fumadocs-core:
+      nopends-core:
         specifier: workspace:*
         version: link:../core
-      fumadocs-ui:
+      nopends-ui:
         specifier: workspace:*
         version: link:../ui
       lucide-react:
@@ -1308,7 +1308,7 @@ importers:
       eslint-config-custom:
         specifier: workspace:*
         version: link:../eslint-config-custom
-      fumadocs-ui:
+      nopends-ui:
         specifier: workspace:*
         version: link:../ui
       shiki:
@@ -1372,10 +1372,10 @@ importers:
       eslint-config-custom:
         specifier: workspace:*
         version: link:../eslint-config-custom
-      fumadocs-core:
+      nopends-core:
         specifier: workspace:*
         version: link:../core
-      fumadocs-ui:
+      nopends-ui:
         specifier: workspace:*
         version: link:../ui
       tsconfig:
@@ -1423,7 +1423,7 @@ importers:
       class-variance-authority:
         specifier: ^0.7.1
         version: 0.7.1
-      fumadocs-core:
+      nopends-core:
         specifier: workspace:*
         version: link:../core
       lodash.merge:
@@ -1451,7 +1451,7 @@ importers:
         specifier: ^3.3.0
         version: 3.3.0
     devDependencies:
-      '@fumadocs/cli':
+      '@nopends/cli':
         specifier: workspace:*
         version: link:../cli
       '@next/eslint-plugin-next':

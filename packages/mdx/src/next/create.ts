@@ -49,7 +49,7 @@ export function createMDX({
           '*.{md,mdx}': {
             loaders: [
               {
-                loader: 'fumadocs-mdx/loader-mdx',
+                loader: 'nopends-mdx/loader-mdx',
                 options: mdxLoaderOptions,
               },
             ],
@@ -69,7 +69,7 @@ export function createMDX({
           use: [
             options.defaultLoaders.babel,
             {
-              loader: 'fumadocs-mdx/loader-mdx',
+              loader: 'nopends-mdx/loader-mdx',
               options: mdxLoaderOptions,
             },
           ],

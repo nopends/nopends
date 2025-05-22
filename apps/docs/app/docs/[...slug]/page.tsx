@@ -4,7 +4,7 @@ import {
   DocsDescription,
   DocsPage,
   DocsTitle,
-} from 'fumadocs-ui/page';
+} from 'nopends-ui/page';
 import { notFound } from 'next/navigation';
 import {
   type ComponentProps,
@@ -12,9 +12,9 @@ import {
   type ReactElement,
   type ReactNode,
 } from 'react';
-import * as Twoslash from 'fumadocs-twoslash/ui';
-import { Callout } from 'fumadocs-ui/components/callout';
-import { TypeTable } from 'fumadocs-ui/components/type-table';
+import * as Twoslash from 'nopends-twoslash/ui';
+import { Callout } from 'nopends-ui/components/callout';
+import { TypeTable } from 'nopends-ui/components/type-table';
 import * as Preview from '@/components/preview';
 import { createMetadata } from '@/lib/metadata';
 import { openapi, source } from '@/lib/source';
@@ -27,14 +27,14 @@ import {
   HoverCardContent,
   HoverCardTrigger,
 } from '@/components/ui/hover-card';
-import Link from 'fumadocs-core/link';
+import Link from 'nopends-core/link';
 import { UiOverview } from '@/components/ui-overview';
-import { AutoTypeTable } from 'fumadocs-typescript/ui';
-import { createGenerator } from 'fumadocs-typescript';
-import { getPageTreePeers } from 'fumadocs-core/server';
-import { Card, Cards } from 'fumadocs-ui/components/card';
+import { AutoTypeTable } from 'nopends-typescript/ui';
+import { createGenerator } from 'nopends-typescript';
+import { getPageTreePeers } from 'nopends-core/server';
+import { Card, Cards } from 'nopends-ui/components/card';
 import { getMDXComponents } from '@/mdx-components';
-import { APIPage } from 'fumadocs-openapi/ui';
+import { APIPage } from 'nopends-openapi/ui';
 import { EditOnGitHub, LLMCopyButton } from './page.client';
 
 function PreviewRenderer({ preview }: { preview: string }): ReactNode {

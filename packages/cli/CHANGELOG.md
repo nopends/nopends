@@ -1,4 +1,4 @@
-# fumadocs
+# nopends
 
 ## 0.2.0
 

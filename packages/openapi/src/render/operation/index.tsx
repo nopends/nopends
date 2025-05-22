@@ -25,7 +25,7 @@ import {
 } from '@/render/operation/api-example';
 import { MethodLabel } from '@/ui/components/method-label';
 import { type SampleGenerator } from '@/requests/_shared';
-import { Tab, Tabs } from 'fumadocs-ui/components/tabs';
+import { Tab, Tabs } from 'nopends-ui/components/tabs';
 import { getTypescriptSchema } from '@/utils/get-typescript-schema';
 import { CopyResponseTypeScript } from '@/ui/client';
 
@@ -116,7 +116,7 @@ export function Operation({
       <>
         {heading(headingLevel, 'Response Body', ctx)}
 
-        <Tabs items={statuses} groupId="fumadocs_openapi_responses">
+        <Tabs items={statuses} groupId="nopends_openapi_responses">
           {statuses.map((status) => (
             <ResponseTab
               key={status}

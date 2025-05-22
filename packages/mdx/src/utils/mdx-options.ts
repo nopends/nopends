@@ -1,4 +1,4 @@
-import * as plugins from 'fumadocs-core/mdx-plugins';
+import * as plugins from 'nopends-core/mdx-plugins';
 import type { ProcessorOptions } from '@mdx-js/mdx';
 import type { Pluggable } from 'unified';
 import remarkMdxExport from '@/mdx-plugins/remark-exports';

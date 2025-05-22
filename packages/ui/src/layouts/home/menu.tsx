@@ -7,7 +7,7 @@ import {
   NavigationMenuLink,
   NavigationMenuTrigger,
 } from '@/components/ui/navigation-menu';
-import Link from 'fumadocs-core/link';
+import Link from 'nopends-core/link';
 import { cva } from 'class-variance-authority';
 import { buttonVariants } from '@/components/ui/button';
 import type { ComponentPropsWithoutRef } from 'react';

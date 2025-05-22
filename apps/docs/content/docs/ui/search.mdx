@@ -8,7 +8,7 @@ description: Implement document search in your docs
 You can customise the search UI from root provider, such as disabling search:
 
 ```tsx title="app/layout.tsx"
-import { RootProvider } from 'fumadocs-ui/provider';
+import { RootProvider } from 'nopends-ui/provider';
 import type { ReactNode } from 'react';
 
 export default function Layout({ children }: { children: ReactNode }) {
@@ -33,7 +33,7 @@ export default function Layout({ children }: { children: ReactNode }) {
 Customise the hot keys to trigger search dialog, by default it's <kbd>⌘</kbd> <kbd>K</kbd> or <kbd>Ctrl</kbd> <kbd>K</kbd>.
 
 ```tsx
-import { RootProvider } from 'fumadocs-ui/provider';
+import { RootProvider } from 'nopends-ui/provider';
 
 <RootProvider
   search={{
@@ -55,11 +55,11 @@ Make a `<RootProvider />` wrapper with `use client` directive, and use it instea
 
 ```tsx tab="provider.tsx"
 'use client';
-import { RootProvider } from 'fumadocs-ui/provider';
+import { RootProvider } from 'nopends-ui/provider';
 import type { ReactNode } from 'react';
 
 // for example, using the default `fetch()` client
-import SearchDialog from 'fumadocs-ui/components/dialog/search-default';
+import SearchDialog from 'nopends-ui/components/dialog/search-default';
 
 export function Provider({ children }: { children: ReactNode }) {
   return (
@@ -104,7 +104,7 @@ It sends queries to an API endpoint, works with the built-in [Orama search engin
 You can pass options to the search client:
 
 ```tsx
-import { RootProvider } from 'fumadocs-ui/provider';
+import { RootProvider } from 'nopends-ui/provider';
 
 <RootProvider
   search={{
@@ -123,7 +123,7 @@ import { RootProvider } from 'fumadocs-ui/provider';
 Add UI for filtering results by tags, [configure Tag Filter](/docs/headless/search/orama#tag-filter) on search server and add the following:
 
 ```tsx
-import { RootProvider } from 'fumadocs-ui/provider';
+import { RootProvider } from 'nopends-ui/provider';
 
 <RootProvider
   search={{
@@ -167,7 +167,7 @@ SDK, you can also plug the built-in dialog interface.
 Same as default search client, you can configure [Tag Filter](/docs/headless/search/algolia#tag-filter) on the dialog.
 
 ```tsx title="components/search.tsx"
-import SearchDialog from 'fumadocs-ui/components/dialog/search-algolia';
+import SearchDialog from 'nopends-ui/components/dialog/search-algolia';
 
 <SearchDialog
   defaultTag="value"
@@ -188,8 +188,8 @@ For the setup guide, see [Integrate Orama Cloud](/docs/headless/search/orama-clo
 'use client';
 
 import { OramaClient } from '@oramacloud/client';
-import type { SharedProps } from 'fumadocs-ui/components/dialog/search';
-import SearchDialog from 'fumadocs-ui/components/dialog/search-orama';
+import type { SharedProps } from 'nopends-ui/components/dialog/search';
+import SearchDialog from 'nopends-ui/components/dialog/search-orama';
 
 const client = new OramaClient({
   endpoint: 'endpoint',
@@ -219,7 +219,7 @@ you may use the `SearchDialog` component.
 import {
   SearchDialog,
   type SharedProps,
-} from 'fumadocs-ui/components/dialog/search';
+} from 'nopends-ui/components/dialog/search';
 
 export default function CustomSearchDialog(props: SharedProps) {
   return <SearchDialog {...props} />;

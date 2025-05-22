@@ -25,10 +25,10 @@ import {
   DialogOverlay,
   DialogTitle,
 } from '@radix-ui/react-dialog';
-import type { SortedResult } from 'fumadocs-core/server';
+import type { SortedResult } from 'nopends-core/server';
 import { cva } from 'class-variance-authority';
-import { useEffectEvent } from 'fumadocs-core/utils/use-effect-event';
-import { createContext, useRouter } from 'fumadocs-core/framework';
+import { useEffectEvent } from 'nopends-core/utils/use-effect-event';
+import { createContext, useRouter } from 'nopends-core/framework';
 
 export type SearchLink = [name: string, href: string];
 

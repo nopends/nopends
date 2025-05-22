@@ -1,17 +1,17 @@
-import type { Accordion, Accordions } from 'fumadocs-ui/components/accordion';
-import type { Callout } from 'fumadocs-ui/components/callout';
-import type { File, Folder } from 'fumadocs-ui/components/files';
-import type { InlineTOC } from 'fumadocs-ui/components/inline-toc';
-import type { TypeTable } from 'fumadocs-ui/components/type-table';
-import type { Card } from 'fumadocs-ui/components/card';
-import type { DocsLayoutProps } from 'fumadocs-ui/layouts/docs';
+import type { Accordion, Accordions } from 'nopends-ui/components/accordion';
+import type { Callout } from 'nopends-ui/components/callout';
+import type { File, Folder } from 'nopends-ui/components/files';
+import type { InlineTOC } from 'nopends-ui/components/inline-toc';
+import type { TypeTable } from 'nopends-ui/components/type-table';
+import type { Card } from 'nopends-ui/components/card';
+import type { DocsLayoutProps } from 'nopends-ui/layouts/docs';
 import type {
   AnchorHTMLAttributes,
   ComponentPropsWithoutRef,
   HTMLAttributes,
 } from 'react';
-import type { DocsPageProps } from 'fumadocs-ui/page';
-import type { AutoTypeTable } from 'fumadocs-typescript/ui';
+import type { DocsPageProps } from 'nopends-ui/page';
+import type { AutoTypeTable } from 'nopends-typescript/ui';
 
 export type AccordionsProps = Omit<
   ComponentPropsWithoutRef<typeof Accordions>,

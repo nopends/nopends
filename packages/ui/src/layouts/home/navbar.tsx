@@ -1,7 +1,7 @@
 'use client';
 import { type ComponentProps, useState } from 'react';
 import { cva, type VariantProps } from 'class-variance-authority';
-import Link, { type LinkProps } from 'fumadocs-core/link';
+import Link, { type LinkProps } from 'nopends-core/link';
 import { cn } from '@/utils/cn';
 import { BaseLinkItem } from '@/layouts/links';
 import {

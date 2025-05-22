@@ -8,7 +8,7 @@ description: Collection of content data for your app
 Define a collection to parse a certain set of files.
 
 ```ts
-import { defineCollections } from 'fumadocs-mdx/config';
+import { defineCollections } from 'nopends-mdx/config';
 import { z } from 'zod';
 
 export const blog = defineCollections({
@@ -26,7 +26,7 @@ export const blog = defineCollections({
 The accepted type of collection.
 
 ```ts
-import { defineCollections } from 'fumadocs-mdx/config';
+import { defineCollections } from 'nopends-mdx/config';
 
 // only scan for json/yaml files
 export const metaFiles = defineCollections({
@@ -56,7 +56,7 @@ Directories to scan input files.
 The schema to validate file data (frontmatter on `doc` type, content on `meta` type).
 
 ```ts
-import { defineCollections } from 'fumadocs-mdx/config';
+import { defineCollections } from 'nopends-mdx/config';
 import { z } from 'zod';
 
 export const blog = defineCollections({
@@ -74,7 +74,7 @@ Note that the validation is done by build time, hence the output must be seriali
 You can also pass a function and receives the transform context.
 
 ```ts
-import { defineCollections } from 'fumadocs-mdx/config';
+import { defineCollections } from 'nopends-mdx/config';
 import { z } from 'zod';
 
 export const blog = defineCollections({
@@ -97,7 +97,7 @@ export const blog = defineCollections({
 Customise MDX options on collection level.
 
 ```ts title="source.config.ts"
-import { defineCollections, getDefaultMDXOptions } from 'fumadocs-mdx/config';
+import { defineCollections, getDefaultMDXOptions } from 'nopends-mdx/config';
 
 export const blog = defineCollections({
   type: 'doc',
@@ -113,7 +113,7 @@ You have full control over MDX options.
 You can use `getDefaultMDXOptions` to apply default configurations, it accepts the [extended MDX Options](/docs/mdx/mdx#extended).
 
 ```ts title="source.config.ts"
-import { defineCollections, getDefaultMDXOptions } from 'fumadocs-mdx/config';
+import { defineCollections, getDefaultMDXOptions } from 'nopends-mdx/config';
 
 export const blog = defineCollections({
   type: 'doc',
@@ -130,7 +130,7 @@ export const blog = defineCollections({
 Define a collection for Fumadocs.
 
 ```ts
-import { defineDocs } from 'fumadocs-mdx/config';
+import { defineDocs } from 'nopends-mdx/config';
 
 export const docs = defineDocs({
   dir: '/my/content/dir',
@@ -148,7 +148,7 @@ export const docs = defineDocs({
 Instead of per collection, you should customise `dir` from `defineDocs`:
 
 ```ts
-import { defineDocs } from 'fumadocs-mdx/config';
+import { defineDocs } from 'nopends-mdx/config';
 
 export const docs = defineDocs({
   dir: 'my/content/dir',
@@ -160,7 +160,7 @@ export const docs = defineDocs({
 You can extend the default Zod schema of `docs` and `meta`.
 
 ```ts
-import { frontmatterSchema, metaSchema, defineDocs } from 'fumadocs-mdx/config';
+import { frontmatterSchema, metaSchema, defineDocs } from 'nopends-mdx/config';
 import { z } from 'zod';
 
 export const docs = defineDocs({

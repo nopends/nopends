@@ -1,12 +1,12 @@
 'use client';
 import { cn } from '@/lib/cn';
-import { buttonVariants } from 'fumadocs-ui/components/ui/button';
+import { buttonVariants } from 'nopends-ui/components/ui/button';
 import { ThumbsDown, ThumbsUp } from 'lucide-react';
 import { type SyntheticEvent, useEffect, useState } from 'react';
 import {
   Collapsible,
   CollapsibleContent,
-} from 'fumadocs-ui/components/ui/collapsible';
+} from 'nopends-ui/components/ui/collapsible';
 import { cva } from 'class-variance-authority';
 import { usePathname } from 'next/navigation';
 

@@ -1,5 +1,5 @@
 {
-  "name": "fumadocs-python",
+  "name": "nopends-python",
   "version": "0.0.2",
   "description": "The built-in Python docgen for Fumadocs",
   "keywords": [
@@ -7,8 +7,8 @@
     "Docs",
     "Python"
   ],
-  "homepage": "https://fumadocs.vercel.app",
-  "repository": "github:fuma-nama/fumadocs",
+  "homepage": "https://docs.nopends.com",
+  "repository": "github:nopends/nopends",
   "license": "MIT",
   "author": "Fuma Nama",
   "type": "module",
@@ -43,14 +43,14 @@
     "@types/node": "^22.15.19",
     "@types/react": "^19.1.4",
     "eslint-config-custom": "workspace:*",
-    "fumadocs-core": "workspace:*",
-    "fumadocs-ui": "workspace:*",
+    "nopends-core": "workspace:*",
+    "nopends-ui": "workspace:*",
     "lucide-react": "^0.511.0",
     "tsconfig": "workspace:*"
   },
   "peerDependencies": {
-    "fumadocs-core": "15.x.x",
-    "fumadocs-ui": "15.x.x"
+    "nopends-core": "15.x.x",
+    "nopends-ui": "15.x.x"
   },
   "publishConfig": {
     "access": "public"

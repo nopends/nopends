@@ -1,4 +1,4 @@
-import { createMDX } from 'fumadocs-mdx/next';
+import { createMDX } from 'nopends-mdx/next';
 
 const withMDX = createMDX();
 

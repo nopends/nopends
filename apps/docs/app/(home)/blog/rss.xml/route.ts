@@ -7,12 +7,12 @@ export const revalidate = false;
 export function GET() {
   const feed = new Feed({
     title: 'Fumadocs Blog',
-    id: 'https://fumadocs.dev',
-    link: 'https://fumadocs.dev',
+    id: 'https://nopends.dev',
+    link: 'https://nopends.dev',
     language: 'en',
 
-    image: 'https://fumadocs.dev/banner.png',
-    favicon: 'https://fumadocs.dev/icon.png',
+    image: 'https://nopends.dev/banner.png',
+    favicon: 'https://nopends.dev/icon.png',
     copyright: 'All rights reserved 2025, Fuma Nama',
   });
 

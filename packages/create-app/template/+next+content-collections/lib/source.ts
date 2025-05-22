@@ -1,6 +1,6 @@
 import { allDocs, allMetas } from 'content-collections';
-import { loader } from 'fumadocs-core/source';
-import { createMDXSource } from '@fumadocs/content-collections';
+import { loader } from 'nopends-core/source';
+import { createMDXSource } from '@nopends/content-collections';
 
 export const source = loader({
   baseUrl: '/docs',

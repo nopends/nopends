@@ -1,4 +1,4 @@
-# fumadocs-typescript
+# nopends-typescript
 
 ## 4.0.5
 
@@ -40,7 +40,7 @@
   Create a generator instance:
 
   ```ts
-  import { createGenerator } from 'fumadocs-typescript';
+  import { createGenerator } from 'nopends-typescript';
 
   const generator = createGenerator(tsconfig);
   ```
@@ -48,7 +48,7 @@
   Refactor:
 
   ```tsx
-  import { remarkAutoTypeTable, createTypeTable } from 'fumadocs-typescript';
+  import { remarkAutoTypeTable, createTypeTable } from 'nopends-typescript';
 
   generateDocumentation('./file.ts', 'MyClass', fs.readFileSync('./file.ts').toString())
   generateMDX('content', {...})
@@ -64,7 +64,7 @@
   To:
 
   ```tsx
-  import { AutoTypeTable, remarkAutoTypeTable } from "fumadocs-typescript";
+  import { AutoTypeTable, remarkAutoTypeTable } from "nopends-typescript";
 
   generator.generateDocumentation({path: './file.ts'}, 'MyClass')
   generateMDX(generator, 'content', { ... })
@@ -149,11 +149,11 @@
 
 ### Major Changes
 
-- f75287d: **Introduce `fumadocs-docgen` package.**
+- f75287d: **Introduce `nopends-docgen` package.**
 
   Offer a better authoring experience for advanced use cases.
 
-  - Move `remark-dynamic-content` and `remark-install` plugins to the new package `fumadocs-docgen`.
+  - Move `remark-dynamic-content` and `remark-install` plugins to the new package `nopends-docgen`.
   - Support Typescript generator by default
 
   **Usage**
@@ -161,7 +161,7 @@
   Add the `remarkDocGen` plugin to your remark plugins.
 
   ```ts
-  import { remarkDocGen, fileGenerator } from 'fumadocs-docgen';
+  import { remarkDocGen, fileGenerator } from 'nopends-docgen';
 
   remark().use(remarkDocGen, { generators: [fileGenerator()] });
   ```
@@ -191,7 +191,7 @@
   For `remarkInstall`, it remains the same:
 
   ```ts
-  import { remarkInstall } from 'fumadocs-docgen';
+  import { remarkInstall } from 'nopends-docgen';
   ```
 
 ## 1.0.2

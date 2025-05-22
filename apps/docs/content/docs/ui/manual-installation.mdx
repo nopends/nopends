@@ -10,7 +10,7 @@ Before continuing, make sure:
 ## Getting Started
 
 ```package-install
-fumadocs-ui fumadocs-core
+nopends-ui nopends-core
 ```
 
 ### MDX Components
@@ -26,11 +26,11 @@ Fumadocs supports different content sources, including Fumadocs MDX and [Content
 Fumadocs MDX is our official content source, you can configure it with:
 
 ```package-install
-fumadocs-mdx @types/mdx
+nopends-mdx @types/mdx
 ```
 
 ```js tab="next.config.mjs"
-import { createMDX } from 'fumadocs-mdx/next';
+import { createMDX } from 'nopends-mdx/next';
 
 const withMDX = createMDX();
 
@@ -43,7 +43,7 @@ export default withMDX(config);
 ```
 
 ```ts tab="source.config.ts"
-import { defineDocs } from 'fumadocs-mdx/config';
+import { defineDocs } from 'nopends-mdx/config';
 
 export const docs = defineDocs({
   dir: 'content/docs',
@@ -53,7 +53,7 @@ export const docs = defineDocs({
 ```json tab="package.json"
 {
   "scripts": {
-    "postinstall": "fumadocs-mdx" // [!code ++]
+    "postinstall": "nopends-mdx" // [!code ++]
   }
 }
 ```
@@ -63,7 +63,7 @@ Finally, to access your content:
 ```ts title="lib/source.ts"
 // .source folder will be generated when you run `next dev`
 import { docs } from '@/.source';
-import { loader } from 'fumadocs-core/source';
+import { loader } from 'nopends-core/source';
 
 export const source = loader({
   baseUrl: '/docs',
@@ -76,7 +76,7 @@ export const source = loader({
 Wrap the entire application inside [Root Provider](/docs/ui/layouts/root-provider), and add required styles to `body`.
 
 ```tsx title="app/layout.tsx"
-import { RootProvider } from 'fumadocs-ui/provider';
+import { RootProvider } from 'nopends-ui/provider';
 import type { ReactNode } from 'react';
 
 export default function Layout({ children }: { children: ReactNode }) {
@@ -103,8 +103,8 @@ Add the following Tailwind CSS styles to `global.css`.
 
 ```css title="global.css"
 @import 'tailwindcss';
-@import 'fumadocs-ui/css/neutral.css';
-@import 'fumadocs-ui/css/preset.css';
+@import 'nopends-ui/css/neutral.css';
+@import 'nopends-ui/css/preset.css';
 ```
 
 > It doesn't come with a default font, you may choose one from `next/font`.

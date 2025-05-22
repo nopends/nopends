@@ -2,7 +2,7 @@
   "name": "example-versions",
   "version": "0.0.0",
   "private": true,
-  "description": "Used to track dependency versions in create-fumadocs-app",
+  "description": "Used to track dependency versions in create-nopends-app",
   "license": "MIT",
   "dependencies": {
     "@content-collections/core": "^0.8.2",

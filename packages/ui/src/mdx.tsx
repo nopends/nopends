@@ -1,4 +1,4 @@
-import Link from 'fumadocs-core/link';
+import Link from 'nopends-core/link';
 import type {
   AnchorHTMLAttributes,
   FC,
@@ -6,7 +6,7 @@ import type {
   ImgHTMLAttributes,
   TableHTMLAttributes,
 } from 'react';
-import { Image as FrameworkImage } from 'fumadocs-core/framework';
+import { Image as FrameworkImage } from 'nopends-core/framework';
 import { Card, Cards } from '@/components/card';
 import { Callout } from '@/components/callout';
 import { Heading } from '@/components/heading';

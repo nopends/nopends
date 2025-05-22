@@ -1,7 +1,7 @@
 import { dump } from 'js-yaml';
 import Slugger from 'github-slugger';
-import type { TableOfContents } from 'fumadocs-core/server';
-import type { StructuredData } from 'fumadocs-core/mdx-plugins';
+import type { TableOfContents } from 'nopends-core/server';
+import type { StructuredData } from 'nopends-core/mdx-plugins';
 import type {
   ApiPageProps,
   OperationItem,

@@ -1,6 +1,6 @@
 'use client';
-import { cn } from 'fumadocs-ui/utils/cn';
-import { buttonVariants } from 'fumadocs-ui/components/ui/button';
+import { cn } from 'nopends-ui/utils/cn';
+import { buttonVariants } from 'nopends-ui/components/ui/button';
 import {
   ApiClientModalProvider,
   useApiClientModal,

@@ -10,7 +10,7 @@ description: Use Content Collections for Fumadocs
 Install the required packages.
 
 ```package-install
-@fumadocs/content-collections @content-collections/core @content-collections/mdx @content-collections/next
+@nopends/content-collections @content-collections/core @content-collections/mdx @content-collections/next
 ```
 
 After the installation, add a path alias for the generated collections to the `tsconfig.json`.
@@ -74,7 +74,7 @@ You can customise MDX options in the `transformMDX` function.
 
 ```ts
 import { defineCollection } from '@content-collections/core';
-import { transformMDX } from '@fumadocs/content-collections/configuration';
+import { transformMDX } from '@nopends/content-collections/configuration';
 
 const docs = defineCollection({
   transform: (document, context) =>

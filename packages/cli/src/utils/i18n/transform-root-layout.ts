@@ -55,7 +55,7 @@ export function runTransform(sourceFile: SourceFile): void {
 
     sourceFile.addImportDeclaration({
       kind: StructureKind.ImportDeclaration,
-      moduleSpecifier: 'fumadocs-ui/i18n',
+      moduleSpecifier: 'nopends-ui/i18n',
       namedImports: ['I18nProvider'],
     });
   }

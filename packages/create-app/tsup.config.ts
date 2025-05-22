@@ -7,11 +7,11 @@ import mdxPkg from '../mdx/package.json';
 import uiPkg from '../ui/package.json';
 
 const versions = {
-  'fumadocs-core': corePkg.version,
-  'fumadocs-ui': uiPkg.version,
-  'fumadocs-mdx': mdxPkg.version,
-  '@fumadocs/mdx-remote': mdxRemotePkg.version,
-  '@fumadocs/content-collections': contentCollectionsPkg.version,
+  'nopends-core': corePkg.version,
+  'nopends-ui': uiPkg.version,
+  'nopends-mdx': mdxPkg.version,
+  '@nopends/mdx-remote': mdxRemotePkg.version,
+  '@nopends/content-collections': contentCollectionsPkg.version,
 };
 
 writeFileSync(

@@ -25,7 +25,7 @@ import { add } from '@/commands/add';
 const program = new Command().option('--config <string>');
 
 program
-  .name('fumadocs')
+  .name('nopends')
   .description('CLI to setup Fumadocs, init a config ')
   .version(packageJson.version)
   .action(async () => {
@@ -78,7 +78,7 @@ program
   });
 
 const dirShortcuts: Record<string, string> = {
-  ':dev': 'https://preview.fumadocs.dev/registry',
+  ':dev': 'https://preview.nopends.dev/registry',
   ':localhost': 'http://localhost:3000/registry',
 };
 
@@ -139,7 +139,7 @@ program
   );
 
 function getResolverFromDir(
-  dir: string = 'https://fumadocs.dev/registry',
+  dir: string = 'https://nopends.dev/registry',
 ): Resolver {
   if (dir in dirShortcuts) dir = dirShortcuts[dir];
 

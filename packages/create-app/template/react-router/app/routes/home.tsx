@@ -1,5 +1,5 @@
 import type { Route } from './+types/home';
-import { HomeLayout } from 'fumadocs-ui/layouts/home';
+import { HomeLayout } from 'nopends-ui/layouts/home';
 import { Link } from 'react-router';
 
 export function meta({}: Route.MetaArgs) {

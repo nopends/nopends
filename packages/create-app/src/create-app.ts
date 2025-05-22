@@ -189,9 +189,9 @@ function createPackageJson(projectName: string, options: Options): object {
       },
       dependencies: {
         ...pick(localVersions, [
-          '@fumadocs/mdx-remote',
-          'fumadocs-core',
-          'fumadocs-ui',
+          '@nopends/mdx-remote',
+          'nopends-core',
+          'nopends-ui',
         ]),
         ...pick(versionPkg.dependencies, [
           '@react-router/node',
@@ -231,9 +231,9 @@ function createPackageJson(projectName: string, options: Options): object {
       private: true,
       dependencies: {
         ...pick(localVersions, [
-          '@fumadocs/mdx-remote',
-          'fumadocs-ui',
-          'fumadocs-core',
+          '@nopends/mdx-remote',
+          'nopends-ui',
+          'nopends-core',
         ]),
         ...pick(versionPkg.dependencies, [
           '@tanstack/react-router',
@@ -268,13 +268,13 @@ function createPackageJson(projectName: string, options: Options): object {
       start: 'next start',
       ...(options.template === '+next+fuma-docs-mdx'
         ? {
-            postinstall: 'fumadocs-mdx',
+            postinstall: 'nopends-mdx',
           }
         : null),
     },
     dependencies: {
       ...pick(versionPkg.dependencies, ['next', 'react', 'react-dom']),
-      ...pick(localVersions, ['fumadocs-ui', 'fumadocs-core']),
+      ...pick(localVersions, ['nopends-ui', 'nopends-core']),
       ...(options.template === '+next+content-collections'
         ? {
             ...pick(versionPkg.dependencies, [
@@ -282,11 +282,11 @@ function createPackageJson(projectName: string, options: Options): object {
               '@content-collections/core',
               '@content-collections/next',
             ]),
-            ...pick(localVersions, ['@fumadocs/content-collections']),
+            ...pick(localVersions, ['@nopends/content-collections']),
           }
         : null),
       ...(options.template === '+next+fuma-docs-mdx'
-        ? pick(localVersions, ['fumadocs-mdx'])
+        ? pick(localVersions, ['nopends-mdx'])
         : null),
     },
     devDependencies: {

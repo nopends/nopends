@@ -467,7 +467,7 @@
 
 ### Patch Changes
 
-- 6c5a39a: Rename Git repository to `fumadocs`
+- 6c5a39a: Rename Git repository to `nopends`
 
 ## 8.0.0
 
@@ -475,15 +475,15 @@
 
 - 2b11c20: **Rename to Fumadocs**
 
-  `next-docs-zeta` -> `fumadocs-core`
+  `next-docs-zeta` -> `nopends-core`
 
-  `next-docs-ui` -> `fumadocs-ui`
+  `next-docs-ui` -> `nopends-ui`
 
-  `next-docs-mdx` -> `fumadocs-mdx`
+  `next-docs-mdx` -> `nopends-mdx`
 
-  `@fuma-docs/openapi` -> `fumadocs-openapi`
+  `@fuma-docs/openapi` -> `nopends-openapi`
 
-  `create-next-docs-app` -> `create-fumadocs-app`
+  `create-next-docs-app` -> `create-nopends-app`
 
 ## 7.1.2
 

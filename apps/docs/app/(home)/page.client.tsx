@@ -20,7 +20,7 @@ import OpenAPIImg from './openapi.png';
 import { cva } from 'class-variance-authority';
 
 export function CreateAppAnimation() {
-  const installCmd = 'npm create fumadocs-app';
+  const installCmd = 'npm create nopends-app';
   const tickTime = 100;
   const timeCommandEnter = installCmd.length;
   const timeCommandRun = timeCommandEnter + 3;

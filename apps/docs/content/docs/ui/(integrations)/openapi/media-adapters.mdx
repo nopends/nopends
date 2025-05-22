@@ -15,7 +15,7 @@ Put your media adapters in a separate file with `use client` directive.
 ```ts title="lib/media-adapters.ts" twoslash
 'use client';
 
-import type { MediaAdapter } from 'fumadocs-openapi';
+import type { MediaAdapter } from 'nopends-openapi';
 
 export const myAdapter: MediaAdapter = {
   encode(data) {
@@ -41,7 +41,7 @@ export const myAdapter: MediaAdapter = {
 ```
 
 ```ts title="lib/source.ts"
-import { createOpenAPI } from 'fumadocs-openapi/server';
+import { createOpenAPI } from 'nopends-openapi/server';
 import { myAdapter } from './media-adapters';
 
 export const openapi = createOpenAPI({

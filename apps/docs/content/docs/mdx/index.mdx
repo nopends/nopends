@@ -14,13 +14,13 @@ This library made for Next.js, you can use it to handle blog and other contents.
 Setup Fumadocs MDX for your Next.js application.
 
 ```package-install
-fumadocs-mdx @types/mdx
+nopends-mdx @types/mdx
 ```
 
 Add the plugin to your `next.config.mjs` file.
 
 ```js
-import { createMDX } from 'fumadocs-mdx/next';
+import { createMDX } from 'nopends-mdx/next';
 
 const withMDX = createMDX();
 
@@ -51,7 +51,7 @@ Fumadocs MDX transforms collections into arrays of type-safe data, accessible in
 Compile Markdown & MDX files into a React Server Component, with useful properties like **Table of Contents**.
 
 ```ts title="source.config.ts"
-import { defineCollections } from 'fumadocs-mdx/config';
+import { defineCollections } from 'nopends-mdx/config';
 
 export const test = defineCollections({
   type: 'doc',
@@ -66,7 +66,7 @@ export const test = defineCollections({
 Transform YAML/JSON files into an array of data.
 
 ```ts title="source.config.ts"
-import { defineCollections } from 'fumadocs-mdx/config';
+import { defineCollections } from 'nopends-mdx/config';
 
 export const test = defineCollections({
   type: 'meta',
@@ -80,7 +80,7 @@ export const test = defineCollections({
 Combination of `meta` and `doc` collections, which is needed for Fumadocs.
 
 ```ts title="source.config.ts"
-import { defineDocs } from 'fumadocs-mdx/config';
+import { defineDocs } from 'nopends-mdx/config';
 
 export const docs = defineDocs({
   dir: 'content/docs',
@@ -116,12 +116,12 @@ For example, a `doc` collection will transform the `.md` and `.mdx` files:
 
 A `.source` folder is generated in root directory when you run `next dev` or `next build`, it contains all output data and types, you should add it to `.gitignore`.
 
-The `fumadocs-mdx` command also generates types for `.source` folder, add it as a post install script to ensure types are generated when initializing the project.
+The `nopends-mdx` command also generates types for `.source` folder, add it as a post install script to ensure types are generated when initializing the project.
 
 ```json title="package.json"
 {
   "scripts": {
-    "postinstall": "fumadocs-mdx"
+    "postinstall": "nopends-mdx"
   }
 }
 ```
@@ -133,7 +133,7 @@ The `fumadocs-mdx` command also generates types for `.source` folder, add it as 
 You can access the collection output from `.source` folder with its original name:
 
 ```ts tab="source.config.ts"
-import { defineDocs } from 'fumadocs-mdx/config';
+import { defineDocs } from 'nopends-mdx/config';
 
 export const docs = defineDocs({
   dir: 'content/docs',
@@ -160,7 +160,7 @@ Create a `docs` collection and use the `toFumadocsSource()` function of its outp
 
 ```ts title="lib/source.ts"
 import { docs } from '@/.source';
-import { loader } from 'fumadocs-core/source';
+import { loader } from 'nopends-core/source';
 
 export const source = loader({
   baseUrl: '/docs',

@@ -4,19 +4,19 @@ import {
   defineDocs,
   frontmatterSchema,
   metaSchema,
-} from 'fumadocs-mdx/config';
-import { transformerTwoslash } from 'fumadocs-twoslash';
-import { createFileSystemTypesCache } from 'fumadocs-twoslash/cache-fs';
+} from 'nopends-mdx/config';
+import { transformerTwoslash } from 'nopends-twoslash';
+import { createFileSystemTypesCache } from 'nopends-twoslash/cache-fs';
 import remarkMath from 'remark-math';
-import { remarkInstall } from 'fumadocs-docgen';
-import { remarkTypeScriptToJavaScript } from 'fumadocs-docgen/remark-ts2js';
+import { remarkInstall } from 'nopends-docgen';
+import { remarkTypeScriptToJavaScript } from 'nopends-docgen/remark-ts2js';
 import rehypeKatex from 'rehype-katex';
 import { z } from 'zod';
 import {
   rehypeCodeDefaultOptions,
   remarkSteps,
-} from 'fumadocs-core/mdx-plugins';
-import { remarkAutoTypeTable } from 'fumadocs-typescript';
+} from 'nopends-core/mdx-plugins';
+import { remarkAutoTypeTable } from 'nopends-typescript';
 import { transformerRemoveNotationEscape } from '@shikijs/transformers';
 
 export const docs = defineDocs({

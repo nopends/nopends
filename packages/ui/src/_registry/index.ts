@@ -1,5 +1,5 @@
 import { fileURLToPath } from 'node:url';
-import type { Registry } from '@fumadocs/cli/build';
+import type { Registry } from '@nopends/cli/build';
 import * as path from 'node:path';
 
 const srcDir = path.join(path.dirname(fileURLToPath(import.meta.url)), '../');
@@ -13,14 +13,14 @@ export const registry: Registry = {
     '': 'components',
   },
   mapImportPath: {
-    'contexts/sidebar.tsx': 'fumadocs-ui/contexts/sidebar',
-    'contexts/search.tsx': 'fumadocs-ui/contexts/search',
-    'contexts/tree.tsx': 'fumadocs-ui/contexts/tree',
-    'contexts/i18n.tsx': 'fumadocs-ui/contexts/i18n',
-    'contexts/layout.tsx': 'fumadocs-ui/contexts/layout',
-    'provider/index.tsx': 'fumadocs-ui/provider',
-    'utils/get-sidebar-tabs.tsx': 'fumadocs-ui/utils/get-sidebar-tabs',
-    'utils/use-copy-button.ts': 'fumadocs-ui/utils/use-copy-button',
+    'contexts/sidebar.tsx': 'nopends-ui/contexts/sidebar',
+    'contexts/search.tsx': 'nopends-ui/contexts/search',
+    'contexts/tree.tsx': 'nopends-ui/contexts/tree',
+    'contexts/i18n.tsx': 'nopends-ui/contexts/i18n',
+    'contexts/layout.tsx': 'nopends-ui/contexts/layout',
+    'provider/index.tsx': 'nopends-ui/provider',
+    'utils/get-sidebar-tabs.tsx': 'nopends-ui/utils/get-sidebar-tabs',
+    'utils/use-copy-button.ts': 'nopends-ui/utils/use-copy-button',
     'icons.tsx': {
       type: 'dependency',
       name: 'lucide-react',
@@ -122,10 +122,10 @@ export const registry: Registry = {
     },
   ],
   dependencies: {
-    'fumadocs-core': {
+    'nopends-core': {
       type: 'runtime',
     },
-    'fumadocs-ui': {
+    'nopends-ui': {
       type: 'runtime',
     },
     next: {

@@ -19,7 +19,7 @@ import ArkType from '@/public/showcases/arktype.png';
 import AssistantUI from '@/public/showcases/assistant-ui.png';
 import VisionUI from '@/public/showcases/vision-ui.png';
 import Design from './design.png';
-import Link from 'fumadocs-core/link';
+import Link from 'nopends-core/link';
 import MixSpace from '@/public/showcases/mix-space.png';
 import TurboStarter from '@/public/showcases/turbostarter.png';
 
@@ -27,7 +27,7 @@ export const metadata = createMetadata({
   title: 'Showcase',
   description: 'Some cool websites using Fumadocs',
   openGraph: {
-    url: 'https://fumadocs.dev/showcase',
+    url: 'https://nopends.dev/showcase',
   },
 });
 
@@ -188,7 +188,7 @@ export default function Showcase() {
         </p>
         <div className="mt-6">
           <a
-            href="https://github.com/fuma-nama/fumadocs/discussions/30"
+            href="https://github.com/nopends/nopends/discussions/30"
             target="_blank"
             rel="noreferrer noopener"
             className={cn(
@@ -254,7 +254,7 @@ export default function Showcase() {
         ))}
         <div className="absolute text-center bottom-0 inset-x-0 pt-4 bg-gradient-to-t from-fd-background">
           <Link
-            href="https://github.com/fuma-nama/fumadocs/discussions/30"
+            href="https://github.com/nopends/nopends/discussions/30"
             className={cn(
               buttonVariants({
                 size: 'sm',

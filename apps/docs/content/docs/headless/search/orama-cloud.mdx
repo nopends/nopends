@@ -46,7 +46,7 @@ To search documents on the client side, use [Fumadocs UI Search Dialog](/docs/ui
 In addition, the headless search client of Fumadocs can handle state management for React.
 
 ```ts
-import { useDocsSearch } from 'fumadocs-core/search/client';
+import { useDocsSearch } from 'nopends-core/search/client';
 import { OramaClient } from '@oramacloud/client';
 
 const client = new OramaClient();
@@ -70,7 +70,7 @@ const { search, setSearch, query } = useDocsSearch({
 Same as REST API integration, but make sure to set `index` to `crawler`.
 
 ```ts
-import { useDocsSearch } from 'fumadocs-core/search/client';
+import { useDocsSearch } from 'nopends-core/search/client';
 import { OramaClient } from '@oramacloud/client';
 
 const client = new OramaClient({
@@ -94,8 +94,8 @@ It's same for Fumadocs UI:
 'use client';
 
 import { OramaClient } from '@oramacloud/client';
-import type { SharedProps } from 'fumadocs-ui/components/dialog/search';
-import SearchDialog from 'fumadocs-ui/components/dialog/search-orama';
+import type { SharedProps } from 'nopends-ui/components/dialog/search';
+import SearchDialog from 'nopends-ui/components/dialog/search-orama';
 
 const client = new OramaClient({
   endpoint: '<endpoint_url>',

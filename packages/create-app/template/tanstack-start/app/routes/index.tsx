@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from '@tanstack/react-router';
-import { HomeLayout } from 'fumadocs-ui/layouts/home';
+import { HomeLayout } from 'nopends-ui/layouts/home';
 
 export const Route = createFileRoute('/')({
   component: Home,

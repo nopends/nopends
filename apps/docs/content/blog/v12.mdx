@@ -41,7 +41,7 @@ Now, you can use the `<RootToggle />` component directly, and docs has a better 
 You can now attach properties to page trees easily with the Source API.
 
 ```ts
-import { loader } from 'fumadocs-core/source';
+import { loader } from 'nopends-core/source';
 
 export const utils = loader({
   pageTree: {
@@ -58,7 +58,7 @@ export const utils = loader({
 The language switch is now added to Docs Layout.
 
 ```tsx
-import { DocsLayout } from 'fumadocs-ui/layouts/docs';
+import { DocsLayout } from 'nopends-ui/layouts/docs';
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return <DocsLayout i18n>{children}</DocsLayout>;

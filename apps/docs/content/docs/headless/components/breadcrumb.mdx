@@ -16,7 +16,7 @@ it exports a `useBreadcrumb` hook:
 declare const tree: any;
 // ---cut---
 import { usePathname } from 'next/navigation';
-import { useBreadcrumb } from 'fumadocs-core/breadcrumb';
+import { useBreadcrumb } from 'nopends-core/breadcrumb';
 
 const pathname = usePathname();
 const items = useBreadcrumb(pathname, tree);
@@ -30,8 +30,8 @@ A styled example.
 ```tsx
 'use client';
 import { usePathname } from 'next/navigation';
-import { useBreadcrumb } from 'fumadocs-core/breadcrumb';
-import type { PageTree } from 'fumadocs-core/server';
+import { useBreadcrumb } from 'nopends-core/breadcrumb';
+import type { PageTree } from 'nopends-core/server';
 import { Fragment } from 'react';
 import { ChevronRight } from 'lucide-react';
 import Link from 'next/link';

@@ -17,7 +17,7 @@ Allowed:
 - Wildcard
 
 ```ts
-import { generateFiles } from 'fumadocs-openapi';
+import { generateFiles } from 'nopends-openapi';
 
 void generateFiles({
   input: ['./unkey.json'],
@@ -29,7 +29,7 @@ void generateFiles({
 The output directory.
 
 ```ts
-import { generateFiles } from 'fumadocs-openapi';
+import { generateFiles } from 'nopends-openapi';
 
 void generateFiles({
   output: '/content/docs',
@@ -49,7 +49,7 @@ Customise how the page is generated, default to `operation`.
 | operation | each operation              | `{operationId ?? endpoint_path}.mdx`) |
 
 ```ts
-import { generateFiles } from 'fumadocs-openapi';
+import { generateFiles } from 'nopends-openapi';
 
 void generateFiles({
   per: 'tag',
@@ -67,7 +67,7 @@ In `operation` mode, you can group output files with folders.
 | none  | `{operationId ?? endpoint_path}.mdx` (default)         |
 
 ```ts
-import { generateFiles } from 'fumadocs-openapi';
+import { generateFiles } from 'nopends-openapi';
 
 void generateFiles({
   per: 'operation',
@@ -80,7 +80,7 @@ void generateFiles({
 A function that controls the output path of MDX pages.
 
 ```ts
-import { generateFiles } from 'fumadocs-openapi';
+import { generateFiles } from 'nopends-openapi';
 
 void generateFiles({
   name: (output, document) => {
@@ -108,7 +108,7 @@ By default, it includes:
 | `route`       | Route of operation (`operation` mode)            |
 
 ```ts
-import { generateFiles } from 'fumadocs-openapi';
+import { generateFiles } from 'nopends-openapi';
 
 void generateFiles({
   input: ['./petstore.yaml'],
@@ -124,7 +124,7 @@ void generateFiles({
 Add a comment to the top of generated files indicating they are auto-generated.
 
 ```ts
-import { generateFiles } from 'fumadocs-openapi';
+import { generateFiles } from 'nopends-openapi';
 
 void generateFiles({
   input: ['./petstore.yaml'],
@@ -164,7 +164,7 @@ openapi-types -D
 ```
 
 ```ts
-import { createOpenAPI } from 'fumadocs-openapi/server';
+import { createOpenAPI } from 'nopends-openapi/server';
 
 export const openapi = createOpenAPI({
   generateCodeSamples(endpoint) {
@@ -198,7 +198,7 @@ paths:
 You can disable the code sample for a specific language, for example, to disable cURL:
 
 ```ts
-import { createOpenAPI } from 'fumadocs-openapi/server';
+import { createOpenAPI } from 'nopends-openapi/server';
 
 export const openapi = createOpenAPI({
   generateCodeSamples(endpoint) {
@@ -218,7 +218,7 @@ export const openapi = createOpenAPI({
 Customise components in the page.
 
 ```ts
-import { createOpenAPI } from 'fumadocs-openapi/server';
+import { createOpenAPI } from 'nopends-openapi/server';
 
 export const openapi = createOpenAPI({
   renderer: {

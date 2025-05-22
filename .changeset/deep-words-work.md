@@ -1,5 +1,5 @@
 ---
-'fumadocs-openapi': minor
+'nopends-openapi': minor
 ---
 
 Mark `mediaAdapters` API stable

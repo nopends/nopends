@@ -13,19 +13,19 @@ mkdir -p $TMP
 cd $TMP
 
 # Set git info
-git config --global user.email "fuma-nama@noreply.com"
-git config --global user.name "Fuma Nama"
+git config --global user.email "1234yamd@gmail.com"
+git config --global user.name "yamz8"
 
 # clone the template repo
-rm -rf fumadocs-ui-template
-git clone --depth 1 --single-branch --branch main https://github.com/fuma-nama/fumadocs-ui-template.git
+rm -rf nopends-ui-template
+git clone --depth 1 --single-branch --branch main https://github.com/nopends/nopends-ui-template.git
 
 # empty out the repo
-cd fumadocs-ui-template
-node $DIR/update-git-repo.js $TMP/fumadocs-ui-template
+cd nopends-ui-template
+node $DIR/update-git-repo.js $TMP/nopends-ui-template
 
 # commit the new files
 git add -A
 git commit -m "version $npm_package_version"
 
-git push https://github.com/fuma-nama/fumadocs-ui-template.git main -f
+git push https://github.com/nopends/nopends-ui-template.git main -f

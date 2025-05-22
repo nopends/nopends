@@ -1,14 +1,14 @@
 {
-  "name": "fumadocs-typescript",
+  "name": "nopends-typescript",
   "version": "4.0.5",
   "description": "Typescript Integration for Fumadocs",
   "keywords": [
     "NextJs",
-    "fumadocs",
+    "nopends",
     "Docs"
   ],
-  "homepage": "https://fumadocs.vercel.app",
-  "repository": "github:fuma-nama/fumadocs",
+  "homepage": "https://docs.nopends.com",
+  "repository": "github:nopends/nopends",
   "license": "MIT",
   "author": "Fuma Nama",
   "type": "module",
@@ -54,8 +54,8 @@
     "@types/react": "19.1.4",
     "@types/react-dom": "19.1.5",
     "eslint-config-custom": "workspace:*",
-    "fumadocs-core": "workspace:*",
-    "fumadocs-ui": "workspace:*",
+    "nopends-core": "workspace:*",
+    "nopends-ui": "workspace:*",
     "tsconfig": "workspace:*",
     "typescript": "^5.8.3",
     "unified": "^11.0.5"

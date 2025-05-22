@@ -26,7 +26,7 @@ Pass it to the source loader.
 
 ```ts title="lib/source.ts"
 import { i18n } from '@/lib/i18n';
-import { loader } from 'fumadocs-core/source';
+import { loader } from 'nopends-core/source';
 
 export const source = loader({
   i18n, // [!code ++]
@@ -59,8 +59,8 @@ Provide UI translations and other config to `<RootProvider />`.
 Note that only English translations are provided by default.
 
 ```tsx title="app/[lang]/layout.tsx"
-import { RootProvider } from 'fumadocs-ui/provider';
-import type { Translations } from 'fumadocs-ui/i18n';
+import { RootProvider } from 'nopends-ui/provider';
+import type { Translations } from 'nopends-ui/i18n';
 
 // translations
 const cn: Partial<Translations> = {
@@ -113,7 +113,7 @@ Pass the locale to Fumadocs in your pages and layouts.
 
 ```tsx title="app/layout.config.tsx" tab="Shared Options"
 import { i18n } from '@/lib/i18n';
-import type { BaseLayoutProps } from 'fumadocs-ui/layouts/shared';
+import type { BaseLayoutProps } from 'nopends-ui/layouts/shared';
 
 // Make `baseOptions` a function: [!code highlight]
 export function baseOptions(locale: string): BaseLayoutProps {
@@ -126,7 +126,7 @@ export function baseOptions(locale: string): BaseLayoutProps {
 
 ```tsx title="/app/[lang]/(home)/layout.tsx" tab="Home Layout"
 import type { ReactNode } from 'react';
-import { HomeLayout } from 'fumadocs-ui/layouts/home';
+import { HomeLayout } from 'nopends-ui/layouts/home';
 import { baseOptions } from '@/app/layout.config';
 
 export default async function Layout({
@@ -145,7 +145,7 @@ export default async function Layout({
 ```tsx title="/app/[lang]/docs/layout.tsx" tab="Docs Layout"
 import type { ReactNode } from 'react';
 import { source } from '@/lib/source';
-import { DocsLayout } from 'fumadocs-ui/layouts/docs';
+import { DocsLayout } from 'nopends-ui/layouts/docs';
 import { baseOptions } from '@/app/layout.config';
 
 export default async function Layout({
@@ -228,11 +228,11 @@ const { lang } = useParams();
 return <Link href={`/${lang}/another-page`}>This is a link</Link>;
 ```
 
-In addition, the [`fumadocs-core/dynamic-link`](/docs/headless/components/link#dynamic-hrefs) component supports dynamic hrefs, you can use it to attend the locale prefix.
+In addition, the [`nopends-core/dynamic-link`](/docs/headless/components/link#dynamic-hrefs) component supports dynamic hrefs, you can use it to attend the locale prefix.
 It is useful for Markdown/MDX content.
 
 ```mdx title="content.mdx"
-import { DynamicLink } from 'fumadocs-core/dynamic-link';
+import { DynamicLink } from 'nopends-core/dynamic-link';
 
 <DynamicLink href="/[lang]/another-page">This is a link</DynamicLink>
 ```

@@ -53,12 +53,12 @@ Make a script to sync search indexes:
 
 ```js title="update-index.mjs"
 import algosearch from 'algoliasearch';
-import { sync } from 'fumadocs-core/search/algolia';
+import { sync } from 'nopends-core/search/algolia';
 import * as fs from 'node:fs';
 
 const content = fs.readFileSync('.next/server/app/static.json.body');
 
-/** @type {import('fumadocs-core/search/algolia').DocumentRecord[]} **/
+/** @type {import('nopends-core/search/algolia').DocumentRecord[]} **/
 const indexes = JSON.parse(content.toString());
 
 const client = algosearch('id', 'key');
@@ -100,7 +100,7 @@ You can consider different options for implementing the UI:
 
   ```ts
   import algosearch from 'algoliasearch';
-  import { useDocsSearch } from 'fumadocs-core/search/client';
+  import { useDocsSearch } from 'nopends-core/search/client';
 
   const index = algosearch('id', 'key').initIndex('document');
 
@@ -120,7 +120,7 @@ To configure tag filtering, add a `tag` value to indexes.
 
 ```js
 import algosearch from 'algoliasearch';
-import { sync } from 'fumadocs-core/search/algolia';
+import { sync } from 'nopends-core/search/algolia';
 
 const client = algosearch('id', 'key');
 
@@ -139,7 +139,7 @@ And update your search client:
 
   ```ts
   import algosearch from 'algoliasearch';
-  import { useDocsSearch } from 'fumadocs-core/search/client';
+  import { useDocsSearch } from 'nopends-core/search/client';
 
   const index = algosearch('id', 'key').initIndex('document');
 
@@ -161,7 +161,7 @@ While the default attributes might not suit your case, you can pass `extra_data`
 to index options for adding extra fields to each record.
 
 ```js
-import { sync } from 'fumadocs-core/search/algolia';
+import { sync } from 'nopends-core/search/algolia';
 
 sync(client, {
   documents: indexes.map((docs) => ({

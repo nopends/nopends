@@ -1,4 +1,4 @@
-import * as OpenAPI from 'fumadocs-openapi';
+import * as OpenAPI from 'nopends-openapi';
 import { rimraf } from 'rimraf';
 
 export async function generateDocs() {

@@ -8,8 +8,8 @@ import {
   compileMDX as baseCompileMDX,
   type Options as MDXOptions,
 } from '@content-collections/mdx';
-import type { StructuredData } from 'fumadocs-core/mdx-plugins';
-import * as Plugins from 'fumadocs-core/mdx-plugins';
+import type { StructuredData } from 'nopends-core/mdx-plugins';
+import * as Plugins from 'nopends-core/mdx-plugins';
 import { z, z as Zod } from 'zod';
 import {
   resolvePlugin,
@@ -89,7 +89,7 @@ export async function transformMDX<D extends BaseDoc>(
 
   return context.cache(
     {
-      type: 'fumadocs',
+      type: 'nopends',
       document,
     },
     async () => {

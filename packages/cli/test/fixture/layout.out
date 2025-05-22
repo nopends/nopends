@@ -1,8 +1,8 @@
 import './global.css';
-import { RootProvider } from 'fumadocs-ui/provider';
+import { RootProvider } from 'nopends-ui/provider';
 import { Inter } from 'next/font/google';
 import type { ReactNode } from 'react';
-import { I18nProvider } from "fumadocs-ui/i18n";
+import { I18nProvider } from "nopends-ui/i18n";
 
 const inter = Inter({
   subsets: ['latin'],

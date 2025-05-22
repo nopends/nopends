@@ -28,21 +28,21 @@ import { FieldSet, JsonInput } from './inputs';
 import type { ParameterField, RequestSchema } from '@/playground/index';
 import { getStatusInfo } from './status-info';
 import { getUrl } from '@/utils/server-url';
-import { DynamicCodeBlock } from 'fumadocs-ui/components/dynamic-codeblock';
+import { DynamicCodeBlock } from 'nopends-ui/components/dynamic-codeblock';
 import { MethodLabel } from '@/ui/components/method-label';
 import { useQuery } from '@/utils/use-query';
 import {
   Collapsible,
   CollapsibleContent,
   CollapsibleTrigger,
-} from 'fumadocs-ui/components/ui/collapsible';
+} from 'nopends-ui/components/ui/collapsible';
 import { ChevronDown, LoaderCircle } from 'lucide-react';
 import type { Security } from '@/utils/get-security';
 import { useRequestData } from '@/ui/contexts/code-example';
-import { useEffectEvent } from 'fumadocs-core/utils/use-effect-event';
+import { useEffectEvent } from 'nopends-core/utils/use-effect-event';
 import type { RequestData } from '@/requests/_shared';
-import { buttonVariants } from 'fumadocs-ui/components/ui/button';
-import { cn } from 'fumadocs-ui/utils/cn';
+import { buttonVariants } from 'nopends-ui/components/ui/button';
+import { cn } from 'nopends-ui/utils/cn';
 import {
   type FieldInfo,
   SchemaProvider,
@@ -511,7 +511,7 @@ function DefaultResultDisplay({ data }: { data: FetchResult }) {
 
 function usePersistentAuthInfo(authorization?: ClientProps['authorization']) {
   const key = authorization
-    ? `__fumadocs_auth_${authorization.persistentId}`
+    ? `__nopends_auth_${authorization.persistentId}`
     : null;
   const [info, setInfo] = useState<FormValues['authorization']>(() => {
     if (!authorization || authorization.type === 'apiKey') return '';

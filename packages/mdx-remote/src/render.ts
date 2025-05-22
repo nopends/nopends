@@ -1,5 +1,5 @@
 import { type MDXComponents } from 'mdx/types';
-import type { TableOfContents } from 'fumadocs-core/server';
+import type { TableOfContents } from 'nopends-core/server';
 import type { FC } from 'react';
 import jsxRuntimeDefault from 'react/jsx-runtime';
 

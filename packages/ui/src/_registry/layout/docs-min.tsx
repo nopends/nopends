@@ -1,13 +1,13 @@
 'use client';
-import type { PageTree } from 'fumadocs-core/server';
+import type { PageTree } from 'nopends-core/server';
 import { type ComponentProps, type ReactNode, useMemo } from 'react';
 import { cn } from '@/utils/cn';
-import { TreeContextProvider, useTreeContext } from 'fumadocs-ui/contexts/tree';
-import Link from 'fumadocs-core/link';
-import { useSearchContext } from 'fumadocs-ui/contexts/search';
-import { useSidebar } from 'fumadocs-ui/contexts/sidebar';
+import { TreeContextProvider, useTreeContext } from 'nopends-ui/contexts/tree';
+import Link from 'nopends-core/link';
+import { useSearchContext } from 'nopends-ui/contexts/search';
+import { useSidebar } from 'nopends-ui/contexts/sidebar';
 import { cva } from 'class-variance-authority';
-import { usePathname } from 'fumadocs-core/framework';
+import { usePathname } from 'nopends-core/framework';
 
 export interface DocsLayoutProps {
   tree: PageTree.Root;

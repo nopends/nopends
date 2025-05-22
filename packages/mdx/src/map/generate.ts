@@ -30,7 +30,7 @@ export async function generateJS(
     getImportCode({
       type: 'named',
       names: ['_runtime'],
-      specifier: 'fumadocs-mdx',
+      specifier: 'nopends-mdx',
     }),
     getImportCode({
       type: 'namespace',
@@ -90,7 +90,7 @@ export async function generateJS(
       lines.unshift(
         getImportCode({
           type: 'named',
-          specifier: 'fumadocs-mdx/runtime/async',
+          specifier: 'nopends-mdx/runtime/async',
           names: ['_runtimeAsync', 'buildConfig'],
         }),
         'const [err, _sourceConfig] = buildConfig(_source)',

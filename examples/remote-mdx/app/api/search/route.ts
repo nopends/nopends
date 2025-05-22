@@ -1,11 +1,11 @@
 import {
   type AdvancedIndex,
   createSearchAPI,
-} from 'fumadocs-core/search/server';
+} from 'nopends-core/search/server';
 import * as fs from 'node:fs/promises';
 import { getPages } from '@/app/docs/utils';
-import { parseFrontmatter } from '@fumadocs/mdx-remote';
-import { structure } from 'fumadocs-core/mdx-plugins';
+import { parseFrontmatter } from '@nopends/mdx-remote';
+import { structure } from 'nopends-core/mdx-plugins';
 
 export const { GET } = createSearchAPI('advanced', {
   indexes: async () => {

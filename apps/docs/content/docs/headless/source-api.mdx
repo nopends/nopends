@@ -18,7 +18,7 @@ It doesn't rely on the real file system (zero `node:fs` usage), a virtual storag
 You can use it with built-in content sources like Fumadocs MDX.
 
 ```ts
-import { loader } from 'fumadocs-core/source';
+import { loader } from 'nopends-core/source';
 import { docs } from '@/.source';
 
 export const source = loader({
@@ -31,7 +31,7 @@ export const source = loader({
 You can override the base URL, or specify a function to generate URL for each page.
 
 ```ts
-import { loader } from 'fumadocs-core/source';
+import { loader } from 'nopends-core/source';
 
 loader({
   baseUrl: '/docs',
@@ -48,7 +48,7 @@ loader({
 Load the [icon](/docs/headless/page-conventions#icons) property specified by pages and meta files.
 
 ```ts
-import { loader } from 'fumadocs-core/source';
+import { loader } from 'nopends-core/source';
 import { icons } from 'lucide-react';
 import { createElement } from 'react';
 
@@ -70,7 +70,7 @@ Pass the `i18n` config to loader.
 
 ```ts title="lib/source.ts"
 import { i18n } from '@/lib/i18n';
-import { loader } from 'fumadocs-core/source';
+import { loader } from 'nopends-core/source';
 
 export const source = loader({
   i18n, // [!code highlight]
@@ -170,7 +170,7 @@ During the process, your input source files will be parsed and form a virtual st
 To perform virtual file-system operations before processing, you can add a transformer.
 
 ```ts
-import { loader } from 'fumadocs-core/source';
+import { loader } from 'nopends-core/source';
 
 loader({
   transformers: [
@@ -189,7 +189,7 @@ You can customise it using the `pageTree` option, such as attaching custom prope
 
 ```tsx
 import React from 'react';
-import { loader } from 'fumadocs-core/source';
+import { loader } from 'nopends-core/source';
 
 loader({
   pageTree: {
@@ -217,7 +217,7 @@ Since Source API doesn't rely on file system, file paths cannot be absolute or r
 Instead, pass the file paths like `file.mdx` and `content/file.mdx`.
 
 ```ts
-import { Source } from 'fumadocs-core/source';
+import { Source } from 'nopends-core/source';
 
 export function createMySource(): Source<{
   metaData: { title: string; pages: string[] }; // Your custom type

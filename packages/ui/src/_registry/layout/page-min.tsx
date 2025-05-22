@@ -3,12 +3,12 @@ import {
   type PageTree,
   type TableOfContents,
   type TOCItemType,
-} from 'fumadocs-core/server';
+} from 'nopends-core/server';
 import { type ComponentProps, type ReactNode, useMemo } from 'react';
-import { AnchorProvider, useActiveAnchors } from 'fumadocs-core/toc';
+import { AnchorProvider, useActiveAnchors } from 'nopends-core/toc';
 import { cn } from '@/utils/cn';
-import { useTreeContext } from 'fumadocs-ui/contexts/tree';
-import { Link, usePathname } from 'fumadocs-core/framework';
+import { useTreeContext } from 'nopends-ui/contexts/tree';
+import { Link, usePathname } from 'nopends-core/framework';
 
 export interface DocsPageProps {
   toc?: TableOfContents;

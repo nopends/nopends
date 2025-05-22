@@ -1,8 +1,8 @@
 @import 'tailwindcss' source(none);
-@import 'fumadocs-ui/css/neutral.css';
-@import 'fumadocs-ui/css/preset.css';
-@import 'fumadocs-twoslash/twoslash.css';
-@import 'fumadocs-openapi/css/preset.css';
+@import 'nopends-ui/css/neutral.css';
+@import 'nopends-ui/css/preset.css';
+@import 'nopends-twoslash/twoslash.css';
+@import 'nopends-openapi/css/preset.css';
 
 @source ".";
 @source "../components";

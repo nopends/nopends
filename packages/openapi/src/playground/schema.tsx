@@ -2,7 +2,7 @@ import { Ajv2020 } from 'ajv/dist/2020';
 import type { RequestSchema } from '@/playground/index';
 import { createContext, ReactNode, useContext, useMemo, useState } from 'react';
 import { useFormContext } from 'react-hook-form';
-import { useEffectEvent } from 'fumadocs-core/utils/use-effect-event';
+import { useEffectEvent } from 'nopends-core/utils/use-effect-event';
 import { getDefaultValue } from '@/playground/get-default-values';
 
 interface SchemaContextType {

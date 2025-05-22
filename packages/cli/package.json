@@ -1,5 +1,5 @@
 {
-  "name": "@fumadocs/cli",
+  "name": "@nopends/cli",
   "version": "0.2.0",
   "description": "The CLI tool for Fumadocs",
   "keywords": [
@@ -7,8 +7,8 @@
     "Docs",
     "Fumadocs"
   ],
-  "homepage": "https://fumadocs.vercel.app",
-  "repository": "github:fuma-nama/fumadocs",
+  "homepage": "https://docs.nopends.com",
+  "repository": "github:nopends/nopends",
   "license": "MIT",
   "author": "Fuma Nama",
   "type": "module",
@@ -20,7 +20,7 @@
   },
   "main": "./dist/index.js",
   "bin": {
-    "fumadocs": "./dist/index.js"
+    "nopends": "./dist/index.js"
   },
   "files": [
     "dist/*"

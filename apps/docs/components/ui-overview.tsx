@@ -1,4 +1,4 @@
-import { Tab, Tabs } from 'fumadocs-ui/components/tabs';
+import { Tab, Tabs } from 'nopends-ui/components/tabs';
 
 export function UiOverview() {
   return (

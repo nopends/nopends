@@ -16,7 +16,7 @@ Fumadocs allows adding additional links to your layouts with a `links` prop, lik
 </div>
 
 ```tsx tab="Shared Options" title="app/layout.config.tsx"
-import type { BaseLayoutProps } from 'fumadocs-ui/layouts/shared';
+import type { BaseLayoutProps } from 'nopends-ui/layouts/shared';
 
 export const baseOptions: BaseLayoutProps = {
   links: [], // [!code highlight]
@@ -25,7 +25,7 @@ export const baseOptions: BaseLayoutProps = {
 ```
 
 ```tsx tab="Docs Layout" title="app/docs/layout.tsx"
-import { DocsLayout } from 'fumadocs-ui/layouts/docs';
+import { DocsLayout } from 'nopends-ui/layouts/docs';
 import { baseOptions } from '@/app/layout.config';
 import { source } from '@/lib/source';
 import type { ReactNode } from 'react';
@@ -44,7 +44,7 @@ export default function Layout({ children }: { children: ReactNode }) {
 ```
 
 ```tsx tab="Home Layout" title="app/(home)/layout.tsx"
-import { HomeLayout } from 'fumadocs-ui/layouts/home';
+import { HomeLayout } from 'nopends-ui/layouts/home';
 import { baseOptions } from '@/app/layout.config';
 import type { ReactNode } from 'react';
 
@@ -68,7 +68,7 @@ A link to navigate to a URL/href, can be external.
 
 ```tsx title="app/layout.config.tsx"
 import { BookIcon } from 'lucide-react';
-import type { BaseLayoutProps } from 'fumadocs-ui/layouts/shared';
+import type { BaseLayoutProps } from 'nopends-ui/layouts/shared';
 
 export const baseOptions: BaseLayoutProps = {
   links: [
@@ -94,7 +94,7 @@ The conditions to be marked as active.
 | `none`       | Never be active                                             |
 
 ```tsx title="app/layout.config.tsx"
-import type { BaseLayoutProps } from 'fumadocs-ui/layouts/shared';
+import type { BaseLayoutProps } from 'nopends-ui/layouts/shared';
 
 export const baseOptions: BaseLayoutProps = {
   links: [
@@ -114,7 +114,7 @@ Icon items are secondary by default.
 
 ```tsx title="app/layout.config.tsx"
 import { BookIcon } from 'lucide-react';
-import type { BaseLayoutProps } from 'fumadocs-ui/layouts/shared';
+import type { BaseLayoutProps } from 'nopends-ui/layouts/shared';
 
 export const baseOptions: BaseLayoutProps = {
   links: [
@@ -134,7 +134,7 @@ export const baseOptions: BaseLayoutProps = {
 Display a custom component.
 
 ```tsx title="app/layout.config.tsx"
-import type { BaseLayoutProps } from 'fumadocs-ui/layouts/shared';
+import type { BaseLayoutProps } from 'nopends-ui/layouts/shared';
 
 export const baseOptions: BaseLayoutProps = {
   links: [
@@ -152,7 +152,7 @@ export const baseOptions: BaseLayoutProps = {
 There's also a shortcut for adding GitHub repository link item.
 
 ```tsx twoslash title="app/layout.config.tsx"
-import type { BaseLayoutProps } from 'fumadocs-ui/layouts/shared';
+import type { BaseLayoutProps } from 'nopends-ui/layouts/shared';
 
 export const baseOptions: BaseLayoutProps = {
   githubUrl: 'https://github.com',
@@ -166,7 +166,7 @@ export const baseOptions: BaseLayoutProps = {
 A menu containing multiple link items.
 
 ```tsx title="app/layout.config.tsx"
-import type { BaseLayoutProps } from 'fumadocs-ui/layouts/shared';
+import type { BaseLayoutProps } from 'nopends-ui/layouts/shared';
 
 export const baseOptions: BaseLayoutProps = {
   links: [
@@ -192,13 +192,13 @@ In Home Layout, you can add navigation menu (fully animated) to the navbar.
 ```tsx title="app/(home)/layout.tsx"
 import { baseOptions } from '@/app/layout.config';
 import type { ReactNode } from 'react';
-import { HomeLayout } from 'fumadocs-ui/layouts/home';
+import { HomeLayout } from 'nopends-ui/layouts/home';
 import {
   NavbarMenu,
   NavbarMenuContent,
   NavbarMenuLink,
   NavbarMenuTrigger,
-} from 'fumadocs-ui/layouts/home/navbar';
+} from 'nopends-ui/layouts/home/navbar';
 
 export default function Layout({ children }: { children: ReactNode }) {
   return (

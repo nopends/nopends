@@ -1,4 +1,4 @@
-import type { BaseLayoutProps } from 'fumadocs-ui/layouts/shared';
+import type { BaseLayoutProps } from 'nopends-ui/layouts/shared';
 
 /**
  * Shared layout configurations
@@ -23,6 +23,6 @@ export const baseOptions: BaseLayoutProps = {
       </>
     ),
   },
-  // see https://fumadocs.dev/docs/ui/navigation/links
+  // see https://nopends.dev/docs/ui/navigation/links
   links: [],
 };

@@ -1,5 +1,5 @@
 This is a React Router application generated with
-[Create Fumadocs](https://github.com/fuma-nama/fumadocs).
+[Create Fumadocs](https://github.com/nopends/nopends).
 
 Run development server:
 

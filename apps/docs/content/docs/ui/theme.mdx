@@ -9,8 +9,8 @@ Only Tailwind CSS v4 is supported, the preset will also include source to Fumado
 
 ```css title="Tailwind CSS"
 @import 'tailwindcss';
-@import 'fumadocs-ui/css/neutral.css';
-@import 'fumadocs-ui/css/preset.css';
+@import 'nopends-ui/css/neutral.css';
+@import 'nopends-ui/css/preset.css';
 ```
 
 ### Preflight Changes
@@ -31,7 +31,7 @@ RTL (Right-to-left) layout is supported.
 To enable RTL, set the `dir` prop to `rtl` in body and root provider (required for Radix UI).
 
 ```tsx
-import { RootProvider } from 'fumadocs-ui/provider';
+import { RootProvider } from 'nopends-ui/provider';
 import type { ReactNode } from 'react';
 
 export default function RootLayout({ children }: { children: ReactNode }) {
@@ -66,8 +66,8 @@ Fumadocs UI adds its own colors, animations, and utilities with Tailwind CSS pre
 It comes with many themes out-of-the-box, you can pick one you prefer.
 
 ```css
-@import 'fumadocs-ui/css/<theme>.css';
-@import 'fumadocs-ui/css/preset.css';
+@import 'nopends-ui/css/<theme>.css';
+@import 'nopends-ui/css/preset.css';
 ```
 
 <Tabs items={['neutral', 'black', 'vitepress', 'dusk', 'catppuccin', 'ocean', 'purple']}>
@@ -133,8 +133,8 @@ It uses colors from your Shadcn UI theme.
 
 ```css
 @import 'tailwindcss';
-@import 'fumadocs-ui/css/shadcn.css';
-@import 'fumadocs-ui/css/preset.css';
+@import 'nopends-ui/css/shadcn.css';
+@import 'nopends-ui/css/preset.css';
 ```
 
 ### Typography

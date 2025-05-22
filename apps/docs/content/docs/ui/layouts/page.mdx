@@ -14,7 +14,7 @@ import {
   DocsDescription,
   DocsTitle,
   DocsBody,
-} from 'fumadocs-ui/page';
+} from 'nopends-ui/page';
 
 <DocsPage>
   <DocsTitle>title</DocsTitle>
@@ -35,7 +35,7 @@ This will render the title in the MDX body.
 It applies the [Typography](/docs/ui/theme#typography) styles, wrap your content inside.
 
 ```tsx
-import { DocsBody } from 'fumadocs-ui/page';
+import { DocsBody } from 'nopends-ui/page';
 
 <DocsBody>
   <h2>This heading looks good!</h2>
@@ -47,11 +47,11 @@ import { DocsBody } from 'fumadocs-ui/page';
 You can also add your own component.
 
 ```tsx
-import { DocsBody } from 'fumadocs-ui/page';
+import { DocsBody } from 'nopends-ui/page';
 
 <DocsBody>
   <a
-    href={`https://github.com/fuma-nama/fumadocs/blob/main/${page.file.path}`}
+    href={`https://github.com/nopends/nopends/blob/main/${page.file.path}`}
     rel="noreferrer noopener"
     target="_blank"
     className="w-fit border rounded-xl p-2 font-medium text-sm text-fd-secondary-foreground bg-fd-secondary transition-colors hover:text-fd-accent-foreground hover:bg-fd-accent"
@@ -69,7 +69,7 @@ To extend the page to fill up all available space, pass `full` to the page compo
 This will force TOC to be shown as a popover.
 
 ```tsx
-import { DocsPage } from 'fumadocs-ui/page';
+import { DocsPage } from 'nopends-ui/page';
 
 <DocsPage full>...</DocsPage>;
 ```
@@ -82,7 +82,7 @@ For Markdown and MDX documents, You can obtain it using the
 [TOC Utility](/docs/headless/utils/get-toc). Content sources like Fumadocs MDX offer this out-of-the-box.
 
 ```tsx
-import { DocsPage } from 'fumadocs-ui/page';
+import { DocsPage } from 'nopends-ui/page';
 
 <DocsPage toc={headings}>...</DocsPage>;
 ```
@@ -90,7 +90,7 @@ import { DocsPage } from 'fumadocs-ui/page';
 You can customise or disable it with the `tableOfContent` option, or with `tableOfContentPopover` on smaller devices.
 
 ```tsx
-import { DocsPage } from 'fumadocs-ui/page';
+import { DocsPage } from 'nopends-ui/page';
 
 <DocsPage tableOfContent={options} tableOfContentPopover={options}>
   ...
@@ -104,7 +104,7 @@ import { DocsPage } from 'fumadocs-ui/page';
 You can choose another style for TOC, like `clerk` inspired by https://clerk.com:
 
 ```tsx
-import { DocsPage } from 'fumadocs-ui/page';
+import { DocsPage } from 'nopends-ui/page';
 
 <DocsPage
   tableOfContent={{
@@ -120,7 +120,7 @@ import { DocsPage } from 'fumadocs-ui/page';
 Display last updated time of the page.
 
 ```tsx
-import { DocsPage } from 'fumadocs-ui/page';
+import { DocsPage } from 'nopends-ui/page';
 
 <DocsPage lastUpdate={new Date(lastModifiedTime)} />;
 ```
@@ -133,12 +133,12 @@ For Github hosted documents, you can use
 the [`getGithubLastEdit`](/docs/headless/utils/git-last-edit) utility.
 
 ```tsx
-import { DocsPage } from 'fumadocs-ui/page';
-import { getGithubLastEdit } from 'fumadocs-core/server';
+import { DocsPage } from 'nopends-ui/page';
+import { getGithubLastEdit } from 'nopends-core/server';
 
 const time = await getGithubLastEdit({
-  owner: 'fuma-nama',
-  repo: 'fumadocs',
+  owner: 'nopends',
+  repo: 'nopends',
   path: `content/docs/${page.file.path}`,
 });
 
@@ -154,7 +154,7 @@ Footer is a navigation element that has two buttons to jump to the next and prev
 Customise the footer with the `footer` option.
 
 ```tsx
-import { DocsPage, DocsBody } from 'fumadocs-ui/page';
+import { DocsPage, DocsBody } from 'nopends-ui/page';
 
 <DocsPage footer={options}>
   <DocsBody>...</DocsBody>

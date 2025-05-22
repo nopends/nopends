@@ -1,13 +1,13 @@
 {
-  "name": "fumadocs-ui",
+  "name": "nopends-ui",
   "version": "15.3.4",
   "description": "The framework for building a documentation website in Next.js",
   "keywords": [
     "NextJs",
     "Docs"
   ],
-  "homepage": "https://fumadocs.vercel.app",
-  "repository": "github:fuma-nama/fumadocs",
+  "homepage": "https://docs.nopends.com",
+  "repository": "github:nopends/nopends",
   "license": "MIT",
   "author": "Fuma Nama",
   "type": "module",
@@ -93,7 +93,7 @@
     "@radix-ui/react-slot": "^1.2.2",
     "@radix-ui/react-tabs": "^1.1.11",
     "class-variance-authority": "^0.7.1",
-    "fumadocs-core": "workspace:*",
+    "nopends-core": "workspace:*",
     "lodash.merge": "^4.6.2",
     "next-themes": "^0.4.6",
     "postcss-selector-parser": "^7.1.0",
@@ -102,14 +102,14 @@
     "tailwind-merge": "^3.3.0"
   },
   "devDependencies": {
-    "@fumadocs/cli": "workspace:*",
+    "@nopends/cli": "workspace:*",
     "@next/eslint-plugin-next": "^15.3.2",
     "@tailwindcss/cli": "^4.1.7",
     "@types/lodash.merge": "^4.6.9",
     "@types/react": "^19.1.4",
     "@types/react-dom": "^19.1.5",
     "eslint-config-custom": "workspace:*",
-    "fumadocs-core": "workspace:*",
+    "nopends-core": "workspace:*",
     "next": "15.3.2",
     "tailwindcss": "^4.1.7",
     "tsc-alias": "^1.8.16",

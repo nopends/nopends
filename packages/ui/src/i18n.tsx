@@ -1,6 +1,6 @@
 'use client';
 import { usePathname, useRouter } from 'next/navigation';
-import { useEffectEvent } from 'fumadocs-core/utils/use-effect-event';
+import { useEffectEvent } from 'nopends-core/utils/use-effect-event';
 import { useMemo } from 'react';
 import { defaultTranslations, I18nContext } from '@/contexts/i18n';
 import type { I18nProviderProps } from './provider/base';

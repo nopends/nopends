@@ -40,7 +40,7 @@ A command line tool to install UI components and automate things, useful for cus
 </Cards>
 
 <Callout title="Want to learn more?">
-  Read our in-depth [What is Fumadocs](/docs/ui/what-is-fumadocs) introduction.
+  Read our in-depth [What is Fumadocs](/docs/ui/what-is-nopends) introduction.
 </Callout>
 
 ### Terminology
@@ -56,19 +56,19 @@ A minimum version of Node.js 18 required, note that Node.js 23.1 might have prob
 <Tabs groupId='package-manager' persist items={['npm', 'pnpm', 'yarn', 'bun']} label='Initialize Fumadocs'>
 
 ```bash tab="npm"
-npm create fumadocs-app
+npm create nopends-app
 ```
 
 ```bash tab="pnpm"
-pnpm create fumadocs-app
+pnpm create nopends-app
 ```
 
 ```bash tab="yarn"
-yarn create fumadocs-app
+yarn create nopends-app
 ```
 
 ```bash tab="bun"
-bun create fumadocs-app
+bun create nopends-app
 ```
 
 </Tabs>
@@ -78,7 +78,7 @@ It will ask you:
 - the React.js framework to use (the docs is only written for Next.js).
 - the content source to use.
 
-A new fumadocs app should be initialized. Now you can start hacking!
+A new nopends app should be initialized. Now you can start hacking!
 
 <Callout title='From Existing Codebase?'>
 
@@ -126,7 +126,7 @@ Since Fumadocs uses Next.js App Router, you can simply rename the route:
 And tell Fumadocs to use the new route in `source.ts`:
 
 ```ts title="lib/source.ts"
-import { loader } from 'fumadocs-core/source';
+import { loader } from 'nopends-core/source';
 
 export const source = loader({
   baseUrl: '/info',
@@ -182,7 +182,7 @@ For `/docs`, you need to change the catch-all route to be non-optional:
 
 New to here? Don't worry, we are welcome for your questions.
 
-If you find anything confusing, please give your feedback on [Github Discussion](https://github.com/fuma-nama/fumadocs/discussions)!
+If you find anything confusing, please give your feedback on [Github Discussion](https://github.com/nopends/nopends/discussions)!
 
 ### Writing Content
 
