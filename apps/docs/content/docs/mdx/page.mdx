@@ -15,7 +15,7 @@ import type { MDXComponents } from 'mdx/types';
 
 export function getMDXComponents(components?: MDXComponents): MDXComponents {
   return {
-    ...defaultMdxComponents, // for Fumadocs UI
+    ...defaultMdxComponents, // for Nopends UI
     ...components,
   };
 }
@@ -38,7 +38,7 @@ export default defineConfig({
 ### Usage
 
 ```mdx title="app/test/page.mdx"
-{/* this will enable Typography styles of Fumadocs UI */}
+{/* this will enable Typography styles of Nopends UI */}
 export { withArticle as default } from 'nopends-ui/page';
 
 ## Hello World

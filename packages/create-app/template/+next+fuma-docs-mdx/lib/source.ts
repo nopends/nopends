@@ -5,5 +5,5 @@ import { loader } from 'nopends-core/source';
 export const source = loader({
   // it assigns a URL to your pages
   baseUrl: '/docs',
-  source: docs.toFumadocsSource(),
+  source: docs.toNopendsSource(),
 });

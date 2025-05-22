@@ -1,3 +1,3 @@
-# Fumadocs Twoslash
+# Nopends Twoslash
 
-Use Typescript Twolash in Fumadocs.
+Use Typescript Twolash in Nopends.

@@ -12,7 +12,7 @@ export const source = loader({
     if (icon && icon in icons)
       return createElement(icons[icon as keyof typeof icons]);
   },
-  source: docs.toFumadocsSource(),
+  source: docs.toNopendsSource(),
   pageTree: {
     attachFile,
   },

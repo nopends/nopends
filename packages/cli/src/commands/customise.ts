@@ -13,7 +13,7 @@ import type { Config } from '@/config';
 import { install } from '@/commands/add';
 
 export async function customise(resolver: Resolver, config: Config) {
-  intro(picocolors.bgBlack(picocolors.whiteBright('Customise Fumadocs UI')));
+  intro(picocolors.bgBlack(picocolors.whiteBright('Customise Nopends UI')));
 
   const result = await group(
     {

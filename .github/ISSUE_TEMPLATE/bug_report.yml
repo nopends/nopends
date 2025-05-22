@@ -8,7 +8,7 @@ body:
         Before opening a new issue:
 
         - do a search of existing issues.
-        - upgrade to the latest versions of Fumadocs.
+        - upgrade to the latest versions of Nopends.
 
         If you need help with your own project, you can start a discussion in the [Q&A Section](https://github.com/nopends/nopends/discussions/categories/q-a).
   - type: textarea
@@ -62,7 +62,7 @@ body:
         - 'Core'
         - 'UI'
         - 'CLI (create-nopends-app)'
-        - 'Content Sources (e.g. Fumadocs MDX, Content Collections)'
+        - 'Content Sources (e.g. Nopends MDX, Content Collections)'
         - 'Integrations (e.g OpenAPI, Typescript DocsGen)'
         - 'TypeScript (built-in types)'
         - 'Examples'

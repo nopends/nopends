@@ -101,7 +101,7 @@ function Architecture() {
         </p>
         <h2 className="text-2xl font-semibold mb-4">A breakable framework.</h2>
         <p className="text-fd-muted-foreground mb-6">
-          Fumadocs makes it easy to build beautiful docs, write content, and
+          Nopends makes it easy to build beautiful docs, write content, and
           transform content into data for your React.js framework.
         </p>
       </div>
@@ -378,7 +378,7 @@ function Hero() {
         Build excellent documentation site with less effort
       </h1>
       <p className="mb-8 text-fd-muted-foreground md:max-w-[80%] md:text-xl">
-        Fumadocs is a beautiful documentation framework for Developers, flexible
+        Nopends is a beautiful documentation framework for Developers, flexible
         and performant, with everything from Next.js.
       </p>
       <div className="inline-flex items-center gap-3 max-md:mx-auto">
@@ -417,7 +417,7 @@ const feedback = [
     role: 'Creator of Shadcn UI',
     message: `You know how you end up rebuilding a full docs site every time you start a new project? 
 
-Fumadocs fixes this by giving you all the right blocks that you compose together.
+Nopends fixes this by giving you all the right blocks that you compose together.
 
 Like headless docs to build exactly what you need.`,
   },
@@ -552,7 +552,7 @@ function Contributing() {
         Made Possible by You.
       </h2>
       <p className="mb-4 text-fd-muted-foreground">
-        Fumadocs is 100% powered by passion and open source community.
+        Nopends is 100% powered by passion and open source community.
       </p>
       <div className="mb-8 flex flex-row items-center gap-2">
         <Link
@@ -587,7 +587,7 @@ function Features() {
               Designed to integrate with any content source:{' '}
             </span>
             <span>
-              Fumadocs works on MDX, Content Collections, and even your own CMS.
+              Nopends works on MDX, Content Collections, and even your own CMS.
             </span>
           </>
         }
@@ -656,9 +656,9 @@ function Features() {
       </Feature>
       <Feature
         icon={Terminal}
-        subheading="Fumadocs CLI"
+        subheading="Nopends CLI"
         heading="The Shadcn UI for docs"
-        description="Fumadocs CLI creates interactive components for your docs, offering a rich experience to your users."
+        description="Nopends CLI creates interactive components for your docs, offering a rich experience to your users."
       >
         <div className="relative">
           <div className="grid grid-cols-[1fr_2fr_1fr] h-[220px] *:border-fd-foreground/50 *:border-dashed mask-radial-circle mask-radial-from-white">
@@ -694,9 +694,9 @@ function Features() {
           >
             <div className="rounded-[inherit] bg-fd-background bg-gradient-to-br from-transparent via-fd-primary/10 p-4 transition-colors hover:bg-fd-muted">
               <LayoutIcon />
-              <h3 className="font-semibold">Fumadocs UI</h3>
+              <h3 className="font-semibold">Nopends UI</h3>
               <p className="text-sm text-fd-muted-foreground">
-                Default theme of Fumadocs with many useful components.
+                Default theme of Nopends with many useful components.
               </p>
             </div>
           </Link>

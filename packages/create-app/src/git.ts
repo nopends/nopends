@@ -52,7 +52,7 @@ export function tryGitInit(root: string): boolean {
     }
 
     execSync('git add -A', { stdio: 'ignore', cwd: root });
-    execSync('git commit -m "Initial commit from Create Fumadocs App"', {
+    execSync('git commit -m "Initial commit from Create Nopends App"', {
       stdio: 'ignore',
       cwd: root,
     });

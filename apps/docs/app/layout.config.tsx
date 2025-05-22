@@ -2,7 +2,7 @@ import { type LinkItemType } from 'nopends-ui/layouts/docs';
 import { AlbumIcon, Heart, LayoutTemplate } from 'lucide-react';
 import Image from 'next/image';
 import type { BaseLayoutProps } from 'nopends-ui/layouts/shared';
-import { FumadocsIcon } from '@/app/layout.client';
+import { NopendsIcon } from '@/app/layout.client';
 import Logo from '@/public/logo.png';
 
 export const linkItems: LinkItemType[] = [
@@ -39,14 +39,14 @@ export const linkItems: LinkItemType[] = [
 export const logo = (
   <>
     <Image
-      alt="Fumadocs"
+      alt="Nopends"
       src={Logo}
       sizes="100px"
       className="hidden w-20 md:w-24 [.uwu_&]:block"
-      aria-label="Fumadocs"
+      aria-label="Nopends"
     />
 
-    <FumadocsIcon className="size-5 [.uwu_&]:hidden" fill="currentColor" />
+    <NopendsIcon className="size-5 [.uwu_&]:hidden" fill="currentColor" />
   </>
 );
 
@@ -56,7 +56,7 @@ export const baseOptions: BaseLayoutProps = {
       <>
         {logo}
         <span className="font-medium [.uwu_&]:hidden [header_&]:text-[15px]">
-          Fumadocs
+          Nopends
         </span>
       </>
     ),

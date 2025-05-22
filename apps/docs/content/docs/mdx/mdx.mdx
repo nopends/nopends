@@ -1,19 +1,19 @@
 ---
 title: MDX Options
-description: Configure MDX processor for Fumadocs MDX
+description: Configure MDX processor for Nopends MDX
 ---
 
 ## Customising MDX Processor
 
-Fumadocs MDX uses [MDX Compiler](https://mdxjs.com/packages/mdx) to compile MDX files into JavaScript files.
+Nopends MDX uses [MDX Compiler](https://mdxjs.com/packages/mdx) to compile MDX files into JavaScript files.
 
 You can customise it on [Global Config](/docs/mdx/global#mdx-options) or [Collection Config](/docs/mdx/collections#mdxoptions).
 
 ## Extended MDX Options [#extended]
 
-Fumadocs MDX will apply some default MDX options, to make features like **syntax highlighting** work out of the box.
+Nopends MDX will apply some default MDX options, to make features like **syntax highlighting** work out of the box.
 
-To allow overriding the defaults, Fumadocs MDX's `mdxOptions` option accepts **Extended MDX Options** on top of [`ProcessorOptions`](https://mdxjs.com/packages/mdx/#processoroptions).
+To allow overriding the defaults, Nopends MDX's `mdxOptions` option accepts **Extended MDX Options** on top of [`ProcessorOptions`](https://mdxjs.com/packages/mdx/#processoroptions).
 You can see the additional options below:
 
 ### Remark Plugins
@@ -129,7 +129,7 @@ export const blog = defineCollections({
 ### Export Properties from `vfile.data`
 
 Some remark plugins store their output in `vfile.data` (an compile-time memory) which cannot be accessed from your code.
-Fumadocs MDX applies a remark plugin that turns `vfile.data` properties into ESM exports, so that you can access these properties when importing the MDX file.
+Nopends MDX applies a remark plugin that turns `vfile.data` properties into ESM exports, so that you can access these properties when importing the MDX file.
 
 You can define additional properties to be exported.
 

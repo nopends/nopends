@@ -23,7 +23,7 @@ export function useMode(): string | undefined {
   return Array.isArray(slug) && slug.length > 0 ? slug[0] : undefined;
 }
 
-export function FumadocsIcon(props: React.SVGProps<SVGSVGElement>) {
+export function NopendsIcon(props: React.SVGProps<SVGSVGElement>) {
   const id = useId();
   return (
     <svg width="80" height="80" viewBox="0 0 180 180" {...props}>

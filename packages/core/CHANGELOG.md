@@ -598,7 +598,7 @@
 ### Patch Changes
 
 - 36b771b: Remark Image: Support relative import path
-- 61b91fa: Improve Fumadocs OpenAPI support
+- 61b91fa: Improve Nopends OpenAPI support
 
 ## 13.2.1
 
@@ -1181,7 +1181,7 @@
 
 - cdff313: **Separate Contentlayer integration into another package**
 
-  why: As Fumadocs MDX is the preferred default source, Contentlayer should be optional.
+  why: As Nopends MDX is the preferred default source, Contentlayer should be optional.
 
   migrate:
 
@@ -1195,7 +1195,7 @@
   + import { createConfig } from "nopends-contentlayer/configuration"
   ```
 
-- 2b11c20: **Rename to Fumadocs**
+- 2b11c20: **Rename to Nopends**
 
   `next-docs-zeta` -> `nopends-core`
 
