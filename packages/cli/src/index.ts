@@ -139,7 +139,7 @@ program
   );
 
 function getResolverFromDir(
-  dir: string = 'https://nopends.dev/registry',
+  dir: string = 'https://docs.nopends.com/registry',
 ): Resolver {
   if (dir in dirShortcuts) dir = dirShortcuts[dir];
 

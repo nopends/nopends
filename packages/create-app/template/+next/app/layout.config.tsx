@@ -23,6 +23,6 @@ export const baseOptions: BaseLayoutProps = {
       </>
     ),
   },
-  // see https://nopends.dev/docs/ui/navigation/links
+  // see https://docs.nopends.com/docs/ui/navigation/links
   links: [],
 };
