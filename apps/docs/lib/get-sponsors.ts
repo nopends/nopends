@@ -6,7 +6,7 @@ interface SponsorEntity {
   websiteUrl?: string;
 }
 
-const mockSponsors = [
+const mockSponsors: SponsorEntity[] = [
   {
     __typename: 'User',
     login: 'fuma-nama',
@@ -26,47 +26,68 @@ export async function getSponsors(
   login: string,
   excluded: string[],
 ): Promise<SponsorEntity[]> {
-  const query = `query {
-  user(login:${JSON.stringify(login)}) {
-    ... on Sponsorable {
-      sponsors(first: 100) {
-        nodes {
-          __typename
-          ... on User { login, name, avatarUrl, websiteUrl }
-          ... on Organization { login, name, avatarUrl, websiteUrl }
+  try {
+    const query = `query {
+      user(login:${JSON.stringify(login)}) {
+        ... on Sponsorable {
+          sponsors(first: 100) {
+            nodes {
+              __typename
+              ... on User { login, name, avatarUrl, websiteUrl }
+              ... on Organization { login, name, avatarUrl, websiteUrl }
+            }
+          }
         }
       }
+    }`;
+    const headers = new Headers();
+    if (process.env.GITHUB_TOKEN)
+      headers.set('Authorization', `Bearer ${process.env.GITHUB_TOKEN}`);
+    else
+      console.warn(
+        'Highly suggested to add a `GITHUB_TOKEN` environment variable to avoid rate limits.',
+      );
+
+    const res = await fetch('https://api.github.com/graphql', {
+      method: 'POST',
+      body: JSON.stringify({ query }),
+      headers,
+      next: { revalidate: 3600 },
+    });
+
+    if (!res.ok) {
+      console.warn(`Failed to fetch sponsors: ${await res.text()}`);
+      return mockSponsors;
     }
-  }
-}`;
-  const headers = new Headers();
-  if (process.env.GITHUB_TOKEN)
-    headers.set('Authorization', `Bearer ${process.env.GITHUB_TOKEN}`);
-  else
-    console.warn(
-      'Highly suggested to add a `GITHUB_TOKEN` environment variable to avoid rate limits.',
-    );
 
-  const res = await fetch('https://api.github.com/graphql', {
-    method: 'POST',
-    body: JSON.stringify({ query }),
-    headers,
-    next: { revalidate: 3600 },
-  });
-  // if (!res.ok) throw new Error(`Failed to fetch sponsors: ${await res.text()}`);
-  if (!res.ok) return mockSponsors as SponsorEntity[]
-
-  const { data } = (await res.json()) as {
-    data: {
-      user: {
-        sponsors: {
-          nodes: (SponsorEntity | Record<string, never>)[];
+    const { data } = (await res.json()) as {
+      data: {
+        user: {
+          sponsors: {
+            nodes: (SponsorEntity | Record<string, never>)[];
+          };
         };
       };
     };
-  };
 
-  return data.user.sponsors.nodes.filter(
-    (sponsor) => 'name' in sponsor && !excluded.includes(sponsor.login),
-  ) as SponsorEntity[];
+    if (!data?.user?.sponsors?.nodes) {
+      console.warn('Invalid response structure from GitHub API');
+      return mockSponsors;
+    }
+
+    const validSponsors = data.user.sponsors.nodes.filter(
+      (sponsor): sponsor is SponsorEntity =>
+        'name' in sponsor &&
+        'login' in sponsor &&
+        'avatarUrl' in sponsor &&
+        '__typename' in sponsor &&
+        (sponsor.__typename === 'User' || sponsor.__typename === 'Organization') &&
+        !excluded.includes(sponsor.login),
+    );
+
+    return validSponsors.length > 0 ? validSponsors : mockSponsors;
+  } catch (error) {
+    console.error('Error fetching sponsors:', error);
+    return mockSponsors;
+  }
 }
