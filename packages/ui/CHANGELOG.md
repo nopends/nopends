@@ -46,7 +46,7 @@
 
   Mobile sidebar is now a separate component from the desktop one, with its own id `nd-sidebar-mobile`.
 
-  note to advanced use cases: Fumadocs UI now stopped using `nopends-core/sidebar`, avoid using the primitive directly as provider is not used.
+  note to advanced use cases: Nopends UI now stopped using `nopends-core/sidebar`, avoid using the primitive directly as provider is not used.
 
 ### Patch Changes
 
@@ -376,7 +376,7 @@
 
   Follow https://tailwindcss.com/blog/tailwindcss-v4 for official migrate guide of Tailwind CSS v4.
 
-  Fumadocs UI v15 redesigned the Tailwind CSS config to fully adhere the new config style, no JavaScript and options needed for plugins.
+  Nopends UI v15 redesigned the Tailwind CSS config to fully adhere the new config style, no JavaScript and options needed for plugins.
   Add the following to your CSS file:
 
   ```css
@@ -391,7 +391,7 @@
   @source '../node_modules/nopends-openapi/dist/**/*.js';
   ```
 
-  The `nopends-ui/css/preset.css` import is required, it declares necessary plugins & styles for Fumadocs UI, and `nopends-ui/css/neutral.css` defines the color palette of UI.
+  The `nopends-ui/css/preset.css` import is required, it declares necessary plugins & styles for Nopends UI, and `nopends-ui/css/neutral.css` defines the color palette of UI.
 
   Like the previous `preset` option in Tailwind CSS plugin, you can import other color presets like `nopends-ui/css/vitepress.css`.
 
@@ -399,7 +399,7 @@
 
 ### Patch Changes
 
-- a89d6e0: Support Fumadocs v15
+- a89d6e0: Support Nopends v15
 - f2f9c3d: Redesign sidebar
 - Updated dependencies [5b8cca8]
 - Updated dependencies [a763058]
@@ -608,7 +608,7 @@
 
 - 66c70ec: **Replace official Tailwind CSS typography plugin**
 
-  - Other variants like `prose-sm` and `prose-gray` are removed, as it's supposed to only provide support for Fumadocs UI typography styles.
+  - Other variants like `prose-sm` and `prose-gray` are removed, as it's supposed to only provide support for Nopends UI typography styles.
 
 - 05d224c: added the updateAnchor option for the Tabs ui component
 
@@ -637,7 +637,7 @@
 
 - 5fd4e2f: Make TOC collapse to a popover on `lg` screen size instead of `md`
 - 5fd4e2f: Support better table styles for Typography plugin
-- 8a3f5b0: Make `neutral` the default theme of Fumadocs UI
+- 8a3f5b0: Make `neutral` the default theme of Nopends UI
 
 ### Patch Changes
 
@@ -743,7 +743,7 @@
 
 - 9a10262: **Move Twoslash UI components to `nopends-twoslash`**
 
-  **why:** Isolate logic from Fumadocs UI
+  **why:** Isolate logic from Nopends UI
 
   **migrate:**
 
@@ -1185,7 +1185,7 @@
 
   **migrate:** Update to latest OpenAPI integration.
 
-- 89190ae: **Add `fd-` prefix to all Fumadocs UI colors, animations and utilities**
+- 89190ae: **Add `fd-` prefix to all Nopends UI colors, animations and utilities**
 
   **why:** The added Tailwind CSS colors may conflict with the existing colors of codebases.
 
@@ -1232,7 +1232,7 @@
 
 - 4373231: **Remove `RollButton` component**
 
-  **why:** `RollButton` was created because there were no "Table Of Contents" on mobile viewports. Now users can use the TOC Popover to switch between headings, `RollButton` is no longer a suitable design for Fumadocs UI.
+  **why:** `RollButton` was created because there were no "Table Of Contents" on mobile viewports. Now users can use the TOC Popover to switch between headings, `RollButton` is no longer a suitable design for Nopends UI.
 
   **migrate:** Remove usages, you may copy the [last implementation of `RollButton`](https://github.com/nopends/nopends/blob/nopends-ui%4012.5.6/packages/ui/src/components/roll-button.tsx).
 
@@ -1448,7 +1448,7 @@
 - 2a5db91: Add timeout for hovering after collapsed the sidebar
 - 3e98d7d: Support `full` mode on pages
 - d06c92a: Support `transparentMode` on secondary (docs) navbar
-- 3bdc786: Support Fumadocs OpenAPI 3.1.0
+- 3bdc786: Support Nopends OpenAPI 3.1.0
 - d06c92a: Fix hot keys order
   - nopends-core@12.1.3
 
@@ -1456,7 +1456,7 @@
 
 ### Patch Changes
 
-- 284a571: Support Fumadocs OpenAPI v3
+- 284a571: Support Nopends OpenAPI v3
 - Updated dependencies [b4856d1]
   - nopends-core@12.1.2
 
@@ -1938,7 +1938,7 @@
 
 - 2b355907: **Remove controlled usage for Accordion**
 
-  Why: Components in Fumadocs UI should not be used outside of MDX.
+  Why: Components in Nopends UI should not be used outside of MDX.
 
   Migrate: Remove `value` and `onValueChange` props.
 
@@ -2075,7 +2075,7 @@
   + import { Codeblock, Pre } from "nopends-ui/components/codeblock"
   ```
 
-- 2b11c20: **Rename to Fumadocs**
+- 2b11c20: **Rename to Nopends**
 
   `next-docs-zeta` -> `nopends-core`
 

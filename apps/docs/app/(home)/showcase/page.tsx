@@ -25,7 +25,7 @@ import TurboStarter from '@/public/showcases/turbostarter.png';
 
 export const metadata = createMetadata({
   title: 'Showcase',
-  description: 'Some cool websites using Fumadocs',
+  description: 'Some cool websites using Nopends',
   openGraph: {
     url: 'https://nopends.dev/showcase',
   },
@@ -184,7 +184,7 @@ export default function Showcase() {
         </h1>
         <p className="text-fd-muted-foreground">
           A list of beautiful open-source projects with their docs powered by
-          Fumadocs.
+          Nopends.
         </p>
         <div className="mt-6">
           <a
@@ -227,7 +227,7 @@ export default function Showcase() {
         </svg>
         <div>
           <h2 className="text-sm font-medium mb-2">
-            Fumadocs powers the docs of Vercel open source SDKs.
+            Nopends powers the docs of Vercel open source SDKs.
           </h2>
           <div className="flex items-center gap-2 -mx-1.5">
             {vercel.map((item) => (
@@ -267,7 +267,7 @@ export default function Showcase() {
         </div>
       </div>
       <h2 className="text-xl font-medium mt-12 px-4">
-        Fumadocs can power your blog, too.
+        Nopends can power your blog, too.
       </h2>
       <div className="mt-6 grid gap-2.5 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {blogs.map((showcase) => (

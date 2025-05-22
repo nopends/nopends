@@ -53,7 +53,7 @@
 
 ### Major Changes
 
-- a89d6e0: Require Fumadocs v15 & Tailwind CSS v4
+- a89d6e0: Require Nopends v15 & Tailwind CSS v4
 
 ### Patch Changes
 
@@ -94,7 +94,7 @@
 
 - 9a10262: **Move Twoslash UI components to `nopends-twoslash`**
 
-  **why:** Isolate logic from Fumadocs UI
+  **why:** Isolate logic from Nopends UI
 
   **migrate:**
 
@@ -165,7 +165,7 @@
 
 ### Patch Changes
 
-- 6ed95ea: Fix compatibility issues with Fumadocs UI v13
+- 6ed95ea: Fix compatibility issues with Nopends UI v13
 - Updated dependencies [89190ae]
 - Updated dependencies [b02eebf]
 - Updated dependencies [f868018]

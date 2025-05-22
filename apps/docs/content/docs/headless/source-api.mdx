@@ -5,7 +5,7 @@ description: Turn a content source into a unified interface
 
 ## Usage
 
-`loader()` provides an interface for Fumadocs to integrate with file-system based content sources.
+`loader()` provides an interface for Nopends to integrate with file-system based content sources.
 
 ### What it does?
 
@@ -15,14 +15,14 @@ description: Turn a content source into a unified interface
 
 It doesn't rely on the real file system (zero `node:fs` usage), a virtual storage is also allowed.
 
-You can use it with built-in content sources like Fumadocs MDX.
+You can use it with built-in content sources like Nopends MDX.
 
 ```ts
 import { loader } from 'nopends-core/source';
 import { docs } from '@/.source';
 
 export const source = loader({
-  source: docs.toFumadocsSource(),
+  source: docs.toNopendsSource(),
 });
 ```
 

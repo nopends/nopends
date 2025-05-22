@@ -1,7 +1,7 @@
 {
   "name": "nopends-mdx",
   "version": "11.6.5",
-  "description": "The built-in source for Fumadocs",
+  "description": "The built-in source for Nopends",
   "keywords": [
     "NextJs",
     "Docs"

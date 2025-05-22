@@ -1,6 +1,6 @@
 ---
 title: Manual Installation
-description: Add Fumadocs to existing projects.
+description: Add Nopends to existing projects.
 ---
 
 Before continuing, make sure:
@@ -21,9 +21,9 @@ nopends-ui nopends-core
 
 ### Content Source
 
-Fumadocs supports different content sources, including Fumadocs MDX and [Content Collections](/docs/headless/content-collections).
+Nopends supports different content sources, including Nopends MDX and [Content Collections](/docs/headless/content-collections).
 
-Fumadocs MDX is our official content source, you can configure it with:
+Nopends MDX is our official content source, you can configure it with:
 
 ```package-install
 nopends-mdx @types/mdx
@@ -67,7 +67,7 @@ import { loader } from 'nopends-core/source';
 
 export const source = loader({
   baseUrl: '/docs',
-  source: docs.toFumadocsSource(),
+  source: docs.toNopendsSource(),
 });
 ```
 
@@ -131,9 +131,9 @@ Create a catch-all route `/app/docs/[[...slug]]` for docs pages.
 
 In the page, wrap your content in the [Page](/docs/ui/layouts/page) component.
 
-<Tabs groupId='content-source' items={['Fumadocs MDX', 'Content Collections']}>
+<Tabs groupId='content-source' items={['Nopends MDX', 'Content Collections']}>
 
-    <include cwd meta='title="app/docs/[[...slug]]/page.tsx" tab="Fumadocs MDX"'>../../examples/next-mdx/app/docs/[[...slug]]/page.tsx</include>
+    <include cwd meta='title="app/docs/[[...slug]]/page.tsx" tab="Nopends MDX"'>../../examples/next-mdx/app/docs/[[...slug]]/page.tsx</include>
 
     <include cwd meta='title="app/docs/[[...slug]]/page.tsx" tab="Content Collections"'>../../examples/content-collections/app/docs/[[...slug]]/page.tsx</include>
 
@@ -169,11 +169,11 @@ It should work out-of-the-box with Vercel & Netlify.
 
 ### Cloudflare
 
-Use https://opennext.js.org/cloudflare, Fumadocs doesn't work on Edge runtime.
+Use https://opennext.js.org/cloudflare, Nopends doesn't work on Edge runtime.
 
 ### Docker Deployment
 
-If you want to deploy your Fumadocs app using Docker with **Fumadocs MDX configured**, make sure to add the `source.config.ts` file to the `WORKDIR` in the Dockerfile.
+If you want to deploy your Nopends app using Docker with **Nopends MDX configured**, make sure to add the `source.config.ts` file to the `WORKDIR` in the Dockerfile.
 The following snippet is taken from the official [Next.js Dockerfile Example](https://github.com/vercel/next.js/blob/canary/examples/with-docker/Dockerfile):
 
 ```zsh title="Dockerfile"
@@ -183,4 +183,4 @@ WORKDIR /app
 COPY package.json yarn.lock* package-lock.json* pnpm-lock.yaml* .npmrc* source.config.ts ./
 ```
 
-This ensures Fumadocs MDX can access your configuration file during builds.
+This ensures Nopends MDX can access your configuration file during builds.

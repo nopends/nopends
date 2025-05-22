@@ -29,7 +29,7 @@ export default withMDX(config);
 
 Add the remark plugin:
 
-```ts title="source.config.ts" tab="Fumadocs MDX"
+```ts title="source.config.ts" tab="Nopends MDX"
 import { remarkTypeScriptToJavaScript } from 'nopends-docgen/remark-ts2js';
 import { defineConfig } from 'nopends-mdx/config';
 
@@ -51,7 +51,7 @@ await compile('...', {
 
 Finally, make sure to define the required MDX components: `Tabs` and `Tab`.
 
-```tsx title="mdx-components.tsx (Fumadocs UI)"
+```tsx title="mdx-components.tsx (Nopends UI)"
 import { Tab, Tabs } from 'nopends-ui/components/tabs';
 import defaultComponents from 'nopends-ui/mdx';
 import type { MDXComponents } from 'mdx/types';

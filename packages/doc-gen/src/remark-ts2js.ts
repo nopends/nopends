@@ -5,7 +5,7 @@ import { createElement, expressionToAttribute } from '@/utils';
 
 export interface TypeScriptToJavaScriptOptions {
   /**
-   * Persist Tab value (Fumadocs UI only)
+   * Persist Tab value (Nopends UI only)
    *
    * @defaultValue false
    */

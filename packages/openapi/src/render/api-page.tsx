@@ -70,13 +70,13 @@ export async function APIPage(props: ApiPageProps) {
         const pathItem = document.paths?.[item.path];
         if (!pathItem)
           throw new Error(
-            `[Fumadocs OpenAPI] Path not found in OpenAPI schema: ${item.path}`,
+            `[Nopends OpenAPI] Path not found in OpenAPI schema: ${item.path}`,
           );
 
         const operation = pathItem[item.method];
         if (!operation)
           throw new Error(
-            `[Fumadocs OpenAPI] Method ${item.method} not found in operation: ${item.path}`,
+            `[Nopends OpenAPI] Method ${item.method} not found in operation: ${item.path}`,
           );
 
         const method = createMethod(item.method, pathItem, operation);
@@ -95,13 +95,13 @@ export async function APIPage(props: ApiPageProps) {
         const webhook = document.webhooks?.[item.name];
         if (!webhook)
           throw new Error(
-            `[Fumadocs OpenAPI] Webhook not found in OpenAPI schema: ${item.name}`,
+            `[Nopends OpenAPI] Webhook not found in OpenAPI schema: ${item.name}`,
           );
 
         const hook = webhook[item.method];
         if (!hook)
           throw new Error(
-            `[Fumadocs OpenAPI] Method ${item.method} not found in webhook: ${item.name}`,
+            `[Nopends OpenAPI] Method ${item.method} not found in webhook: ${item.name}`,
           );
 
         const method = createMethod(item.method, webhook, hook);

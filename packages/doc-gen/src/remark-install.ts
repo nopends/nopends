@@ -18,7 +18,7 @@ export type RemarkInstallOptions = Partial<{
   Tab: string;
 
   /**
-   * Persist Tab value (Fumadocs UI only)
+   * Persist Tab value (Nopends UI only)
    *
    * @defaultValue false
    */

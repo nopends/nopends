@@ -71,7 +71,7 @@ export interface Runtime {
         docs: DocOut<DocSchema>[];
         meta: MetaOut<MetaSchema>[];
 
-        toFumadocsSource: () => Source<{
+        toNopendsSource: () => Source<{
           pageData: DocOut<DocSchema> extends PageData
             ? DocOut<DocSchema>
             : never;
@@ -128,7 +128,7 @@ export interface RuntimeAsync {
     ? {
         docs: AsyncDocOut<DocSchema>[];
         meta: MetaOut<MetaSchema>[];
-        toFumadocsSource: () => Source<{
+        toNopendsSource: () => Source<{
           pageData: AsyncDocOut<DocSchema> extends PageData
             ? AsyncDocOut<DocSchema>
             : never;

@@ -20,7 +20,7 @@ import { cwd } from './constants';
 const manager = getPackageManager();
 
 async function main(): Promise<void> {
-  intro(pc.bgCyan(pc.bold('Create Fumadocs App')));
+  intro(pc.bgCyan(pc.bold('Create Nopends App')));
 
   const options = await group(
     {
@@ -37,7 +37,7 @@ async function main(): Promise<void> {
           options: [
             {
               value: '+next+fuma-docs-mdx',
-              label: 'Next.js: Fumadocs MDX',
+              label: 'Next.js: Nopends MDX',
               hint: 'recommended',
             },
             {

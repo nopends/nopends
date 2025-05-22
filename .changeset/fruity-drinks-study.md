@@ -4,7 +4,7 @@
 
 **Redesign `generateFiles`**
 
-This redesign will finalize the behaviour of `generateFiles` to make it simpler, consistent across different versions of Fumadocs OpenAPI.
+This redesign will finalize the behaviour of `generateFiles` to make it simpler, consistent across different versions of Nopends OpenAPI.
 
 - Abandoned `groupByFolder`, it's deprecated long time ago and can be replaced with `groupBy`.
 - Improved type safety, `groupBy` is now only available with `per` set to `operation`.
@@ -31,7 +31,7 @@ generateFiles({
 })
 ```
 
-You can set `algorithm` to `v1` to keep the behaviour of Fumadocs OpenAPI v8:
+You can set `algorithm` to `v1` to keep the behaviour of Nopends OpenAPI v8:
 
 ```ts
 generateFiles({

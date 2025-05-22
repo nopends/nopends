@@ -70,7 +70,7 @@ export const _runtimeAsync: RuntimeAsync = {
     return {
       docs: parsedDocs,
       meta: parsedMetas,
-      toFumadocsSource() {
+      toNopendsSource() {
         return createMDXSource(parsedDocs, parsedMetas);
       },
     } as any;

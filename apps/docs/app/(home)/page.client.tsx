@@ -72,7 +72,7 @@ export function CreateAppAnimation() {
         )}
         {tick > timeCommandRun + 3 && (
           <>
-            <span>│ ● Fumadocs MDX</span>
+            <span>│ ● Nopends MDX</span>
             <span>│ ○ Content Collections</span>
           </>
         )}
@@ -191,7 +191,7 @@ export function WhyInteractive(props: {
           <WhyPanel>
             <h3>We made it simple.</h3>
             <p>
-              Fumadocs offers native support for Orama and Algolia Search, it is
+              Nopends offers native support for Orama and Algolia Search, it is
               as easy as plugging a route handler. You can also use your own
               search modal to allow full control over the search UI.
             </p>
@@ -220,7 +220,7 @@ export function WhyInteractive(props: {
           <WhyPanel>
             <h3>Never repeat yourself again.</h3>
             <p>
-              Fumadocs has a smart Type Table component that renders the
+              Nopends has a smart Type Table component that renders the
               properties of interface/type automatically, from the source of
               truth, powered by the TypeScript Compiler API.
             </p>
@@ -249,7 +249,7 @@ export function WhyInteractive(props: {
           <WhyPanel>
             <h3>Interactive docs with React.</h3>
             <p>
-              Fumadocs offers many useful components, from File Tree, Tabs, to
+              Nopends offers many useful components, from File Tree, Tabs, to
               Zoomable Image.
             </p>
             {props.codeblockInteractive}

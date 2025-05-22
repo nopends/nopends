@@ -1,17 +1,17 @@
 ---
 title: Introduction
-description: What is Fumadocs MDX?
+description: What is Nopends MDX?
 icon: Album
 ---
 
-Fumadocs MDX is the official content source of Fumadocs.
+Nopends MDX is the official content source of Nopends.
 
 It provides the tool for Next.js to transform content into type-safe data, similar to Content Collections.
 This library made for Next.js, you can use it to handle blog and other contents.
 
 ## Getting Started
 
-Setup Fumadocs MDX for your Next.js application.
+Setup Nopends MDX for your Next.js application.
 
 ```package-install
 nopends-mdx @types/mdx
@@ -34,7 +34,7 @@ export default withMDX(config);
 
 <Callout title="ESM Only" type='warn' className="mt-4">
 
-    The Next.js config must be a `.mjs` file since Fumadocs is ESM-only.
+    The Next.js config must be a `.mjs` file since Nopends is ESM-only.
 
 </Callout>
 
@@ -42,7 +42,7 @@ export default withMDX(config);
 
 **Collection** refers to a collection containing a certain type of files, you can define collections by creating a `source.config.ts` file.
 
-Fumadocs MDX transforms collections into arrays of type-safe data, accessible in your app, available collections:
+Nopends MDX transforms collections into arrays of type-safe data, accessible in your app, available collections:
 
 <Tabs items={["doc", "meta", 'docs']}>
 
@@ -77,7 +77,7 @@ export const test = defineCollections({
     </Tab>
     <Tab value='docs'>
 
-Combination of `meta` and `doc` collections, which is needed for Fumadocs.
+Combination of `meta` and `doc` collections, which is needed for Nopends.
 
 ```ts title="source.config.ts"
 import { defineDocs } from 'nopends-mdx/config';
@@ -154,9 +154,9 @@ console.log(docs);
 
 > Make sure you are importing from `.source` rather than `source.config.ts`, we will import it with `@/.source` import alias in this guide.
 
-## Integrate with Fumadocs
+## Integrate with Nopends
 
-Create a `docs` collection and use the `toFumadocsSource()` function of its output.
+Create a `docs` collection and use the `toNopendsSource()` function of its output.
 
 ```ts title="lib/source.ts"
 import { docs } from '@/.source';
@@ -164,7 +164,7 @@ import { loader } from 'nopends-core/source';
 
 export const source = loader({
   baseUrl: '/docs',
-  source: docs.toFumadocsSource(),
+  source: docs.toNopendsSource(),
 });
 ```
 

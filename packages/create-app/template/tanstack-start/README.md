@@ -1,5 +1,5 @@
 This is a Tanstack Start application generated with
-[Create Fumadocs](https://github.com/nopends/nopends).
+[Create Nopends](https://github.com/nopends/nopends).
 
 Run development server:
 

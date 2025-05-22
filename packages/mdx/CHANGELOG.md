@@ -144,14 +144,14 @@
 
 ### Patch Changes
 
-- 421166a: Fix Fumadocs 14 compatibility issues
+- 421166a: Fix Nopends 14 compatibility issues
   - nopends-core@15.0.1
 
 ## 11.3.2
 
 ### Patch Changes
 
-- a89d6e0: Support Fumadocs v15
+- a89d6e0: Support Nopends v15
 - d6781cc: Fix incorrect line number with frontmatter on dev mode
 - Updated dependencies [5b8cca8]
 - Updated dependencies [a763058]
@@ -235,7 +235,7 @@
 
 ### Major Changes
 
-- e094284: **Require Fumadocs v14**
+- e094284: **Require Nopends v14**
 
 ### Patch Changes
 
@@ -295,7 +295,7 @@
 
 - ed83d01: **Support declarative collections**
 
-  **why:** This allows Fumadocs MDX to be more flexible.
+  **why:** This allows Nopends MDX to be more flexible.
 
   **migrate:**
 
@@ -352,7 +352,7 @@
 
 ### Patch Changes
 
-- 61b91fa: Improve Fumadocs OpenAPI support
+- 61b91fa: Improve Nopends OpenAPI support
 - Updated dependencies [36b771b]
 - Updated dependencies [61b91fa]
   - nopends-core@13.2.2
@@ -361,7 +361,7 @@
 
 ### Patch Changes
 
-- c7aa090: Improve Fumadocs OpenAPI support
+- c7aa090: Improve Nopends OpenAPI support
 - Updated dependencies [17fa173]
   - nopends-core@13.2.1
 
@@ -369,7 +369,7 @@
 
 ### Major Changes
 
-- 1f1989e: Support Fumadocs v13
+- 1f1989e: Support Nopends v13
 
 ### Patch Changes
 
@@ -709,7 +709,7 @@
   <img alt="banner" src={img_banner} />
   ```
 
-- 2b11c20: **Rename to Fumadocs**
+- 2b11c20: **Rename to Nopends**
 
   `next-docs-zeta` -> `nopends-core`
 

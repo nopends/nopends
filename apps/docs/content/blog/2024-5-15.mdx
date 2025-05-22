@@ -1,5 +1,5 @@
 ---
-title: How Fumadocs works
+title: How Nopends works
 description: The framework for building documentation
 author: Fuma Nama
 ---
@@ -13,10 +13,10 @@ It was working great, looks blazing-fast and minimal.
 I cloned the logic from No Deploy and built this documentation framework.
 With a few months of development, it soon became powerful and stable.
 
-It was originally named `next-docs`, I renamed it to Fumadocs as it conflicts with Next.js Docs.
+It was originally named `next-docs`, I renamed it to Nopends as it conflicts with Next.js Docs.
 
 Thanks to the support from **Next.js** community, I've received a lot of suggestions along the way.
-[Fumadocs](https://docs.nopends.com) is now a framework used by my libraries and some other amazing projects.
+[Nopends](https://docs.nopends.com) is now a framework used by my libraries and some other amazing projects.
 
 ## My Opinion
 
@@ -38,7 +38,7 @@ I saw too many of these misconceptions.
 This happens on many frameworks, they are overly magical.
 **I wanted to make it less-magic, and straightforward at least for most Next.js developers.**
 
-## Fumadocs MDX
+## Nopends MDX
 
 As the recommended content source, It is actually a webpack hack.
 Since Next.js could only optimize static imports, it first transform your `.map.ts` to a file that roughly yields:
@@ -53,32 +53,32 @@ Comparing to Nextra, it might be a suboptimal approach.
 Nextra does it even easier, it directly transforms MDX files into pages. Because the Pages Router adapts Javascript files as a single page, it is possible.
 In App Router, this is not possible anymore. Therefore, I didn't take this approach.
 
-## Fumadocs Core
+## Nopends Core
 
-The core of Fumadocs is a bunch of utilities and MDX plugins.
+The core of Nopends is a bunch of utilities and MDX plugins.
 
 - **Source API** construct page trees from content source, integrated with other content providers.
-- **Headless components** accelerate Fumadocs UI and other custom UI implementations.
+- **Headless components** accelerate Nopends UI and other custom UI implementations.
 - **MDX plugins** bring a perfect developer experience to all integrations.
 - **Search utilities** make it way easier to implement document search.
 
 In addition, it also established the definitions of Page Tree and Page Conventions.
-Over all, it is not yet a framework without Fumadocs UI.
+Over all, it is not yet a framework without Nopends UI.
 
 In my opinion, the most valuable part in the codebase are MDX plugins.
 I learnt a lot more about ASTs and the eco-system of remark/rehype while working on them.
 Absolutely an amazing experience.
 
-## Fumadocs UI
+## Nopends UI
 
-The UI implementation of Fumadocs using Tailwind CSS and Radix UI.
+The UI implementation of Nopends using Tailwind CSS and Radix UI.
 Its design system was inspired by Shadcn UI, using CSS variables for color utilities.
 
-Although the structure of Fumadocs UI is even simpler than core, I've used some subtle hacks to solve the problem of `"use client"` directive.
+Although the structure of Nopends UI is even simpler than core, I've used some subtle hacks to solve the problem of `"use client"` directive.
 The bundler I am using, [TSX](https://github.com/privatenumber/tsx), can't handle nested structures like client components imported from a server component.
 Therefore, I made a little hack to build server components and client components as an individual entry, then inject import statements after the process.
 
-Also it took me some time to come up with the [preset approach](https://docs.nopends.com/docs/ui/theme#docsui-plugin) for integrating Fumadocs UI with Tailwind CSS projects.
+Also it took me some time to come up with the [preset approach](https://docs.nopends.com/docs/ui/theme#docsui-plugin) for integrating Nopends UI with Tailwind CSS projects.
 
 ## Docs Generators
 
@@ -97,7 +97,7 @@ It worked great so far.
 
 ## Thanks
 
-[The Github repository of Fumadocs](https://github.com/nopends/nopends) has reached 300 stars in 2024 March, it is a new achievement for me.
+[The Github repository of Nopends](https://github.com/nopends/nopends) has reached 300 stars in 2024 March, it is a new achievement for me.
 Welcome to give it a star to support my work!
 
 > Original

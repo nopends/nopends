@@ -31,7 +31,7 @@ export default function DocsPage(): React.ReactElement {
         Getting Started
       </h1>
       <p className="text-fd-muted-foreground">
-        You can start with Fumadocs, or just use the core library.
+        You can start with Nopends, or just use the core library.
       </p>
       <div className="mt-4 grid grid-cols-2 gap-4">
         <a
@@ -53,7 +53,7 @@ export default function DocsPage(): React.ReactElement {
           <Icon>
             <Building2 className="size-full" />
           </Icon>
-          <h2 className="mb-2 text-lg font-semibold">Fumadocs</h2>
+          <h2 className="mb-2 text-lg font-semibold">Nopends</h2>
           <p className="text-sm text-fd-muted-foreground">
             The full-powered documentation framework with an excellent UI.
           </p>
@@ -62,9 +62,9 @@ export default function DocsPage(): React.ReactElement {
           <Icon>
             <LibraryIcon className="size-full" />
           </Icon>
-          <h2 className="mb-2 text-lg font-semibold">Fumadocs Core</h2>
+          <h2 className="mb-2 text-lg font-semibold">Nopends Core</h2>
           <p className="text-sm text-fd-muted-foreground">
-            The core library of Fumadocs.
+            The core library of Nopends.
           </p>
         </Item>
       </div>

@@ -1,7 +1,7 @@
 {
   "name": "nopends-python",
   "version": "0.0.2",
-  "description": "The built-in Python docgen for Fumadocs",
+  "description": "The built-in Python docgen for Nopends",
   "keywords": [
     "NextJs",
     "Docs",

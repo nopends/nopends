@@ -129,7 +129,7 @@
 
 ### Patch Changes
 
-- a89d6e0: Support Fumadocs v15
+- a89d6e0: Support Nopends v15
 
 ## 14.7.7
 
@@ -473,7 +473,7 @@
 
 ### Major Changes
 
-- 2b11c20: **Rename to Fumadocs**
+- 2b11c20: **Rename to Nopends**
 
   `next-docs-zeta` -> `nopends-core`
 
