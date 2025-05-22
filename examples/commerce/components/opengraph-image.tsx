@@ -8,13 +8,13 @@ export type Props = {
 };
 
 export default async function OpengraphImage(
-  props?: Props
+  props?: Props,
 ): Promise<ImageResponse> {
   const { title } = {
     ...{
-      title: process.env.SITE_NAME
+      title: process.env.SITE_NAME,
     },
-    ...props
+    ...props,
   };
 
   const file = await readFile(join(process.cwd(), './fonts/Inter-Bold.ttf'));
@@ -37,9 +37,9 @@ export default async function OpengraphImage(
           name: 'Inter',
           data: font,
           style: 'normal',
-          weight: 700
-        }
-      ]
-    }
+          weight: 700,
+        },
+      ],
+    },
   );
 }

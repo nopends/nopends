@@ -17,7 +17,9 @@ export async function generateMetadata(props: {
   return {
     title: collection.seo?.title || collection.title,
     description:
-      collection.seo?.description || collection.description || `${collection.title} products`
+      collection.seo?.description ||
+      collection.description ||
+      `${collection.title} products`,
   };
 }
 
@@ -28,8 +30,13 @@ export default async function CategoryPage(props: {
   const searchParams = await props.searchParams;
   const params = await props.params;
   const { sort } = searchParams as { [key: string]: string };
-  const { sortKey, reverse } = sorting.find((item) => item.slug === sort) || defaultSort;
-  const products = await getCollectionProducts({ collection: params.collection, sortKey, reverse });
+  const { sortKey, reverse } =
+    sorting.find((item) => item.slug === sort) || defaultSort;
+  const products = await getCollectionProducts({
+    collection: params.collection,
+    sortKey,
+    reverse,
+  });
 
   return (
     <section>

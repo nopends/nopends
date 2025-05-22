@@ -16,8 +16,8 @@ function SubmitButton({ type }: { type: 'plus' | 'minus' }) {
       className={clsx(
         'ease flex h-full min-w-[36px] max-w-[36px] flex-none items-center justify-center rounded-full p-2 transition-all duration-200 hover:border-neutral-800 hover:opacity-80',
         {
-          'ml-auto': type === 'minus'
-        }
+          'ml-auto': type === 'minus',
+        },
       )}
     >
       {type === 'plus' ? (
@@ -32,7 +32,7 @@ function SubmitButton({ type }: { type: 'plus' | 'minus' }) {
 export function EditItemQuantityButton({
   item,
   type,
-  optimisticUpdate
+  optimisticUpdate,
 }: {
   item: CartItem;
   type: 'plus' | 'minus';
@@ -41,7 +41,7 @@ export function EditItemQuantityButton({
   const [message, formAction] = useActionState(updateItemQuantity, null);
   const payload = {
     merchandiseId: item.merchandise.id,
-    quantity: type === 'plus' ? item.quantity + 1 : item.quantity - 1
+    quantity: type === 'plus' ? item.quantity + 1 : item.quantity - 1,
   };
   const updateItemQuantityAction = formAction.bind(null, payload);
 

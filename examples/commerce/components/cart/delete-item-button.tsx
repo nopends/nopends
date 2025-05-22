@@ -7,7 +7,7 @@ import { useActionState } from 'react';
 
 export function DeleteItemButton({
   item,
-  optimisticUpdate
+  optimisticUpdate,
 }: {
   item: CartItem;
   optimisticUpdate: any;

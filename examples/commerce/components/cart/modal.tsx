@@ -95,8 +95,8 @@ export default function CartModal() {
                     {cart.lines
                       .sort((a, b) =>
                         a.merchandise.product.title.localeCompare(
-                          b.merchandise.product.title
-                        )
+                          b.merchandise.product.title,
+                        ),
                       )
                       .map((item, i) => {
                         const merchandiseSearchParams =
@@ -108,12 +108,12 @@ export default function CartModal() {
                               merchandiseSearchParams[name.toLowerCase()] =
                                 value;
                             }
-                          }
+                          },
                         );
 
                         const merchandiseUrl = createUrl(
                           `/product/${item.merchandise.product.handle}`,
-                          new URLSearchParams(merchandiseSearchParams)
+                          new URLSearchParams(merchandiseSearchParams),
                         );
 
                         return (
@@ -234,7 +234,7 @@ function CloseCart({ className }: { className?: string }) {
       <XMarkIcon
         className={clsx(
           'h-6 transition-all ease-in-out hover:scale-110',
-          className
+          className,
         )}
       />
     </div>

@@ -31,8 +31,8 @@ export async function generateMetadata(props: {
       follow: indexable,
       googleBot: {
         index: indexable,
-        follow: indexable
-      }
+        follow: indexable,
+      },
     },
     openGraph: url
       ? {
@@ -41,15 +41,17 @@ export async function generateMetadata(props: {
               url,
               width,
               height,
-              alt
-            }
-          ]
+              alt,
+            },
+          ],
         }
-      : null
+      : null,
   };
 }
 
-export default async function ProductPage(props: { params: Promise<{ handle: string }> }) {
+export default async function ProductPage(props: {
+  params: Promise<{ handle: string }>;
+}) {
   const params = await props.params;
   const product = await getProduct(params.handle);
 
@@ -68,8 +70,8 @@ export default async function ProductPage(props: { params: Promise<{ handle: str
         : 'https://schema.org/OutOfStock',
       priceCurrency: product.priceRange.minVariantPrice.currencyCode,
       highPrice: product.priceRange.maxVariantPrice.amount,
-      lowPrice: product.priceRange.minVariantPrice.amount
-    }
+      lowPrice: product.priceRange.minVariantPrice.amount,
+    },
   };
 
   return (
@@ -77,7 +79,7 @@ export default async function ProductPage(props: { params: Promise<{ handle: str
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(productJsonLd)
+          __html: JSON.stringify(productJsonLd),
         }}
       />
       <div className="mx-auto max-w-(--breakpoint-2xl) px-4">
@@ -91,7 +93,7 @@ export default async function ProductPage(props: { params: Promise<{ handle: str
               <Gallery
                 images={product.images.slice(0, 5).map((image: Image) => ({
                   src: image.url,
-                  altText: image.altText
+                  altText: image.altText,
                 }))}
               />
             </Suspense>
@@ -134,7 +136,7 @@ async function RelatedProducts({ id }: { id: string }) {
                 label={{
                   title: product.title,
                   amount: product.priceRange.maxVariantPrice.amount,
-                  currencyCode: product.priceRange.maxVariantPrice.currencyCode
+                  currencyCode: product.priceRange.maxVariantPrice.currencyCode,
                 }}
                 src={product.featuredImage?.url}
                 fill

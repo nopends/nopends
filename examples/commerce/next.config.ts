@@ -2,7 +2,7 @@ export default {
   experimental: {
     ppr: true,
     inlineCss: true,
-    useCache: true
+    useCache: true,
   },
   images: {
     formats: ['image/avif', 'image/webp'],
@@ -10,8 +10,8 @@ export default {
       {
         protocol: 'https',
         hostname: 'cdn.shopify.com',
-        pathname: '/s/files/**'
-      }
-    ]
-  }
+        pathname: '/s/files/**',
+      },
+    ],
+  },
 };

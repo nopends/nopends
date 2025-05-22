@@ -6,7 +6,7 @@ import {
   createCart,
   getCart,
   removeFromCart,
-  updateCart
+  updateCart,
 } from 'lib/shopify';
 import { revalidateTag } from 'next/cache';
 import { cookies } from 'next/headers';
@@ -14,7 +14,7 @@ import { redirect } from 'next/navigation';
 
 export async function addItem(
   prevState: any,
-  selectedVariantId: string | undefined
+  selectedVariantId: string | undefined,
 ) {
   if (!selectedVariantId) {
     return 'Error adding item to cart';
@@ -37,7 +37,7 @@ export async function removeItem(prevState: any, merchandiseId: string) {
     }
 
     const lineItem = cart.lines.find(
-      (line) => line.merchandise.id === merchandiseId
+      (line) => line.merchandise.id === merchandiseId,
     );
 
     if (lineItem && lineItem.id) {
@@ -56,7 +56,7 @@ export async function updateItemQuantity(
   payload: {
     merchandiseId: string;
     quantity: number;
-  }
+  },
 ) {
   const { merchandiseId, quantity } = payload;
 
@@ -68,7 +68,7 @@ export async function updateItemQuantity(
     }
 
     const lineItem = cart.lines.find(
-      (line) => line.merchandise.id === merchandiseId
+      (line) => line.merchandise.id === merchandiseId,
     );
 
     if (lineItem && lineItem.id) {
@@ -79,8 +79,8 @@ export async function updateItemQuantity(
           {
             id: lineItem.id,
             merchandiseId,
-            quantity
-          }
+            quantity,
+          },
         ]);
       }
     } else if (quantity > 0) {
