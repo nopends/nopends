@@ -1,5 +1,14 @@
 # @fuma-docs/openapi
 
+## 8.1.13-canary.0
+
+### Patch Changes
+
+- 0b5043a: start canary
+- Updated dependencies [0b5043a]
+  - nopends-core@15.3.5-canary.0
+  - nopends-ui@15.3.5-canary.0
+
 ## 8.1.12
 
 ### Patch Changes

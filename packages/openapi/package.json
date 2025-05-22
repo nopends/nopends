@@ -1,6 +1,6 @@
 {
   "name": "nopends-openapi",
-  "version": "8.1.12",
+  "version": "8.1.13-canary.0",
   "description": "Generate MDX docs for your OpenAPI spec",
   "keywords": [
     "NextJs",

@@ -1,5 +1,11 @@
 # create-next-docs-app
 
+## 15.3.5-canary.0
+
+### Patch Changes
+
+- 0b5043a: start canary
+
 ## 15.3.4
 
 ### Patch Changes

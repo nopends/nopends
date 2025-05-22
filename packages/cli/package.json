@@ -1,6 +1,6 @@
 {
   "name": "@nopends/cli",
-  "version": "0.2.0",
+  "version": "0.2.1-canary.0",
   "description": "The CLI tool for Nopends",
   "keywords": [
     "NextJs",

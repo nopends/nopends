@@ -1,5 +1,14 @@
 # next-docs-mdx
 
+## 11.6.6-canary.0
+
+### Patch Changes
+
+- 0b5043a: start canary
+- Updated dependencies [0b5043a]
+  - nopends-core@15.3.5-canary.0
+  - @nopends/mdx-remote@1.3.3-canary.0
+
 ## 11.6.5
 
 ### Patch Changes

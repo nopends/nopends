@@ -1,5 +1,11 @@
 # nopends-typescript
 
+## 4.0.6-canary.0
+
+### Patch Changes
+
+- 0b5043a: start canary
+
 ## 4.0.5
 
 ### Patch Changes

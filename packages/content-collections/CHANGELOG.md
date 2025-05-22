@@ -1,5 +1,13 @@
 # @nopends/content-collections
 
+## 1.2.1-canary.0
+
+### Patch Changes
+
+- 0b5043a: start canary
+- Updated dependencies [0b5043a]
+  - nopends-core@15.3.5-canary.0
+
 ## 1.2.0
 
 ### Minor Changes

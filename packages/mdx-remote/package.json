@@ -1,6 +1,6 @@
 {
   "name": "@nopends/mdx-remote",
-  "version": "1.3.2",
+  "version": "1.3.3-canary.0",
   "description": "The remote MDX files adapter for Nopends",
   "keywords": [
     "NextJs",

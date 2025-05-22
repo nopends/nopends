@@ -1,5 +1,11 @@
 # nopends
 
+## 0.2.1-canary.0
+
+### Patch Changes
+
+- 0b5043a: start canary
+
 ## 0.2.0
 
 ### Minor Changes
