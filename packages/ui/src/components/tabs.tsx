@@ -16,7 +16,7 @@ import {
 } from 'react';
 import { cn } from '@/utils/cn';
 import * as Primitive from './ui/tabs';
-import { useEffectEvent } from 'fumadocs-core/utils/use-effect-event';
+import { useEffectEvent } from 'nopends-core/utils/use-effect-event';
 
 type CollectionKey = string | symbol;
 type ChangeListener = (v: string) => void;

@@ -14,13 +14,13 @@ This may result in longer dev server start time for large docs sites, you can en
 Install required dependencies.
 
 ```package-install
-@fumadocs/mdx-remote shiki
+@nopends/mdx-remote shiki
 ```
 
 Enable Async Mode.
 
 ```ts tab="Docs Collection"
-import { defineDocs } from 'fumadocs-mdx/config';
+import { defineDocs } from 'nopends-mdx/config';
 
 export const docs = defineDocs({
   dir: 'content/docs',
@@ -31,7 +31,7 @@ export const docs = defineDocs({
 ```
 
 ```ts tab="Doc Collection"
-import { defineCollections } from 'fumadocs-mdx/config';
+import { defineCollections } from 'nopends-mdx/config';
 
 export const doc = defineCollections({
   type: 'doc',
@@ -49,12 +49,12 @@ However, you need to invoke the `load()` async function to load and compile cont
 For example:
 
 ```tsx title="lib/source.ts"
-import { loader } from 'fumadocs-core/source';
+import { loader } from 'nopends-core/source';
 import { docs } from '@/.source';
 
 export const source = loader({
   baseUrl: '/docs',
-  source: docs.toFumadocsSource(),
+  source: docs.toNopendsSource(),
 });
 ```
 

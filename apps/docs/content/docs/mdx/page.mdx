@@ -10,12 +10,12 @@ You can use `page.mdx` instead of `page.tsx` for creating a new page under the a
 However, it doesn't have MDX components by default so you have to provide them:
 
 ```tsx title="mdx-components.tsx"
-import defaultMdxComponents from 'fumadocs-ui/mdx';
+import defaultMdxComponents from 'nopends-ui/mdx';
 import type { MDXComponents } from 'mdx/types';
 
 export function getMDXComponents(components?: MDXComponents): MDXComponents {
   return {
-    ...defaultMdxComponents, // for Fumadocs UI
+    ...defaultMdxComponents, // for Nopends UI
     ...components,
   };
 }
@@ -25,7 +25,7 @@ export const useMDXComponents = getMDXComponents; // [!code ++]
 ```
 
 ```ts title="source.config.ts"
-import { defineConfig } from 'fumadocs-mdx/config';
+import { defineConfig } from 'nopends-mdx/config';
 
 export default defineConfig({
   mdxOptions: {
@@ -38,8 +38,8 @@ export default defineConfig({
 ### Usage
 
 ```mdx title="app/test/page.mdx"
-{/* this will enable Typography styles of Fumadocs UI */}
-export { withArticle as default } from 'fumadocs-ui/page';
+{/* this will enable Typography styles of Nopends UI */}
+export { withArticle as default } from 'nopends-ui/page';
 
 ## Hello World
 ```

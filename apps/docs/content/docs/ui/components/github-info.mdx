@@ -7,11 +7,11 @@ preview: githubInfo
 ## Usage
 
 ```tsx
-import { GithubInfo } from 'fumadocs-ui/components/github-info';
+import { GithubInfo } from 'nopends-ui/components/github-info';
 
 <GithubInfo
-  owner="fuma-nama"
-  repo="fumadocs"
+  owner="nopends"
+  repo="nopends"
   // your own GitHub access token (optional)
   token={process.env.GITHUB_TOKEN}
 />;
@@ -20,11 +20,11 @@ import { GithubInfo } from 'fumadocs-ui/components/github-info';
 It's recommended to add it to your docs layout with `links` option:
 
 ```tsx title="app/docs/layout.tsx"
-import { DocsLayout, type DocsLayoutProps } from 'fumadocs-ui/layouts/notebook';
+import { DocsLayout, type DocsLayoutProps } from 'nopends-ui/layouts/notebook';
 import type { ReactNode } from 'react';
 import { baseOptions } from '@/app/layout.config';
 import { source } from '@/lib/source';
-import { GithubInfo } from 'fumadocs-ui/components/github-info';
+import { GithubInfo } from 'nopends-ui/components/github-info';
 
 const docsOptions: DocsLayoutProps = {
   ...baseOptions,
@@ -33,7 +33,7 @@ const docsOptions: DocsLayoutProps = {
     {
       type: 'custom',
       children: (
-        <GithubInfo owner="fuma-nama" repo="fumadocs" className="lg:-mx-2" />
+        <GithubInfo owner="nopends" repo="nopends" className="lg:-mx-2" />
       ),
     },
   ],

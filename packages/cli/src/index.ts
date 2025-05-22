@@ -25,8 +25,8 @@ import { add } from '@/commands/add';
 const program = new Command().option('--config <string>');
 
 program
-  .name('fumadocs')
-  .description('CLI to setup Fumadocs, init a config ')
+  .name('nopends')
+  .description('CLI to setup Nopends, init a config ')
   .version(packageJson.version)
   .action(async () => {
     if (await initConfig()) {
@@ -39,7 +39,7 @@ program
 program
   .command('customise')
   .alias('customize')
-  .description('simple way to customise layouts with Fumadocs UI')
+  .description('simple way to customise layouts with Nopends UI')
   .option('--dir <string>', 'the root url or directory to resolve registry')
   .action(async (options: { config?: string; dir?: string }) => {
     const resolver = getResolverFromDir(options.dir);
@@ -78,7 +78,7 @@ program
   });
 
 const dirShortcuts: Record<string, string> = {
-  ':dev': 'https://preview.fumadocs.dev/registry',
+  ':dev': 'https://preview.nopends.dev/registry',
   ':localhost': 'http://localhost:3000/registry',
 };
 
@@ -139,7 +139,7 @@ program
   );
 
 function getResolverFromDir(
-  dir: string = 'https://fumadocs.dev/registry',
+  dir: string = 'https://docs.nopends.com/registry',
 ): Resolver {
   if (dir in dirShortcuts) dir = dirShortcuts[dir];
 

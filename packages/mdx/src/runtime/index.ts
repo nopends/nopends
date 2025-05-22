@@ -1,9 +1,9 @@
-import type { VirtualFile } from 'fumadocs-core/source';
+import type { VirtualFile } from 'nopends-core/source';
 import {
   type MetaData,
   type PageData,
   type Source,
-} from 'fumadocs-core/source';
+} from 'nopends-core/source';
 import { type BaseCollectionEntry } from '@/config';
 import type { Runtime } from '@/runtime/types';
 import fs from 'node:fs';
@@ -42,7 +42,7 @@ export const _runtime: Runtime = {
     return {
       docs: parsedDocs,
       meta: parsedMetas,
-      toFumadocsSource() {
+      toNopendsSource() {
         return createMDXSource(parsedDocs, parsedMetas);
       },
     } as any;

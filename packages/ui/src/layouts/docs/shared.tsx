@@ -8,7 +8,7 @@ import {
   SidebarItem,
   type SidebarProps,
 } from '@/components/layout/sidebar';
-import type { PageTree } from 'fumadocs-core/server';
+import type { PageTree } from 'nopends-core/server';
 import type { ReactNode } from 'react';
 import type { Option } from '@/components/layout/root-toggle';
 import {

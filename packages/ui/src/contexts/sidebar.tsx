@@ -6,8 +6,8 @@ import {
   useRef,
   useState,
 } from 'react';
-import { createContext, usePathname } from 'fumadocs-core/framework';
-import { useOnChange } from 'fumadocs-core/utils/use-on-change';
+import { createContext, usePathname } from 'nopends-core/framework';
+import { useOnChange } from 'nopends-core/utils/use-on-change';
 
 interface SidebarContext {
   open: boolean;

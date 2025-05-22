@@ -1,16 +1,16 @@
 import type { Route } from './+types/page';
-import { DocsLayout } from 'fumadocs-ui/layouts/docs';
+import { DocsLayout } from 'nopends-ui/layouts/docs';
 import {
   DocsBody,
   DocsDescription,
   DocsPage,
   DocsTitle,
-} from 'fumadocs-ui/page';
+} from 'nopends-ui/page';
 import { source } from '@/source';
-import defaultMdxComponents from 'fumadocs-ui/mdx';
-import { executeMdxSync } from '@fumadocs/mdx-remote/client';
-import type { PageTree } from 'fumadocs-core/server';
-import { createCompiler } from '@fumadocs/mdx-remote';
+import defaultMdxComponents from 'nopends-ui/mdx';
+import { executeMdxSync } from '@nopends/mdx-remote/client';
+import type { PageTree } from 'nopends-core/server';
+import { createCompiler } from '@nopends/mdx-remote';
 import * as path from 'node:path';
 
 export function meta({}: Route.MetaArgs) {

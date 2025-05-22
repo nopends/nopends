@@ -1,1 +1,1 @@
-export * from 'fumadocs-ui/internal/icons';
+export * from 'nopends-ui/internal/icons';

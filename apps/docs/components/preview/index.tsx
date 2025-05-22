@@ -1,15 +1,15 @@
 import { Home } from 'lucide-react';
-import { Heading } from 'fumadocs-ui/components/heading';
-import { Card } from 'fumadocs-ui/components/card';
-import { Callout } from 'fumadocs-ui/components/callout';
-import { Accordion, Accordions } from 'fumadocs-ui/components/accordion';
-import { RootToggle } from 'fumadocs-ui/components/layout/root-toggle';
-import { Tab, Tabs } from 'fumadocs-ui/components/tabs';
-import { Step, Steps } from 'fumadocs-ui/components/steps';
-import { TypeTable } from 'fumadocs-ui/components/type-table';
+import { Heading } from 'nopends-ui/components/heading';
+import { Card } from 'nopends-ui/components/card';
+import { Callout } from 'nopends-ui/components/callout';
+import { Accordion, Accordions } from 'nopends-ui/components/accordion';
+import { RootToggle } from 'nopends-ui/components/layout/root-toggle';
+import { Tab, Tabs } from 'nopends-ui/components/tabs';
+import { Step, Steps } from 'nopends-ui/components/steps';
+import { TypeTable } from 'nopends-ui/components/type-table';
 import { type ReactNode } from 'react';
 import { Wrapper } from './wrapper';
-import { GithubInfo } from 'fumadocs-ui/components/github-info';
+import { GithubInfo } from 'nopends-ui/components/github-info';
 import { owner, repo } from '@/lib/github';
 import {
   Banner,
@@ -115,7 +115,7 @@ export function accordion(): ReactNode {
   return (
     <Wrapper>
       <Accordions type="single" collapsible>
-        <Accordion id="what-is-fumadocs" title="What is Fumadocs?">
+        <Accordion id="what-is-nopends" title="What is Nopends?">
           A framework for building documentations
         </Accordion>
         <Accordion id="ux" title="What do we love?">
@@ -237,7 +237,7 @@ export function banner(): ReactNode {
     <Wrapper>
       <div className="flex flex-col gap-4">
         <Banner className="z-0" changeLayout={false}>
-          Be careful, Fumadocs v99 has released
+          Be careful, Nopends v99 has released
         </Banner>
 
         <Banner

@@ -1,14 +1,14 @@
 import type { ComponentProps, ReactNode } from 'react';
 import { cva } from 'class-variance-authority';
-import { cn } from 'fumadocs-ui/utils/cn';
+import { cn } from 'nopends-ui/utils/cn';
 import {
   Collapsible,
   CollapsibleContent,
   CollapsibleTrigger,
-} from 'fumadocs-ui/components/ui/collapsible';
-import { buttonVariants } from 'fumadocs-ui/components/ui/button';
+} from 'nopends-ui/components/ui/collapsible';
+import { buttonVariants } from 'nopends-ui/components/ui/button';
 import { ChevronRight } from 'lucide-react';
-import { highlight } from 'fumadocs-core/highlight';
+import { highlight } from 'nopends-core/highlight';
 
 const cardVariants = cva('bg-fd-card rounded-lg text-sm my-6 p-3 border');
 const badgeVariants = cva(
@@ -182,4 +182,4 @@ async function InlineCode({
   });
 }
 
-export { Tab, Tabs } from 'fumadocs-ui/components/tabs';
+export { Tab, Tabs } from 'nopends-ui/components/tabs';

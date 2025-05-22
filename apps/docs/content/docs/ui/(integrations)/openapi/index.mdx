@@ -8,7 +8,7 @@ description: Generating docs for OpenAPI schema
 Install the required packages.
 
 ```package-install
-fumadocs-openapi shiki
+nopends-openapi shiki
 ```
 
 ### Generate Styles
@@ -17,19 +17,19 @@ Please note that you must have Tailwind CSS v4 configured.
 
 ```css title="Tailwind CSS"
 @import 'tailwindcss';
-@import 'fumadocs-ui/css/neutral.css';
-@import 'fumadocs-ui/css/preset.css';
+@import 'nopends-ui/css/neutral.css';
+@import 'nopends-ui/css/preset.css';
 /* [!code ++] */
-@import 'fumadocs-openapi/css/preset.css';
+@import 'nopends-openapi/css/preset.css';
 ```
 
 ### Configure Pages
 
-Create an OpenAPI instance on the server. Fumadocs OpenAPI renders the pages on server-side.
+Create an OpenAPI instance on the server. Nopends OpenAPI renders the pages on server-side.
 
 ```ts title="lib/source.ts"
-import { createOpenAPI, attachFile } from 'fumadocs-openapi/server';
-import { loader } from 'fumadocs-core/source';
+import { createOpenAPI, attachFile } from 'nopends-openapi/server';
+import { loader } from 'nopends-core/source';
 
 export const source = loader({
   pageTree: {
@@ -46,8 +46,8 @@ export const openapi = createOpenAPI({
 Add `APIPage` to your MDX Components, so that you can use it in MDX files.
 
 ```tsx title="mdx-components.tsx"
-import defaultComponents from 'fumadocs-ui/mdx';
-import { APIPage } from 'fumadocs-openapi/ui';
+import defaultComponents from 'nopends-ui/mdx';
+import { APIPage } from 'nopends-openapi/ui';
 import { openapi } from '@/lib/source';
 import type { MDXComponents } from 'mdx/types';
 
@@ -69,11 +69,10 @@ You can generate MDX files directly from your OpenAPI schema.
 Create a script:
 
 ```js title="scripts/generate-docs.mjs"
-import { generateFiles } from 'fumadocs-openapi';
+import { generateFiles } from 'nopends-openapi';
 
 void generateFiles({
   // the OpenAPI schema
-  // For Vercel users, we recommend a URL instead.
   input: ['./unkey.json'],
   output: './content/docs',
   // we recommend to enable it

@@ -1,13 +1,13 @@
 import { remark } from 'remark';
 import remarkGfm from 'remark-gfm';
 import remarkMdx from 'remark-mdx';
-import { remarkInclude } from 'fumadocs-mdx/config';
+import { remarkInclude } from 'nopends-mdx/config';
 import { source } from '@/lib/source';
-import type { InferPageType } from 'fumadocs-core/source';
+import type { InferPageType } from 'nopends-core/source';
 
 const processor = remark()
   .use(remarkMdx)
-  // needed for Fumadocs MDX
+  // needed for Nopends MDX
   .use(remarkInclude)
   .use(remarkGfm);
 

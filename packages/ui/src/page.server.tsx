@@ -1,10 +1,10 @@
 import type { HTMLAttributes } from 'react';
-import type { LoaderConfig, LoaderOutput, Page } from 'fumadocs-core/source';
-import { getPageTreePeers, type PageTree } from 'fumadocs-core/server';
+import type { LoaderConfig, LoaderOutput, Page } from 'nopends-core/source';
+import { getPageTreePeers, type PageTree } from 'nopends-core/server';
 import { Card, Cards } from '@/components/card';
 
 /**
- * @deprecated use https://fumadocs.vercel.app/docs/ui/markdown#further-reading-section instead
+ * @deprecated use https://docs.nopends.com/docs/ui/markdown#further-reading-section instead
  */
 export function DocsCategory({
   page,

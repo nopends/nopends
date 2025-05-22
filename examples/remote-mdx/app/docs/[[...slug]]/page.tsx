@@ -4,10 +4,10 @@ import {
   DocsBody,
   DocsTitle,
   DocsDescription,
-} from 'fumadocs-ui/page';
+} from 'nopends-ui/page';
 import { notFound } from 'next/navigation';
-import defaultComponents from 'fumadocs-ui/mdx';
-import { compileMDX, parseFrontmatter } from '@fumadocs/mdx-remote';
+import defaultComponents from 'nopends-ui/mdx';
+import { compileMDX, parseFrontmatter } from '@nopends/mdx-remote';
 import { type Frontmatter, getPage, getPages } from '@/app/docs/utils';
 
 export default async function Page(props: {

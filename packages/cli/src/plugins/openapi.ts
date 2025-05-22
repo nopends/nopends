@@ -12,14 +12,14 @@ export const openapiPlugin: Plugin = {
   files: () => ({
     'scripts/generate-docs.mjs': generated['scripts/generate-docs'],
   }),
-  dependencies: ['fumadocs-openapi', 'rimraf', 'shiki'],
+  dependencies: ['nopends-openapi', 'rimraf', 'shiki'],
   async transform(ctx) {
     const project = createEmptyProject();
 
     await Promise.all([
       transformSource(project, ctx),
       transformTailwind(project, {
-        addContents: [`./node_modules/fumadocs-openapi/dist/**/*.js`],
+        addContents: [`./node_modules/nopends-openapi/dist/**/*.js`],
       }),
       addScript(),
     ]);
@@ -33,7 +33,7 @@ You can add the APIPage component to your page.tsx:`,
     {
       type: 'code',
       title: 'page.tsx',
-      code: `import defaultMdxComponents from 'fumadocs-ui/mdx';
+      code: `import defaultMdxComponents from 'nopends-ui/mdx';
 import { openapi } from '@/lib/source';
  
 <MDX
@@ -85,7 +85,7 @@ async function transformSource(
   file.addImportDeclaration({
     kind: StructureKind.ImportDeclaration,
     namedImports: ['createOpenAPI'],
-    moduleSpecifier: 'fumadocs-openapi/server',
+    moduleSpecifier: 'nopends-openapi/server',
   });
 
   file.addStatements(`export const openapi = createOpenAPI();`);

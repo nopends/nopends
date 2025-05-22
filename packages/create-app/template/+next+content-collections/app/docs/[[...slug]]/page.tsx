@@ -4,10 +4,10 @@ import {
   DocsBody,
   DocsTitle,
   DocsDescription,
-} from 'fumadocs-ui/page';
+} from 'nopends-ui/page';
 import { notFound } from 'next/navigation';
 import { MDXContent } from '@content-collections/mdx/react';
-import { createRelativeLink } from 'fumadocs-ui/mdx';
+import { createRelativeLink } from 'nopends-ui/mdx';
 import { getMDXComponents } from '@/mdx-components';
 
 export default async function Page(props: {

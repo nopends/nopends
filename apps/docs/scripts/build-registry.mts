@@ -1,4 +1,4 @@
-import { build, writeOutput } from '@fumadocs/cli/build';
+import { build, writeOutput } from '@nopends/cli/build';
 import { registry } from '@/components/registry.mjs';
 
 export async function buildRegistry() {

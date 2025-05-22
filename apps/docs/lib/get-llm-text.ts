@@ -1,9 +1,9 @@
 import { remark } from 'remark';
 import remarkGfm from 'remark-gfm';
-import { remarkInstall } from 'fumadocs-docgen';
+import { remarkInstall } from 'nopends-docgen';
 import remarkMdx from 'remark-mdx';
-import { remarkAutoTypeTable } from 'fumadocs-typescript';
-import { remarkInclude } from 'fumadocs-mdx/config';
+import { remarkAutoTypeTable } from 'nopends-typescript';
+import { remarkInclude } from 'nopends-mdx/config';
 import { type Page } from '@/lib/source';
 
 const processor = remark()
@@ -16,10 +16,10 @@ const processor = remark()
 export async function getLLMText(page: Page) {
   const category =
     {
-      ui: 'Fumadocs Framework',
-      headless: 'Fumadocs Core (core library of framework)',
-      mdx: 'Fumadocs MDX (the built-in content source)',
-      cli: 'Fumadocs CLI (the CLI tool for automating Fumadocs apps)',
+      ui: 'Nopends Framework',
+      headless: 'Nopends Core (core library of framework)',
+      mdx: 'Nopends MDX (the built-in content source)',
+      cli: 'Nopends CLI (the CLI tool for automating Nopends apps)',
     }[page.slugs[0]] ?? page.slugs[0];
 
   const processed = await processor.process({
@@ -29,7 +29,7 @@ export async function getLLMText(page: Page) {
 
   return `# ${category}: ${page.data.title}
 URL: ${page.url}
-Source: https://raw.githubusercontent.com/fuma-nama/fumadocs/refs/heads/main/apps/docs/content/docs/${page.file.path}
+Source: https://raw.githubusercontent.com/nopends/nopends/refs/heads/main/apps/docs/content/docs/${page.file.path}
 
 ${page.data.description}
         

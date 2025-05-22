@@ -1,10 +1,10 @@
-import { createCompiler, type MDXOptions } from '@fumadocs/mdx-remote';
+import { createCompiler, type MDXOptions } from '@nopends/mdx-remote';
 import type { LoadedConfig } from '@/utils/config';
 import { remarkInclude } from '@/mdx-plugins/remark-include';
 import {
   remarkStructure,
   type StructuredData,
-} from 'fumadocs-core/mdx-plugins';
+} from 'nopends-core/mdx-plugins';
 import { createMDXSource, _runtime } from '@/runtime/index';
 import type { RuntimeAsync } from '@/runtime/types';
 
@@ -70,7 +70,7 @@ export const _runtimeAsync: RuntimeAsync = {
     return {
       docs: parsedDocs,
       meta: parsedMetas,
-      toFumadocsSource() {
+      toNopendsSource() {
         return createMDXSource(parsedDocs, parsedMetas);
       },
     } as any;

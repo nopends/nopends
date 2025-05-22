@@ -22,8 +22,8 @@ import {
 import type { RequestSchema } from '@/playground/index';
 import { Input, labelVariants } from '@/ui/components/input';
 import { getDefaultValue } from './get-default-values';
-import { cn } from 'fumadocs-ui/utils/cn';
-import { buttonVariants } from 'fumadocs-ui/components/ui/button';
+import { cn } from 'nopends-ui/utils/cn';
+import { buttonVariants } from 'nopends-ui/components/ui/button';
 import { combineSchema } from '@/utils/combine-schema';
 import { schemaToString } from '@/utils/schema-to-string';
 import {

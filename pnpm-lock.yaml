@@ -62,7 +62,7 @@ importers:
       '@ai-sdk/react':
         specifier: ^1.2.12
         version: 1.2.12(react@19.1.0)(zod@3.25.7)
-      '@fumadocs/mdx-remote':
+      '@nopends/mdx-remote':
         specifier: workspace:*
         version: link:../../packages/mdx-remote
       '@oramacloud/client':
@@ -89,27 +89,9 @@ importers:
       class-variance-authority:
         specifier: ^0.7.1
         version: 0.7.1
-      fumadocs-core:
-        specifier: workspace:*
-        version: link:../../packages/core
-      fumadocs-docgen:
-        specifier: workspace:^
-        version: link:../../packages/doc-gen
-      fumadocs-mdx:
-        specifier: workspace:*
-        version: link:../../packages/mdx
-      fumadocs-openapi:
-        specifier: workspace:^
-        version: link:../../packages/openapi
-      fumadocs-twoslash:
-        specifier: workspace:^
-        version: link:../../packages/twoslash
-      fumadocs-typescript:
-        specifier: workspace:^
-        version: link:../../packages/typescript
-      fumadocs-ui:
-        specifier: workspace:*
-        version: link:../../packages/ui
+      feed:
+        specifier: ^5.0.1
+        version: 5.0.1
       hast-util-to-jsx-runtime:
         specifier: ^2.3.6
         version: 2.3.6
@@ -128,6 +110,27 @@ importers:
       next-themes:
         specifier: ^0.4.6
         version: 0.4.6(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      nopends-core:
+        specifier: workspace:*
+        version: link:../../packages/core
+      nopends-docgen:
+        specifier: workspace:^
+        version: link:../../packages/doc-gen
+      nopends-mdx:
+        specifier: workspace:*
+        version: link:../../packages/mdx
+      nopends-openapi:
+        specifier: workspace:^
+        version: link:../../packages/openapi
+      nopends-twoslash:
+        specifier: workspace:^
+        version: link:../../packages/twoslash
+      nopends-typescript:
+        specifier: workspace:^
+        version: link:../../packages/typescript
+      nopends-ui:
+        specifier: workspace:*
+        version: link:../../packages/ui
       octokit:
         specifier: ^5.0.1
         version: 5.0.1
@@ -174,9 +177,6 @@ importers:
         specifier: ^3.25.7
         version: 3.25.7
     devDependencies:
-      '@fumadocs/cli':
-        specifier: workspace:*
-        version: link:../../packages/cli
       '@next/bundle-analyzer':
         specifier: 15.3.2
         version: 15.3.2
@@ -186,6 +186,9 @@ importers:
       '@next/eslint-plugin-next':
         specifier: 15.3.2
         version: 15.3.2
+      '@nopends/cli':
+        specifier: workspace:*
+        version: link:../../packages/cli
       '@tailwindcss/postcss':
         specifier: ^4.1.7
         version: 4.1.7
@@ -243,18 +246,18 @@ importers:
 
   examples/content-collections:
     dependencies:
-      '@fumadocs/content-collections':
+      '@nopends/content-collections':
         specifier: workspace:*
         version: link:../../packages/content-collections
-      fumadocs-core:
-        specifier: workspace:*
-        version: link:../../packages/core
-      fumadocs-ui:
-        specifier: workspace:*
-        version: link:../../packages/ui
       next:
         specifier: ^15.3.2
         version: 15.3.2(@babel/core@7.27.1)(@opentelemetry/api@1.9.0)(babel-plugin-macros@3.1.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      nopends-core:
+        specifier: workspace:*
+        version: link:../../packages/core
+      nopends-ui:
+        specifier: workspace:*
+        version: link:../../packages/ui
       react:
         specifier: 19.1.0
         version: 19.1.0
@@ -270,7 +273,7 @@ importers:
         version: 0.2.2(@content-collections/core@0.8.2(typescript@5.8.3))(acorn@8.14.1)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@content-collections/next':
         specifier: ^0.2.6
-        version: 0.2.6(@content-collections/core@0.8.2(typescript@5.8.3))(next@15.3.2(@babel/core@7.27.1)(@opentelemetry/api@1.9.0)(babel-plugin-macros@3.1.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))
+        version: 0.2.6(@content-collections/core@0.8.2(typescript@5.8.3))(next@15.3.2(@opentelemetry/api@1.9.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))
       '@types/mdx':
         specifier: ^2.0.13
         version: 2.0.13
@@ -289,18 +292,18 @@ importers:
       '@orama/tokenizers':
         specifier: ^3.1.6
         version: 3.1.7
-      fumadocs-core:
-        specifier: workspace:*
-        version: link:../../packages/core
-      fumadocs-mdx:
-        specifier: workspace:*
-        version: link:../../packages/mdx
-      fumadocs-ui:
-        specifier: workspace:*
-        version: link:../../packages/ui
       next:
         specifier: 15.3.2
         version: 15.3.2(@babel/core@7.27.1)(@opentelemetry/api@1.9.0)(babel-plugin-macros@3.1.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      nopends-core:
+        specifier: workspace:*
+        version: link:../../packages/core
+      nopends-mdx:
+        specifier: workspace:*
+        version: link:../../packages/mdx
+      nopends-ui:
+        specifier: workspace:*
+        version: link:../../packages/ui
       react:
         specifier: 19.1.0
         version: 19.1.0
@@ -323,18 +326,18 @@ importers:
 
   examples/next-mdx:
     dependencies:
-      fumadocs-core:
-        specifier: workspace:*
-        version: link:../../packages/core
-      fumadocs-mdx:
-        specifier: workspace:*
-        version: link:../../packages/mdx
-      fumadocs-ui:
-        specifier: workspace:*
-        version: link:../../packages/ui
       next:
         specifier: 15.3.2
         version: 15.3.2(@babel/core@7.27.1)(@opentelemetry/api@1.9.0)(babel-plugin-macros@3.1.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      nopends-core:
+        specifier: workspace:*
+        version: link:../../packages/core
+      nopends-mdx:
+        specifier: workspace:*
+        version: link:../../packages/mdx
+      nopends-ui:
+        specifier: workspace:*
+        version: link:../../packages/ui
       react:
         specifier: 19.1.0
         version: 19.1.0
@@ -366,21 +369,21 @@ importers:
 
   examples/openapi:
     dependencies:
-      fumadocs-core:
-        specifier: workspace:*
-        version: link:../../packages/core
-      fumadocs-mdx:
-        specifier: workspace:*
-        version: link:../../packages/mdx
-      fumadocs-openapi:
-        specifier: workspace:*
-        version: link:../../packages/openapi
-      fumadocs-ui:
-        specifier: workspace:*
-        version: link:../../packages/ui
       next:
         specifier: 15.3.2
         version: 15.3.2(@babel/core@7.27.1)(@opentelemetry/api@1.9.0)(babel-plugin-macros@3.1.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      nopends-core:
+        specifier: workspace:*
+        version: link:../../packages/core
+      nopends-mdx:
+        specifier: workspace:*
+        version: link:../../packages/mdx
+      nopends-openapi:
+        specifier: workspace:*
+        version: link:../../packages/openapi
+      nopends-ui:
+        specifier: workspace:*
+        version: link:../../packages/ui
       react:
         specifier: 19.1.0
         version: 19.1.0
@@ -415,21 +418,21 @@ importers:
 
   examples/python:
     dependencies:
-      fumadocs-core:
-        specifier: workspace:*
-        version: link:../../packages/core
-      fumadocs-mdx:
-        specifier: workspace:*
-        version: link:../../packages/mdx
-      fumadocs-python:
-        specifier: workspace:*
-        version: link:../../packages/python
-      fumadocs-ui:
-        specifier: workspace:*
-        version: link:../../packages/ui
       next:
         specifier: 15.3.2
         version: 15.3.2(@babel/core@7.27.1)(@opentelemetry/api@1.9.0)(babel-plugin-macros@3.1.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      nopends-core:
+        specifier: workspace:*
+        version: link:../../packages/core
+      nopends-mdx:
+        specifier: workspace:*
+        version: link:../../packages/mdx
+      nopends-python:
+        specifier: workspace:*
+        version: link:../../packages/python
+      nopends-ui:
+        specifier: workspace:*
+        version: link:../../packages/ui
       react:
         specifier: ^19.1.0
         version: 19.1.0
@@ -464,7 +467,7 @@ importers:
 
   examples/react-router:
     dependencies:
-      '@fumadocs/mdx-remote':
+      '@nopends/mdx-remote':
         specifier: workspace:*
         version: link:../../packages/mdx-remote
       '@react-router/node':
@@ -473,18 +476,18 @@ importers:
       '@react-router/serve':
         specifier: ^7.6.0
         version: 7.6.0(react-router@7.6.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(typescript@5.8.3)
-      fumadocs-core:
-        specifier: workspace:*
-        version: link:../../packages/core
-      fumadocs-ui:
-        specifier: workspace:*
-        version: link:../../packages/ui
       gray-matter:
         specifier: ^4.0.3
         version: 4.0.3
       isbot:
         specifier: ^5.1.28
         version: 5.1.28
+      nopends-core:
+        specifier: workspace:*
+        version: link:../../packages/core
+      nopends-ui:
+        specifier: workspace:*
+        version: link:../../packages/ui
       react:
         specifier: ^19.1.0
         version: 19.1.0
@@ -531,18 +534,18 @@ importers:
 
   examples/remote-mdx:
     dependencies:
-      '@fumadocs/mdx-remote':
+      '@nopends/mdx-remote':
         specifier: workspace:*
         version: link:../../packages/mdx-remote
-      fumadocs-core:
-        specifier: workspace:*
-        version: link:../../packages/core
-      fumadocs-ui:
-        specifier: workspace:*
-        version: link:../../packages/ui
       next:
         specifier: 15.3.2
         version: 15.3.2(@babel/core@7.27.1)(@opentelemetry/api@1.9.0)(babel-plugin-macros@3.1.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      nopends-core:
+        specifier: workspace:*
+        version: link:../../packages/core
+      nopends-ui:
+        specifier: workspace:*
+        version: link:../../packages/ui
       react:
         specifier: 19.1.0
         version: 19.1.0
@@ -568,7 +571,7 @@ importers:
 
   examples/tanstack-start:
     dependencies:
-      '@fumadocs/mdx-remote':
+      '@nopends/mdx-remote':
         specifier: workspace:*
         version: link:../../packages/mdx-remote
       '@tanstack/react-router':
@@ -577,15 +580,15 @@ importers:
       '@tanstack/react-start':
         specifier: ^1.120.3
         version: 1.120.5(@tanstack/react-router@1.120.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(@types/node@22.15.19)(babel-plugin-macros@3.1.0)(db0@0.3.2)(ioredis@5.6.1)(jiti@2.4.2)(lightningcss@1.30.1)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(terser@5.39.2)(tsx@4.19.4)(vite@6.3.5(@types/node@22.15.19)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.39.2)(tsx@4.19.4)(yaml@2.8.0))(webpack@5.99.9(esbuild@0.25.4))(yaml@2.8.0)
-      fumadocs-core:
-        specifier: workspace:*
-        version: link:../../packages/core
-      fumadocs-ui:
-        specifier: workspace:*
-        version: link:../../packages/ui
       gray-matter:
         specifier: ^4.0.3
         version: 4.0.3
+      nopends-core:
+        specifier: workspace:*
+        version: link:../../packages/core
+      nopends-ui:
+        specifier: workspace:*
+        version: link:../../packages/ui
       react:
         specifier: ^19.1.0
         version: 19.1.0
@@ -675,7 +678,7 @@ importers:
       eslint-config-custom:
         specifier: workspace:*
         version: link:../eslint-config-custom
-      fumadocs-core:
+      nopends-core:
         specifier: workspace:*
         version: link:../core
       tsconfig:
@@ -850,7 +853,7 @@ importers:
         version: 0.2.2(@content-collections/core@0.8.2(typescript@5.8.3))(acorn@8.14.1)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@content-collections/next':
         specifier: ^0.2.6
-        version: 0.2.6(@content-collections/core@0.8.2(typescript@5.8.3))(next@15.3.2(@babel/core@7.27.1)(@opentelemetry/api@1.9.0)(babel-plugin-macros@3.1.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))
+        version: 0.2.6(@content-collections/core@0.8.2(typescript@5.8.3))(next@15.3.2(@opentelemetry/api@1.9.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))
       '@react-router/dev':
         specifier: ^7.6.0
         version: 7.6.0(@react-router/serve@7.6.0(react-router@7.6.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(typescript@5.8.3))(@types/node@22.15.19)(babel-plugin-macros@3.1.0)(jiti@2.4.2)(lightningcss@1.30.1)(react-router@7.6.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(terser@5.39.2)(tsx@4.19.4)(typescript@5.8.3)(vite@6.3.5(@types/node@22.15.19)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.39.2)(tsx@4.19.4)(yaml@2.8.0))(yaml@2.8.0)
@@ -1035,7 +1038,7 @@ importers:
         specifier: ^3.25.7
         version: 3.25.7
     devDependencies:
-      '@fumadocs/mdx-remote':
+      '@nopends/mdx-remote':
         specifier: workspace:*
         version: link:../mdx-remote
       '@types/cross-spawn':
@@ -1056,15 +1059,15 @@ importers:
       eslint-config-custom:
         specifier: workspace:*
         version: link:../eslint-config-custom
-      fumadocs-core:
-        specifier: workspace:*
-        version: link:../core
       mdast-util-mdx-jsx:
         specifier: ^3.2.0
         version: 3.2.0
       next:
         specifier: ^15.3.2
         version: 15.3.2(@babel/core@7.27.1)(@opentelemetry/api@1.9.0)(babel-plugin-macros@3.1.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      nopends-core:
+        specifier: workspace:*
+        version: link:../core
       tsconfig:
         specifier: workspace:*
         version: link:../tsconfig
@@ -1105,7 +1108,7 @@ importers:
       eslint-config-custom:
         specifier: workspace:*
         version: link:../eslint-config-custom
-      fumadocs-core:
+      nopends-core:
         specifier: workspace:*
         version: link:../core
       tinyglobby:
@@ -1144,12 +1147,6 @@ importers:
       class-variance-authority:
         specifier: ^0.7.1
         version: 0.7.1
-      fumadocs-core:
-        specifier: workspace:*
-        version: link:../core
-      fumadocs-ui:
-        specifier: workspace:*
-        version: link:../ui
       github-slugger:
         specifier: ^2.0.0
         version: 2.0.0
@@ -1162,6 +1159,12 @@ importers:
       next-themes:
         specifier: ^0.4.6
         version: 0.4.6(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      nopends-core:
+        specifier: workspace:*
+        version: link:../core
+      nopends-ui:
+        specifier: workspace:*
+        version: link:../ui
       openapi-sampler:
         specifier: ^1.6.1
         version: 1.6.1
@@ -1248,15 +1251,15 @@ importers:
       eslint-config-custom:
         specifier: workspace:*
         version: link:../eslint-config-custom
-      fumadocs-core:
-        specifier: workspace:*
-        version: link:../core
-      fumadocs-ui:
-        specifier: workspace:*
-        version: link:../ui
       lucide-react:
         specifier: ^0.511.0
         version: 0.511.0(react@19.1.0)
+      nopends-core:
+        specifier: workspace:*
+        version: link:../core
+      nopends-ui:
+        specifier: workspace:*
+        version: link:../ui
       tsconfig:
         specifier: workspace:*
         version: link:../tsconfig
@@ -1305,7 +1308,7 @@ importers:
       eslint-config-custom:
         specifier: workspace:*
         version: link:../eslint-config-custom
-      fumadocs-ui:
+      nopends-ui:
         specifier: workspace:*
         version: link:../ui
       shiki:
@@ -1369,10 +1372,10 @@ importers:
       eslint-config-custom:
         specifier: workspace:*
         version: link:../eslint-config-custom
-      fumadocs-core:
+      nopends-core:
         specifier: workspace:*
         version: link:../core
-      fumadocs-ui:
+      nopends-ui:
         specifier: workspace:*
         version: link:../ui
       tsconfig:
@@ -1420,15 +1423,15 @@ importers:
       class-variance-authority:
         specifier: ^0.7.1
         version: 0.7.1
-      fumadocs-core:
-        specifier: workspace:*
-        version: link:../core
       lodash.merge:
         specifier: ^4.6.2
         version: 4.6.2
       next-themes:
         specifier: ^0.4.6
         version: 0.4.6(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      nopends-core:
+        specifier: workspace:*
+        version: link:../core
       postcss-selector-parser:
         specifier: ^7.1.0
         version: 7.1.0
@@ -1448,12 +1451,12 @@ importers:
         specifier: ^3.3.0
         version: 3.3.0
     devDependencies:
-      '@fumadocs/cli':
-        specifier: workspace:*
-        version: link:../cli
       '@next/eslint-plugin-next':
         specifier: ^15.3.2
         version: 15.3.2
+      '@nopends/cli':
+        specifier: workspace:*
+        version: link:../cli
       '@tailwindcss/cli':
         specifier: ^4.1.7
         version: 4.1.7
@@ -6184,6 +6187,10 @@ packages:
   fecha@4.2.3:
     resolution: {integrity: sha512-OP2IUU6HeYKJi3i0z4A19kHMQoLVs4Hc+DPqqxI2h/DPZHTm/vjsfC6P0b4jCMy14XizLBqvndQ+UilD7707Jw==}
 
+  feed@5.0.1:
+    resolution: {integrity: sha512-kOveKLHucVZ6RI91bdWAts9O0L1N2mGzRGVCDQPRnHh4HmgqLdN66Cp/5dMeJZGn/qnBslWliwX37FEBq8DCIA==}
+    engines: {node: '>=20', pnpm: '>=10'}
+
   fetch-blob@3.2.0:
     resolution: {integrity: sha512-7yAQpD2UMJzLi1Dqv7qFYnPbaPx7ZfFK6PiIxQ4PfkGPyNyl2Ugx+a/umUonmKqjhM4DnfbMvdX6otXq83soQQ==}
     engines: {node: ^12.20 || >= 14.13}
@@ -10707,7 +10714,7 @@ snapshots:
       - acorn
       - supports-color
 
-  '@content-collections/next@0.2.6(@content-collections/core@0.8.2(typescript@5.8.3))(next@15.3.2(@babel/core@7.27.1)(@opentelemetry/api@1.9.0)(babel-plugin-macros@3.1.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))':
+  '@content-collections/next@0.2.6(@content-collections/core@0.8.2(typescript@5.8.3))(next@15.3.2(@opentelemetry/api@1.9.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))':
     dependencies:
       '@content-collections/core': 0.8.2(typescript@5.8.3)
       '@content-collections/integrations': 0.2.1(@content-collections/core@0.8.2(typescript@5.8.3))
@@ -15971,6 +15978,10 @@ snapshots:
       picomatch: 4.0.2
 
   fecha@4.2.3: {}
+
+  feed@5.0.1:
+    dependencies:
+      xml-js: 1.6.11
 
   fetch-blob@3.2.0:
     dependencies:

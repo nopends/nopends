@@ -10,25 +10,25 @@ import {
   useState,
 } from 'react';
 import { ChevronDown, ChevronLeft, ChevronRight } from 'lucide-react';
-import Link from 'fumadocs-core/link';
+import Link from 'nopends-core/link';
 import { cn } from '@/utils/cn';
 import { useI18n } from './contexts/i18n';
 import { useTreeContext, useTreePath } from './contexts/tree';
-import type { PageTree, TOCItemType } from 'fumadocs-core/server';
-import { createContext, usePathname } from 'fumadocs-core/framework';
+import type { PageTree, TOCItemType } from 'nopends-core/server';
+import { createContext, usePathname } from 'nopends-core/framework';
 import {
   type BreadcrumbOptions,
   getBreadcrumbItemsFromPath,
-} from 'fumadocs-core/breadcrumb';
+} from 'nopends-core/breadcrumb';
 import { useNav, usePageStyles } from '@/contexts/layout';
 import { isActive } from '@/utils/is-active';
-import { useEffectEvent } from 'fumadocs-core/utils/use-effect-event';
+import { useEffectEvent } from 'nopends-core/utils/use-effect-event';
 import {
   Collapsible,
   CollapsibleContent,
   CollapsibleTrigger,
 } from '@/components/ui/collapsible';
-import * as Primitive from 'fumadocs-core/toc';
+import * as Primitive from 'nopends-core/toc';
 
 const TocPopoverContext = createContext<{
   open: boolean;

@@ -29,9 +29,9 @@ export const { GET, HEAD, PUT, POST, PATCH, DELETE } = openapi.createProxy();
 And enable the proxy from `createOpenAPI`.
 
 ```ts title="lib/source.ts"
-import { createOpenAPI } from 'fumadocs-openapi/server';
+import { createOpenAPI } from 'nopends-openapi/server';
 
 export const openapi = createOpenAPI({
-  proxyUrl: '/api/proxy',
+  proxyUrl: '/api/proxy', // [!code ++]
 });
 ```

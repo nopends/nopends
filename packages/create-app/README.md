@@ -1,11 +1,11 @@
-# Create Fumadocs App
+# Create Nopends App
 
-A CLI tool to create new Next.js documentation sites with Fumadocs.
+A CLI tool to create new Next.js documentation sites with Nopends.
 
 ```bash
-npx create-fumadocs-app
+npx create-nopends-app
 #or
-pnpm create fumadocs-app
+pnpm create nopends-app
 #or
-yarn create fumadocs-app
+yarn create nopends-app
 ```

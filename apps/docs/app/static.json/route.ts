@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 import { source } from '@/lib/source';
-import type { OramaDocument } from 'fumadocs-core/search/orama-cloud';
+import type { OramaDocument } from 'nopends-core/search/orama-cloud';
 
 export const revalidate = false;
 

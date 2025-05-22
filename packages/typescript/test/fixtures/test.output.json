@@ -63,7 +63,7 @@
         "name": "name",
         "description": "The name of player",
         "tags": {
-          "see": "https://fumadocs.vercel.app",
+          "see": "https://docs.nopends.com",
           "defaultValue": "Henry"
         },
         "type": "string",

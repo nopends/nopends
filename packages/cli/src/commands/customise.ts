@@ -13,7 +13,7 @@ import type { Config } from '@/config';
 import { install } from '@/commands/add';
 
 export async function customise(resolver: Resolver, config: Config) {
-  intro(picocolors.bgBlack(picocolors.whiteBright('Customise Fumadocs UI')));
+  intro(picocolors.bgBlack(picocolors.whiteBright('Customise Nopends UI')));
 
   const result = await group(
     {
@@ -100,11 +100,11 @@ export async function customise(resolver: Resolver, config: Config) {
         picocolors.dim('---'),
         'Open your `layout.tsx` files, replace the imports of components:',
         picocolors.greenBright(
-          '`fumadocs-ui/layouts/docs` -> `@/components/layouts/docs`',
+          '`nopends-ui/layouts/docs` -> `@/components/layouts/docs`',
         ),
         pageAdded
           ? picocolors.greenBright(
-              '`fumadocs-ui/page` -> `@/components/layouts/page`',
+              '`nopends-ui/page` -> `@/components/layouts/page`',
             )
           : '',
       ].join('\n'),
@@ -121,7 +121,7 @@ export async function customise(resolver: Resolver, config: Config) {
         picocolors.dim('---'),
         'Open your `layout.tsx` files, replace the imports of components:',
         picocolors.greenBright(
-          '`fumadocs-ui/layouts/home` -> `@/components/layouts/home`',
+          '`nopends-ui/layouts/home` -> `@/components/layouts/home`',
         ),
       ].join('\n'),
     );

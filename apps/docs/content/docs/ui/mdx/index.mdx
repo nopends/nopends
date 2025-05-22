@@ -8,7 +8,7 @@ description: Default MDX Components
 The default MDX components include Cards, Callouts, Code Blocks and Headings.
 
 ```ts
-import defaultMdxComponents from 'fumadocs-ui/mdx';
+import defaultMdxComponents from 'nopends-ui/mdx';
 ```
 
 ### Relative Link
@@ -16,7 +16,7 @@ import defaultMdxComponents from 'fumadocs-ui/mdx';
 To support links with relative file path in `href`, override the default `a` component with:
 
 ```tsx title="app/docs/[[...slug]]/page.tsx"
-import { createRelativeLink } from 'fumadocs-ui/mdx';
+import { createRelativeLink } from 'nopends-ui/mdx';
 import { source } from '@/lib/source';
 import { getMDXComponents } from '@/mdx-components';
 

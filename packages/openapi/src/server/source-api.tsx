@@ -1,4 +1,4 @@
-import type { BuildPageTreeOptions } from 'fumadocs-core/source';
+import type { BuildPageTreeOptions } from 'nopends-core/source';
 import { MethodLabel } from '@/ui/components/method-label';
 
 /**

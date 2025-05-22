@@ -1,16 +1,16 @@
 {
-  "name": "fumadocs-docgen",
-  "version": "2.0.0",
+  "name": "nopends-docgen",
+  "version": "2.0.1-alpha.0",
   "description": "Useful remark utilities and plugins",
   "keywords": [
     "NextJs",
-    "fumadocs",
+    "nopends",
     "remark",
     "mdx",
     "Docs"
   ],
-  "homepage": "https://fumadocs.vercel.app",
-  "repository": "github:fuma-nama/fumadocs",
+  "homepage": "https://docs.nopends.com",
+  "repository": "github:nopends/nopends",
   "license": "MIT",
   "author": "Fuma Nama",
   "type": "module",

@@ -1,6 +1,6 @@
-import { createMDXSource } from 'fumadocs-mdx';
-import { loader } from 'fumadocs-core/source';
-import { attachFile, createOpenAPI } from 'fumadocs-openapi/server';
+import { createMDXSource } from 'nopends-mdx';
+import { loader } from 'nopends-core/source';
+import { attachFile, createOpenAPI } from 'nopends-openapi/server';
 import { docs, meta } from '@/.source';
 
 export const source = loader({

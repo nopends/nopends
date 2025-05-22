@@ -1,6 +1,6 @@
 'use client';
-import type { TOCItemType } from 'fumadocs-core/server';
-import * as Primitive from 'fumadocs-core/toc';
+import type { TOCItemType } from 'nopends-core/server';
+import * as Primitive from 'nopends-core/toc';
 import { useEffect, useRef, useState } from 'react';
 import { cn } from '@/utils/cn';
 import { TocThumb } from '@/components/layout/toc-thumb';

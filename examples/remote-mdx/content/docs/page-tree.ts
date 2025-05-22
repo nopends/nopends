@@ -1,4 +1,4 @@
-import { PageTree } from 'fumadocs-core/server';
+import { PageTree } from 'nopends-core/server';
 
 export default {
   name: 'Docs',

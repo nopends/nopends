@@ -7,13 +7,13 @@
     "dev": "next dev --turbo",
     "start": "next start",
     "build:docs": "node ./scripts/generate-docs.mjs",
-    "python:generate": "pip3 install ./node_modules/fumadocs-python && fumapy-generate httpx"
+    "python:generate": "pip3 install ./node_modules/nopends-python && fumapy-generate httpx"
   },
   "dependencies": {
-    "fumadocs-core": "workspace:*",
-    "fumadocs-mdx": "workspace:*",
-    "fumadocs-python": "workspace:*",
-    "fumadocs-ui": "workspace:*",
+    "nopends-core": "workspace:*",
+    "nopends-mdx": "workspace:*",
+    "nopends-python": "workspace:*",
+    "nopends-ui": "workspace:*",
     "next": "15.3.2",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"

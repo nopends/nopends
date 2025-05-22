@@ -1,4 +1,12 @@
-# fumadocs-twoslash
+# nopends-twoslash
+
+## 3.1.4-alpha.0
+
+### Patch Changes
+
+- 9667375: add alpha
+- Updated dependencies [9667375]
+  - nopends-ui@15.3.5-alpha.0
 
 ## 3.1.3
 
@@ -7,7 +15,7 @@
 - 721c927: Lazy load twoslasher
 - 3372792: Support line numbers in codeblock
 - Updated dependencies [3372792]
-  - fumadocs-ui@15.3.1
+  - nopends-ui@15.3.1
 
 ## 3.1.2
 
@@ -16,7 +24,7 @@
 - 81fe2c2: Remove the need for placeholder lines
 - Updated dependencies [52b5ad8]
 - Updated dependencies [abce713]
-  - fumadocs-ui@15.3.0
+  - nopends-ui@15.3.0
 
 ## 3.1.1
 
@@ -26,18 +34,18 @@
 - Updated dependencies [eb18da9]
 - Updated dependencies [085e39f]
 - Updated dependencies [4d50bcf]
-  - fumadocs-ui@15.2.7
+  - nopends-ui@15.2.7
 
 ## 3.1.0
 
 ### Minor Changes
 
-- b49d236: Support `typesCache` option and `fumadocs-twoslash/cache-fs` similar to Vitepress
+- b49d236: Support `typesCache` option and `nopends-twoslash/cache-fs` similar to Vitepress
 
 ### Patch Changes
 
 - Updated dependencies [6bc033a]
-  - fumadocs-ui@15.0.14
+  - nopends-ui@15.0.14
 
 ## 3.0.1
 
@@ -47,27 +55,27 @@
 - Updated dependencies [7608f4e]
 - Updated dependencies [89ff3ae]
 - Updated dependencies [16c8944]
-  - fumadocs-ui@15.0.13
+  - nopends-ui@15.0.13
 
 ## 3.0.0
 
 ### Major Changes
 
-- a89d6e0: Require Fumadocs v15 & Tailwind CSS v4
+- a89d6e0: Require Nopends v15 & Tailwind CSS v4
 
 ### Patch Changes
 
 - Updated dependencies [a89d6e0]
 - Updated dependencies [a84f37a]
 - Updated dependencies [f2f9c3d]
-  - fumadocs-ui@15.0.0
+  - nopends-ui@15.0.0
 
 ## 2.0.3
 
 ### Patch Changes
 
 - b9601fb: Update Shiki
-  - fumadocs-ui@14.7.6
+  - nopends-ui@14.7.6
 
 ## 2.0.2
 
@@ -79,39 +87,39 @@
 - Updated dependencies [bebb16b]
 - Updated dependencies [9585561]
 - Updated dependencies [4766292]
-  - fumadocs-ui@14.6.0
+  - nopends-ui@14.6.0
 
 ## 2.0.1
 
 ### Patch Changes
 
 - d6d290c: Upgrade Shiki
-  - fumadocs-ui@14.1.0
+  - nopends-ui@14.1.0
 
 ## 2.0.0
 
 ### Major Changes
 
-- 9a10262: **Move Twoslash UI components to `fumadocs-twoslash`**
+- 9a10262: **Move Twoslash UI components to `nopends-twoslash`**
 
-  **why:** Isolate logic from Fumadocs UI
+  **why:** Isolate logic from Nopends UI
 
   **migrate:**
 
   Before:
 
   ```ts
-  import 'fumadocs-ui/twoslash.css';
+  import 'nopends-ui/twoslash.css';
 
-  import { Popup } from 'fumadocs-ui/twoslash/popup';
+  import { Popup } from 'nopends-ui/twoslash/popup';
   ```
 
   After:
 
   ```ts
-  import 'fumadocs-twoslash/twoslash.css';
+  import 'nopends-twoslash/twoslash.css';
 
-  import { Popup } from 'fumadocs-twoslash/ui';
+  import { Popup } from 'nopends-twoslash/ui';
   ```
 
   **Tailwind CSS is now required for Twoslash integration.**
@@ -138,7 +146,7 @@
 - Updated dependencies [d9e908e]
 - Updated dependencies [be820c4]
 - Updated dependencies [be53a0e]
-  - fumadocs-ui@14.0.0
+  - nopends-ui@14.0.0
 
 ## 1.1.3
 
@@ -148,7 +156,7 @@
 - Updated dependencies [0c251e5]
 - Updated dependencies [0c251e5]
 - Updated dependencies [0c251e5]
-  - fumadocs-ui@13.4.2
+  - nopends-ui@13.4.2
 
 ## 1.1.2
 
@@ -159,13 +167,13 @@
 - Updated dependencies [32ca37a]
 - Updated dependencies [9aae448]
 - Updated dependencies [c542561]
-  - fumadocs-ui@13.3.0
+  - nopends-ui@13.3.0
 
 ## 1.1.1
 
 ### Patch Changes
 
-- 6ed95ea: Fix compatibility issues with Fumadocs UI v13
+- 6ed95ea: Fix compatibility issues with Nopends UI v13
 - Updated dependencies [89190ae]
 - Updated dependencies [b02eebf]
 - Updated dependencies [f868018]
@@ -180,7 +188,7 @@
 - Updated dependencies [89190ae]
 - Updated dependencies [b02eebf]
 - Updated dependencies [4373231]
-  - fumadocs-ui@13.0.0
+  - nopends-ui@13.0.0
 
 ## 1.1.0
 

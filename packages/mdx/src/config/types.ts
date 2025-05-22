@@ -1,6 +1,6 @@
 import type { MDXProps } from 'mdx/types';
-import type { StructuredData } from 'fumadocs-core/mdx-plugins';
-import type { TableOfContents } from 'fumadocs-core/server';
+import type { StructuredData } from 'nopends-core/mdx-plugins';
+import type { TableOfContents } from 'nopends-core/server';
 import { type DefaultMDXOptions } from '@/utils/mdx-options';
 import type { FC } from 'react';
 

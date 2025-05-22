@@ -16,7 +16,7 @@ export type ProcessedDocument = {
 const cache = new Map<string, ProcessedDocument>();
 
 /**
- * process & reference input document to a Fumadocs OpenAPI compatible format
+ * process & reference input document to a Nopends OpenAPI compatible format
  */
 export async function processDocument(
   document: DocumentInput,
@@ -31,6 +31,12 @@ export async function processDocument(
   const loaded = await load(document, {
     plugins: [readFiles(), fetchUrls()],
   });
+
+  if (loaded.errors && loaded.errors.length > 0) {
+    throw new Error(
+      loaded.errors.map((err) => `${err.code}: ${err.message}`).join('\n'),
+    );
+  }
 
   // upgrade
   loaded.specification = upgrade(loaded.specification).specification;

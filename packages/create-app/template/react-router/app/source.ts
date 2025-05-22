@@ -4,7 +4,7 @@ import {
   type PageData,
   type Source,
   type VirtualFile,
-} from 'fumadocs-core/source';
+} from 'nopends-core/source';
 import matter from 'gray-matter';
 import * as path from 'node:path';
 

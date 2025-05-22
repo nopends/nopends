@@ -9,7 +9,7 @@ import {
   useState,
 } from 'react';
 import { useApiContext, useServerSelectContext } from '@/ui/contexts/api';
-import { DynamicCodeBlock } from 'fumadocs-ui/components/dynamic-codeblock';
+import { DynamicCodeBlock } from 'nopends-ui/components/dynamic-codeblock';
 import type { CodeSample } from '@/render/operation';
 import type { SamplesProps } from '@/render/renderer';
 import {
@@ -19,7 +19,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@/ui/components/select';
-import { useEffectEvent } from 'fumadocs-core/utils/use-effect-event';
+import { useEffectEvent } from 'nopends-core/utils/use-effect-event';
 import { getUrl } from '@/utils/server-url';
 import type { RequestData } from '@/requests/_shared';
 import { defaultSamples } from '@/requests';

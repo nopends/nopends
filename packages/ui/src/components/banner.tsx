@@ -23,7 +23,7 @@ export function Banner({
   variant?: 'rainbow' | 'normal';
 
   /**
-   * Change Fumadocs layout styles
+   * Change Nopends layout styles
    *
    * @defaultValue true
    */

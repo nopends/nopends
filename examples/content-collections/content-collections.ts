@@ -3,7 +3,7 @@ import {
   createMetaSchema,
   createDocSchema,
   transformMDX,
-} from '@fumadocs/content-collections/configuration';
+} from '@nopends/content-collections/configuration';
 
 const docs = defineCollection({
   name: 'docs',

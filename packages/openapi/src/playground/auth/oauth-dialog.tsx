@@ -11,8 +11,8 @@ import { useForm } from 'react-hook-form';
 import { Input, labelVariants } from '@/ui/components/input';
 import { useQuery } from '@/utils/use-query';
 import { useEffect, useState } from 'react';
-import { cn } from 'fumadocs-ui/utils/cn';
-import { buttonVariants } from 'fumadocs-ui/components/ui/button';
+import { cn } from 'nopends-ui/utils/cn';
+import { buttonVariants } from 'nopends-ui/components/ui/button';
 
 export interface AuthDialogProps {
   flow: keyof OpenAPIV3_1.OAuth2SecurityScheme['flows'];

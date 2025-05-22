@@ -6,14 +6,14 @@ description: Generate code blocks for installing packages
 ## Usage
 
 ```package-install
-fumadocs-docgen
+nopends-docgen
 ```
 
 Add the remark plugin.
 
-```ts title="source.config.ts" tab="Fumadocs MDX"
-import { remarkInstall } from 'fumadocs-docgen';
-import { defineConfig } from 'fumadocs-mdx/config';
+```ts title="source.config.ts" tab="Nopends MDX"
+import { remarkInstall } from 'nopends-docgen';
+import { defineConfig } from 'nopends-mdx/config';
 
 export default defineConfig({
   mdxOptions: {
@@ -24,7 +24,7 @@ export default defineConfig({
 
 ```ts tab="MDX Compiler"
 import { compile } from '@mdx-js/mdx';
-import { remarkInstall } from 'fumadocs-docgen';
+import { remarkInstall } from 'nopends-docgen';
 
 await compile('...', {
   remarkPlugins: [remarkInstall],
@@ -33,9 +33,9 @@ await compile('...', {
 
 Define the required components.
 
-```tsx title="mdx-components.tsx (Fumadocs UI)"
-import { Tab, Tabs } from 'fumadocs-ui/components/tabs';
-import defaultComponents from 'fumadocs-ui/mdx';
+```tsx title="mdx-components.tsx (Nopends UI)"
+import { Tab, Tabs } from 'nopends-ui/components/tabs';
+import defaultComponents from 'nopends-ui/mdx';
 import type { MDXComponents } from 'mdx/types';
 
 export function getMDXComponents(components?: MDXComponents): MDXComponents {
@@ -86,11 +86,11 @@ my-package
 
 ### Persistent
 
-When using with Fumadocs UI, you can enable persistent with the `persist` option.
+When using with Nopends UI, you can enable persistent with the `persist` option.
 
-```ts title="source.config.ts" tab="Fumadocs MDX"
-import { remarkInstall } from 'fumadocs-docgen';
-import { defineConfig } from 'fumadocs-mdx/config';
+```ts title="source.config.ts" tab="Nopends MDX"
+import { remarkInstall } from 'nopends-docgen';
+import { defineConfig } from 'nopends-mdx/config';
 
 const remarkInstallOptions = {
   persist: {
@@ -107,7 +107,7 @@ export default defineConfig({
 
 ```ts tab="MDX Compiler"
 import { compile } from '@mdx-js/mdx';
-import { remarkInstall } from 'fumadocs-docgen';
+import { remarkInstall } from 'nopends-docgen';
 
 const remarkInstallOptions = {
   persist: {

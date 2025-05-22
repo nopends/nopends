@@ -1,13 +1,13 @@
 import type { ReactNode } from 'react';
-import { HomeLayout } from 'fumadocs-ui/layouts/home';
+import { HomeLayout } from 'nopends-ui/layouts/home';
 import { baseOptions, linkItems } from '@/app/layout.config';
 import {
   NavbarMenu,
   NavbarMenuContent,
   NavbarMenuLink,
   NavbarMenuTrigger,
-} from 'fumadocs-ui/layouts/home/navbar';
-import Link from 'fumadocs-core/link';
+} from 'nopends-ui/layouts/home/navbar';
+import Link from 'nopends-core/link';
 import Image from 'next/image';
 import Preview from '@/public/banner.png';
 import { Book, ComponentIcon, Pencil, PlusIcon, Server } from 'lucide-react';
@@ -57,7 +57,7 @@ export default function Layout({ children }: { children: ReactNode }) {
                   </div>
                   <p className="font-medium">Getting Started</p>
                   <p className="text-fd-muted-foreground text-sm">
-                    Learn to use Fumadocs on your docs site.
+                    Learn to use Nopends on your docs site.
                   </p>
                 </NavbarMenuLink>
 
@@ -91,7 +91,7 @@ export default function Layout({ children }: { children: ReactNode }) {
                   <Pencil className="bg-fd-primary text-fd-primary-foreground p-1 mb-2 rounded-md" />
                   <p className="font-medium">Markdown</p>
                   <p className="text-fd-muted-foreground text-sm">
-                    Learn the writing format/syntax of Fumadocs.
+                    Learn the writing format/syntax of Nopends.
                   </p>
                 </NavbarMenuLink>
 
@@ -102,7 +102,7 @@ export default function Layout({ children }: { children: ReactNode }) {
                   <PlusIcon className="bg-fd-primary text-fd-primary-foreground p-1 mb-2 rounded-md" />
                   <p className="font-medium">Manual Installation</p>
                   <p className="text-fd-muted-foreground text-sm">
-                    Setup Fumadocs for your existing Next.js app.
+                    Setup Nopends for your existing Next.js app.
                   </p>
                 </NavbarMenuLink>
               </NavbarMenuContent>
@@ -124,7 +124,7 @@ function Footer() {
     <footer className="mt-auto border-t bg-fd-card py-12 text-fd-secondary-foreground">
       <div className="container flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
         <div>
-          <p className="mb-1 text-sm font-semibold">Fumadocs</p>
+          <p className="mb-1 text-sm font-semibold">Nopends</p>
           <p className="text-xs">
             Built with ❤️ by{' '}
             <a

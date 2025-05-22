@@ -3,7 +3,7 @@ import { createHash } from 'node:crypto';
 import path from 'node:path';
 
 export function createCache() {
-  const dir = path.join(process.cwd(), '.next/fumadocs-typescript');
+  const dir = path.join(process.cwd(), '.next/nopends-typescript');
   try {
     fs.mkdirSync(dir, { recursive: true });
   } catch {

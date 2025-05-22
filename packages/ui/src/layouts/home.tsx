@@ -22,7 +22,7 @@ import {
   LanguageToggleText,
 } from '@/components/layout/language-toggle';
 import { ChevronDown, Languages } from 'lucide-react';
-import Link from 'fumadocs-core/link';
+import Link from 'nopends-core/link';
 import {
   Menu,
   MenuContent,

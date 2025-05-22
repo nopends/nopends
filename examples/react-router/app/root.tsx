@@ -6,8 +6,8 @@ import {
   Scripts,
   ScrollRestoration,
 } from 'react-router';
-import { RootProvider } from 'fumadocs-ui/provider/base';
-import { ReactRouterProvider } from 'fumadocs-core/framework/react-router';
+import { RootProvider } from 'nopends-ui/provider/base';
+import { ReactRouterProvider } from 'nopends-core/framework/react-router';
 import type { Route } from './+types/root';
 import './app.css';
 

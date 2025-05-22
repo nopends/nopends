@@ -1,16 +1,16 @@
 ---
 title: Themes
-description: Add Theme to Fumadocs UI
+description: Add Theme to Nopends UI
 ---
 
 ## Usage
 
-Only Tailwind CSS v4 is supported, the preset will also include source to Fumadocs UI itself:
+Only Tailwind CSS v4 is supported, the preset will also include source to Nopends UI itself:
 
 ```css title="Tailwind CSS"
 @import 'tailwindcss';
-@import 'fumadocs-ui/css/neutral.css';
-@import 'fumadocs-ui/css/preset.css';
+@import 'nopends-ui/css/neutral.css';
+@import 'nopends-ui/css/preset.css';
 ```
 
 ### Preflight Changes
@@ -20,7 +20,7 @@ colors will be changed.
 
 ### Light/Dark Modes
 
-Fumadocs supports light/dark modes with [`next-themes`](https://github.com/pacocoursey/next-themes), it is included in Root Provider.
+Nopends supports light/dark modes with [`next-themes`](https://github.com/pacocoursey/next-themes), it is included in Root Provider.
 
 See [Root Provider](/docs/ui/layouts/root-provider#theme-provider) to learn more.
 
@@ -31,7 +31,7 @@ RTL (Right-to-left) layout is supported.
 To enable RTL, set the `dir` prop to `rtl` in body and root provider (required for Radix UI).
 
 ```tsx
-import { RootProvider } from 'fumadocs-ui/provider';
+import { RootProvider } from 'nopends-ui/provider';
 import type { ReactNode } from 'react';
 
 export default function RootLayout({ children }: { children: ReactNode }) {
@@ -59,15 +59,15 @@ Customise the max width of docs layout with CSS Variables.
 
 ## Tailwind CSS Preset
 
-Fumadocs UI adds its own colors, animations, and utilities with Tailwind CSS preset.
+Nopends UI adds its own colors, animations, and utilities with Tailwind CSS preset.
 
 ### Colors
 
 It comes with many themes out-of-the-box, you can pick one you prefer.
 
 ```css
-@import 'fumadocs-ui/css/<theme>.css';
-@import 'fumadocs-ui/css/preset.css';
+@import 'nopends-ui/css/<theme>.css';
+@import 'nopends-ui/css/preset.css';
 ```
 
 <Tabs items={['neutral', 'black', 'vitepress', 'dusk', 'catppuccin', 'ocean', 'purple']}>
@@ -133,8 +133,8 @@ It uses colors from your Shadcn UI theme.
 
 ```css
 @import 'tailwindcss';
-@import 'fumadocs-ui/css/shadcn.css';
-@import 'fumadocs-ui/css/preset.css';
+@import 'nopends-ui/css/shadcn.css';
+@import 'nopends-ui/css/preset.css';
 ```
 
 ### Typography
@@ -149,5 +149,5 @@ The plugin adds a `prose` class and variants to customise it.
 </div>
 ```
 
-> The plugin works with and only with Fumadocs UI's MDX components, it may conflict with `@tailwindcss/typography`.
+> The plugin works with and only with Nopends UI's MDX components, it may conflict with `@tailwindcss/typography`.
 > If you need to use `@tailwindcss/typography` over the default plugin, [set a class name option](https://github.com/tailwindlabs/tailwindcss-typography/blob/main/README.md#changing-the-default-class-name) to avoid conflicts.

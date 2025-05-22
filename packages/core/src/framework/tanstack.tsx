@@ -41,7 +41,7 @@ const framework: Framework = {
 };
 
 /**
- * Fumadocs adapter for Tanstack Router/Start
+ * Nopends adapter for Tanstack Router/Start
  */
 export function TanstackProvider({ children }: { children: ReactNode }) {
   return <FrameworkProvider {...framework}>{children}</FrameworkProvider>;

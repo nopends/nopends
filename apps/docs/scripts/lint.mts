@@ -1,11 +1,11 @@
 import { glob } from 'tinyglobby';
 import { printErrors, scanURLs, validateFiles } from 'next-validate-link';
-import { createGetUrl, getSlugs, parseFilePath } from 'fumadocs-core/source';
-import { getTableOfContents } from 'fumadocs-core/server';
+import { createGetUrl, getSlugs, parseFilePath } from 'nopends-core/source';
+import { getTableOfContents } from 'nopends-core/server';
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import matter from 'gray-matter';
-import { remarkInclude } from 'fumadocs-mdx/config';
+import { remarkInclude } from 'nopends-mdx/config';
 import remarkMdx from 'remark-mdx';
 
 async function readFromPath(file: string) {

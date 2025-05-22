@@ -6,9 +6,9 @@ export function createMetadata(override: Metadata): Metadata {
     openGraph: {
       title: override.title ?? undefined,
       description: override.description ?? undefined,
-      url: 'https://fumadocs.dev',
+      url: 'https://docs.nopends.com',
       images: '/banner.png',
-      siteName: 'Fumadocs',
+      siteName: 'Nopends',
       ...override.openGraph,
     },
     twitter: {

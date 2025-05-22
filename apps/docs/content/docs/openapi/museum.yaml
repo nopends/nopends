@@ -23,7 +23,7 @@ servers:
         default: http
       domain:
         description: Where your app run
-        default: fumadocs.vercel.app
+        default: docs.nopends.com
 
 paths:
   /museum-hours:

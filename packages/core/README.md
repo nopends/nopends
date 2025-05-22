@@ -1,5 +1,5 @@
-# Fumadocs Core
+# Nopends Core
 
-The core library for Fumadocs.
+The core library for Nopends.
 
-📘 Learn More: [Documentation](https://fumadocs.vercel.app)
+📘 Learn More: [Documentation](https://docs.nopends.com)

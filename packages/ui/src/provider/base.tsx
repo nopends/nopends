@@ -11,14 +11,14 @@ import { DirectionProvider } from '@radix-ui/react-direction';
 import type { DefaultSearchDialogProps } from '@/components/dialog/search-default';
 import { SidebarProvider } from '@/contexts/sidebar';
 import { SearchProvider, type SearchProviderProps } from '@/contexts/search';
-import { useEffectEvent } from 'fumadocs-core/utils/use-effect-event';
+import { useEffectEvent } from 'nopends-core/utils/use-effect-event';
 import {
   defaultTranslations,
   I18nContext,
   type LocaleItem,
   type Translations,
 } from '@/contexts/i18n';
-import { usePathname, useRouter } from 'fumadocs-core/framework';
+import { usePathname, useRouter } from 'nopends-core/framework';
 
 interface SearchOptions
   extends Omit<SearchProviderProps, 'options' | 'children'> {

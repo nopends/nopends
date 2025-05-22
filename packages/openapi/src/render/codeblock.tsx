@@ -1,8 +1,8 @@
 import { type HTMLAttributes } from 'react';
-import * as Base from 'fumadocs-ui/components/codeblock';
+import * as Base from 'nopends-ui/components/codeblock';
 import type { RenderContext } from '@/types';
-import { highlight } from 'fumadocs-core/highlight';
-import { cn } from 'fumadocs-ui/utils/cn';
+import { highlight } from 'nopends-core/highlight';
+import { cn } from 'nopends-ui/utils/cn';
 
 export interface CodeBlockProps extends HTMLAttributes<HTMLElement> {
   code: string;

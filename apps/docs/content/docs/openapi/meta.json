@@ -1,6 +1,6 @@
 {
   "title": "OpenAPI Example",
-  "description": "A demo for Fumadocs OpenAPI",
+  "description": "A demo for Nopends OpenAPI",
   "root": true,
   "icon": "Play",
   "pages": ["index", "...(generated)"]

@@ -1,4 +1,4 @@
-import { sync } from 'fumadocs-core/search/orama-cloud';
+import { sync } from 'nopends-core/search/orama-cloud';
 import * as fs from 'node:fs/promises';
 import { CloudManager } from '@oramacloud/client';
 

@@ -1,12 +1,20 @@
 # next-docs-ui
 
+## 15.3.5-alpha.0
+
+### Patch Changes
+
+- 9667375: add alpha
+- Updated dependencies [9667375]
+  - nopends-core@15.3.5-alpha.0
+
 ## 15.3.4
 
 ### Patch Changes
 
 - e0c2a92: Improve UI consistency
 - 71fc1a5: Mount all children of tabs by default
-  - fumadocs-core@15.3.4
+  - nopends-core@15.3.4
 
 ## 15.3.3
 
@@ -16,7 +24,7 @@
 - 39bf088: Support usage with `Tabs` in primitive way
 - e955a98: Hotfix problems with `HideIfEmpty`
 - Updated dependencies [4ae7b4a]
-  - fumadocs-core@15.3.3
+  - nopends-core@15.3.3
 
 ## 15.3.2
 
@@ -28,7 +36,7 @@
 - ac0ab12: Improve performance by reducing usage of `@radix-ui/react-scroll-area`
 - c25d678: Support Shiki focus notation transformer by default
 - Updated dependencies [c25d678]
-  - fumadocs-core@15.3.2
+  - nopends-core@15.3.2
 
 ## 15.3.1
 
@@ -36,7 +44,7 @@
 
 - 3372792: Support line numbers in codeblock
 - Updated dependencies [3372792]
-  - fumadocs-core@15.3.1
+  - nopends-core@15.3.1
 
 ## 15.3.0
 
@@ -46,13 +54,13 @@
 
   Mobile sidebar is now a separate component from the desktop one, with its own id `nd-sidebar-mobile`.
 
-  note to advanced use cases: Fumadocs UI now stopped using `fumadocs-core/sidebar`, avoid using the primitive directly as provider is not used.
+  note to advanced use cases: Nopends UI now stopped using `nopends-core/sidebar`, avoid using the primitive directly as provider is not used.
 
 ### Patch Changes
 
 - abce713: Adjust design (Accordion, Tabs, border color of themes)
 - Updated dependencies [c05dc03]
-  - fumadocs-core@15.3.0
+  - nopends-core@15.3.0
 
 ## 15.2.15
 
@@ -61,22 +69,22 @@
 - 50db874: Remove placeholder space for codeblocks
 - Updated dependencies [50db874]
 - Updated dependencies [79e75c3]
-  - fumadocs-core@15.2.15
+  - nopends-core@15.2.15
 
 ## 15.2.14
 
 ### Patch Changes
 
 - Updated dependencies [6ea1718]
-  - fumadocs-core@15.2.14
+  - nopends-core@15.2.14
 
 ## 15.2.13
 
 ### Patch Changes
 
 - b433d93: Recommend using custom button/link instead for edit on GitHub button
-- 1e07ed8: Support disabling codeblock styles with `.not-fumadocs-codeblock`
-  - fumadocs-core@15.2.13
+- 1e07ed8: Support disabling codeblock styles with `.not-nopends-codeblock`
+  - nopends-core@15.2.13
 
 ## 15.2.12
 
@@ -85,7 +93,7 @@
 - b68bb51: Fix sidebar legacy behaviours
 - 127e681: Fix Notebook layout ignores `themeSwitch` and `sidebar.collapsible` on nav mode
 - Updated dependencies [acff667]
-  - fumadocs-core@15.2.12
+  - nopends-core@15.2.12
 
 ## 15.2.11
 
@@ -95,7 +103,7 @@
 - 4e62b41: Bundle `lucide-react` as part of library
 - 07cd690: Support separators without name
 - Updated dependencies [07cd690]
-  - fumadocs-core@15.2.11
+  - nopends-core@15.2.11
 
 ## 15.2.10
 
@@ -103,7 +111,7 @@
 
 - 3a5595a: Support deprecated properties in Type Table
 - 8c9fc1f: Fix callout margin
-  - fumadocs-core@15.2.10
+  - nopends-core@15.2.10
 
 ## 15.2.9
 
@@ -112,7 +120,7 @@
 - e72af4b: Improve layout
 - ea0f468: Fix relative file href with hash
 - 7f3c30e: Add `shadcn.css` preset
-  - fumadocs-core@15.2.9
+  - nopends-core@15.2.9
 
 ## 15.2.8
 
@@ -120,7 +128,7 @@
 
 - 4fad539: fix TOC relative position
 - a673ef4: Make `@source` in `global.css` optional
-  - fumadocs-core@15.2.8
+  - nopends-core@15.2.8
 
 ## 15.2.7
 
@@ -131,24 +139,24 @@
 - 4d50bcf: fix banner overlapping with collapsible control
 - Updated dependencies [ec85a6c]
 - Updated dependencies [e1a61bf]
-  - fumadocs-core@15.2.7
+  - nopends-core@15.2.7
 
 ## 15.2.6
 
 ### Patch Changes
 
-- b07e98c: Deprecate `DocsCategory`, see https://fumadocs.vercel.app/docs/ui/markdown#further-reading-section
+- b07e98c: Deprecate `DocsCategory`, see https://docs.nopends.com/docs/ui/markdown#further-reading-section
 - Updated dependencies [d49f9ae]
 - Updated dependencies [b07e98c]
 - Updated dependencies [3a4bd88]
-  - fumadocs-core@15.2.6
+  - nopends-core@15.2.6
 
 ## 15.2.5
 
 ### Patch Changes
 
 - Updated dependencies [c66ed79]
-  - fumadocs-core@15.2.5
+  - nopends-core@15.2.5
 
 ## 15.2.4
 
@@ -156,7 +164,7 @@
 
 - 1057957: Fix type problems on dynamic codeblock
 - Updated dependencies [1057957]
-  - fumadocs-core@15.2.4
+  - nopends-core@15.2.4
 
 ## 15.2.3
 
@@ -164,7 +172,7 @@
 
 - 5e4e9ec: Deprecate I18nProvider in favour of `<RootProvider />` `i18n` prop
 - 293178f: revert framework migration on i18n provider
-  - fumadocs-core@15.2.3
+  - nopends-core@15.2.3
 
 ## 15.2.2
 
@@ -172,14 +180,14 @@
 
 - 0829544: Remove unused registry files from dist
 - Updated dependencies [0829544]
-  - fumadocs-core@15.2.2
+  - nopends-core@15.2.2
 
 ## 15.2.1
 
 ### Patch Changes
 
 - 22aeafb: Improve Tree context performance
-  - fumadocs-core@15.2.1
+  - nopends-core@15.2.1
 
 ## 15.2.0
 
@@ -188,14 +196,14 @@
 - c5af09f: UI: Use `text.previousPage` for previous page navigation
 - Updated dependencies [2fd325c]
 - Updated dependencies [a7cf4fa]
-  - fumadocs-core@15.2.0
+  - nopends-core@15.2.0
 
 ## 15.1.3
 
 ### Patch Changes
 
 - Updated dependencies [b734f92]
-  - fumadocs-core@15.1.3
+  - nopends-core@15.1.3
 
 ## 15.1.2
 
@@ -203,7 +211,7 @@
 
 - 44d5acf: Improve sidebar UI
 - Updated dependencies [3f580c4]
-  - fumadocs-core@15.1.2
+  - nopends-core@15.1.2
 
 ## 15.1.1
 
@@ -213,7 +221,7 @@
 - Updated dependencies [f3cde4f]
 - Updated dependencies [7c8a690]
 - Updated dependencies [b812457]
-  - fumadocs-core@15.1.1
+  - nopends-core@15.1.1
 
 ## 15.1.0
 
@@ -222,14 +230,14 @@
 - Updated dependencies [f491f6f]
 - Updated dependencies [f491f6f]
 - Updated dependencies [f491f6f]
-  - fumadocs-core@15.1.0
+  - nopends-core@15.1.0
 
 ## 15.0.18
 
 ### Patch Changes
 
 - e7e2a2a: Support `createRelativeLink` component factory for using relative file paths in `href`
-  - fumadocs-core@15.0.18
+  - nopends-core@15.0.18
 
 ## 15.0.17
 
@@ -237,13 +245,13 @@
 
 - b790699: Support `themeSwitch` option in layouts to customise theme switch
 - Updated dependencies [72f79cf]
-  - fumadocs-core@15.0.17
+  - nopends-core@15.0.17
 
 ## 15.0.16
 
 ### Patch Changes
 
-- fumadocs-core@15.0.16
+- nopends-core@15.0.16
 
 ## 15.0.15
 
@@ -252,7 +260,7 @@
 - 0e5e14d: Use container media queries on Cards
 - Updated dependencies [9f6d39a]
 - Updated dependencies [2035cb1]
-  - fumadocs-core@15.0.15
+  - nopends-core@15.0.15
 
 ## 15.0.14
 
@@ -262,7 +270,7 @@
 - Updated dependencies [37dc0a6]
 - Updated dependencies [796cc5e]
 - Updated dependencies [2cc0be5]
-  - fumadocs-core@15.0.14
+  - nopends-core@15.0.14
 
 ## 15.0.13
 
@@ -271,17 +279,17 @@
 - 7608f4e: Support showing optional properties on TypeTable
 - 89ff3ae: Support GithubInfo component
 - 16c8944: Fix Tailwind CSS utilities
-  - fumadocs-core@15.0.13
+  - nopends-core@15.0.13
 
 ## 15.0.12
 
 ### Patch Changes
 
-- 3534a10: Move `fumadocs-core` highlighting utils to `fumadocs-core/highlight` and `fumadocs-core/highlight/client`
+- 3534a10: Move `nopends-core` highlighting utils to `nopends-core/highlight` and `nopends-core/highlight/client`
 - ecacb53: Improve performance
 - Updated dependencies [3534a10]
 - Updated dependencies [93952db]
-  - fumadocs-core@15.0.12
+  - nopends-core@15.0.12
 
 ## 15.0.11
 
@@ -289,7 +297,7 @@
 
 - 886da49: Fix sidebar layout shifts with `defaultOpen` option
 - 04e6c6e: Fix Notebook layout paddings
-  - fumadocs-core@15.0.11
+  - nopends-core@15.0.11
 
 ## 15.0.10
 
@@ -297,21 +305,21 @@
 
 - e8a3ab7: Add collapse button back to sidebar on Notebook layout
 - Updated dependencies [d95c21f]
-  - fumadocs-core@15.0.10
+  - nopends-core@15.0.10
 
 ## 15.0.9
 
 ### Patch Changes
 
 - fa5b908: Fix React 18 compatibility
-  - fumadocs-core@15.0.9
+  - nopends-core@15.0.9
 
 ## 15.0.8
 
 ### Patch Changes
 
 - 8f5993b: Support custom nav mode and tabs mode on Notebook layout
-  - fumadocs-core@15.0.8
+  - nopends-core@15.0.8
 
 ## 15.0.7
 
@@ -320,7 +328,7 @@
 - 5deaf40: Support icons in separators of `meta.json`
 - f782c2c: Improve sidebar design
 - Updated dependencies [5deaf40]
-  - fumadocs-core@15.0.7
+  - nopends-core@15.0.7
 
 ## 15.0.6
 
@@ -328,14 +336,14 @@
 
 - Updated dependencies [08236e1]
 - Updated dependencies [a06af26]
-  - fumadocs-core@15.0.6
+  - nopends-core@15.0.6
 
 ## 15.0.5
 
 ### Patch Changes
 
 - 14b2f95: Improve accessibility
-  - fumadocs-core@15.0.5
+  - nopends-core@15.0.5
 
 ## 15.0.4
 
@@ -343,28 +351,28 @@
 
 - c892bd9: Improve `DocsCategory` cards
 - c892bd9: Always show copy button on codeblocks on touch devices
-  - fumadocs-core@15.0.4
+  - nopends-core@15.0.4
 
 ## 15.0.3
 
 ### Patch Changes
 
 - 47171db: UI: fix ocean theme
-  - fumadocs-core@15.0.3
+  - nopends-core@15.0.3
 
 ## 15.0.2
 
 ### Patch Changes
 
 - a8e9e1f: Bump deps
-  - fumadocs-core@15.0.2
+  - nopends-core@15.0.2
 
 ## 15.0.1
 
 ### Patch Changes
 
 - 421166a: Fix border styles
-  - fumadocs-core@15.0.1
+  - nopends-core@15.0.1
 
 ## 15.0.0
 
@@ -376,35 +384,35 @@
 
   Follow https://tailwindcss.com/blog/tailwindcss-v4 for official migrate guide of Tailwind CSS v4.
 
-  Fumadocs UI v15 redesigned the Tailwind CSS config to fully adhere the new config style, no JavaScript and options needed for plugins.
+  Nopends UI v15 redesigned the Tailwind CSS config to fully adhere the new config style, no JavaScript and options needed for plugins.
   Add the following to your CSS file:
 
   ```css
   @import 'tailwindcss';
-  @import 'fumadocs-ui/css/neutral.css';
-  @import 'fumadocs-ui/css/preset.css';
+  @import 'nopends-ui/css/neutral.css';
+  @import 'nopends-ui/css/preset.css';
   /* if you have Twoslash enabled */
-  @import 'fumadocs-twoslash/twoslash.css';
+  @import 'nopends-twoslash/twoslash.css';
 
-  @source '../node_modules/fumadocs-ui/dist/**/*.js';
+  @source '../node_modules/nopends-ui/dist/**/*.js';
   /* if you have OpenAPI enabled */
-  @source '../node_modules/fumadocs-openapi/dist/**/*.js';
+  @source '../node_modules/nopends-openapi/dist/**/*.js';
   ```
 
-  The `fumadocs-ui/css/preset.css` import is required, it declares necessary plugins & styles for Fumadocs UI, and `fumadocs-ui/css/neutral.css` defines the color palette of UI.
+  The `nopends-ui/css/preset.css` import is required, it declares necessary plugins & styles for Nopends UI, and `nopends-ui/css/neutral.css` defines the color palette of UI.
 
-  Like the previous `preset` option in Tailwind CSS plugin, you can import other color presets like `fumadocs-ui/css/vitepress.css`.
+  Like the previous `preset` option in Tailwind CSS plugin, you can import other color presets like `nopends-ui/css/vitepress.css`.
 
-  You should also pay attention to `@source`, the file paths are relative to the CSS file itself. For your project, it might not be `../node_modules/fumadocs-ui/dist/**/*.js`.
+  You should also pay attention to `@source`, the file paths are relative to the CSS file itself. For your project, it might not be `../node_modules/nopends-ui/dist/**/*.js`.
 
 ### Patch Changes
 
-- a89d6e0: Support Fumadocs v15
+- a89d6e0: Support Nopends v15
 - f2f9c3d: Redesign sidebar
 - Updated dependencies [5b8cca8]
 - Updated dependencies [a763058]
 - Updated dependencies [581f4a5]
-  - fumadocs-core@15.0.0
+  - nopends-core@15.0.0
 
 ## 14.7.7
 
@@ -413,14 +421,14 @@
 - 4f2538a: Support `children` prop in custom `Folder` component
 - 191012a: `DocsCategory` search based on file path when item isn't present in the tree
 - fb6b168: No longer rely on search context on search dialog
-  - fumadocs-core@14.7.7
+  - nopends-core@14.7.7
 
 ## 14.7.6
 
 ### Patch Changes
 
 - Updated dependencies [b9601fb]
-  - fumadocs-core@14.7.6
+  - nopends-core@14.7.6
 
 ## 14.7.5
 
@@ -430,7 +438,7 @@
 - 900eb6c: Prevent shrink on sidebar icons by default
 - a959374: Support `fd-*` prefixes to Tailwind CSS utils
 - Updated dependencies [777188b]
-  - fumadocs-core@14.7.5
+  - nopends-core@14.7.5
 
 ## 14.7.4
 
@@ -440,7 +448,7 @@
 - 036f8e1: Disable hover to open navbar menu by default, can be enabled via `nav.enableHoverToOpen`
 - Updated dependencies [bb73a72]
 - Updated dependencies [69bd4fe]
-  - fumadocs-core@14.7.4
+  - nopends-core@14.7.4
 
 ## 14.7.3
 
@@ -449,14 +457,14 @@
 - 041f230: Support trailing slash
 - ca1cf19: Support custom `<Banner />` height
 - Updated dependencies [041f230]
-  - fumadocs-core@14.7.3
+  - nopends-core@14.7.3
 
 ## 14.7.2
 
 ### Patch Changes
 
 - Updated dependencies [14b280c]
-  - fumadocs-core@14.7.2
+  - nopends-core@14.7.2
 
 ## 14.7.1
 
@@ -464,7 +472,7 @@
 
 - 18b00c1: Fix `hideSearch` option
 - Updated dependencies [72dc093]
-  - fumadocs-core@14.7.1
+  - nopends-core@14.7.1
 
 ## 14.7.0
 
@@ -472,7 +480,7 @@
 
 - a557bb4: revert `contain`
 - Updated dependencies [97ed36c]
-  - fumadocs-core@14.7.0
+  - nopends-core@14.7.0
 
 ## 14.6.8
 
@@ -480,21 +488,21 @@
 
 - e95be52: Fix i18n toggle
 - f3298ea: Add css prefix by default
-  - fumadocs-core@14.6.8
+  - nopends-core@14.6.8
 
 ## 14.6.7
 
 ### Patch Changes
 
 - Updated dependencies [5474343]
-  - fumadocs-core@14.6.7
+  - nopends-core@14.6.7
 
 ## 14.6.6
 
 ### Patch Changes
 
 - 9c930ea: fix runtime error
-  - fumadocs-core@14.6.6
+  - nopends-core@14.6.6
 
 ## 14.6.5
 
@@ -502,7 +510,7 @@
 
 - 969da26: Improve i18n api
 - Updated dependencies [969da26]
-  - fumadocs-core@14.6.5
+  - nopends-core@14.6.5
 
 ## 14.6.4
 
@@ -511,14 +519,14 @@
 - 67124b1: Improve theme toggle on Notebook layout
 - 1810868: Enable `content-visibility` CSS features
 - Updated dependencies [b71064a]
-  - fumadocs-core@14.6.4
+  - nopends-core@14.6.4
 
 ## 14.6.3
 
 ### Patch Changes
 
 - abc3677: Allow `className` to be used with `SidebarItem`
-  - fumadocs-core@14.6.3
+  - nopends-core@14.6.3
 
 ## 14.6.2
 
@@ -528,14 +536,14 @@
 - ece734f: Support custom children of trigger on `InlineTOC` component
 - 1a2597a: Expose `--fd-tocnav-height` CSS variable
 - Updated dependencies [2357d40]
-  - fumadocs-core@14.6.2
+  - nopends-core@14.6.2
 
 ## 14.6.1
 
 ### Patch Changes
 
 - 9532855: Hide toc popover when no items
-  - fumadocs-core@14.6.1
+  - nopends-core@14.6.1
 
 ## 14.6.0
 
@@ -552,7 +560,7 @@
 - Updated dependencies [bebb16b]
 - Updated dependencies [4766292]
 - Updated dependencies [050b326]
-  - fumadocs-core@14.6.0
+  - nopends-core@14.6.0
 
 ## 14.5.6
 
@@ -560,7 +568,7 @@
 
 - b7745f4: Fix references problem of sidebar tabs
 - Updated dependencies [9a18c14]
-  - fumadocs-core@14.5.6
+  - nopends-core@14.5.6
 
 ## 14.5.5
 
@@ -568,14 +576,14 @@
 
 - 06f66d8: improve notebook layout for transparent sidebar
 - 2d0501f: Fi sidebar icon trigger
-  - fumadocs-core@14.5.5
+  - nopends-core@14.5.5
 
 ## 14.5.4
 
 ### Patch Changes
 
 - 8e2cb31: fix trivial bugs
-  - fumadocs-core@14.5.4
+  - nopends-core@14.5.4
 
 ## 14.5.3
 
@@ -586,21 +594,21 @@
 - 4c82a3d: Hide toc when it has no items and custom banner & footer
 - f8e5157: Fix custom `theme` with Typography plugin
 - ad00dd3: Support folder groups on sidebar tabs
-  - fumadocs-core@14.5.3
+  - nopends-core@14.5.3
 
 ## 14.5.2
 
 ### Patch Changes
 
 - 072e349: fix initial sidebar level to 0
-  - fumadocs-core@14.5.2
+  - nopends-core@14.5.2
 
 ## 14.5.1
 
 ### Patch Changes
 
 - 6fd480f: Fix old browser compatibility
-  - fumadocs-core@14.5.1
+  - nopends-core@14.5.1
 
 ## 14.5.0
 
@@ -608,20 +616,20 @@
 
 - 66c70ec: **Replace official Tailwind CSS typography plugin**
 
-  - Other variants like `prose-sm` and `prose-gray` are removed, as it's supposed to only provide support for Fumadocs UI typography styles.
+  - Other variants like `prose-sm` and `prose-gray` are removed, as it's supposed to only provide support for Nopends UI typography styles.
 
 - 05d224c: added the updateAnchor option for the Tabs ui component
 
 ### Patch Changes
 
-- fumadocs-core@14.5.0
+- nopends-core@14.5.0
 
 ## 14.4.2
 
 ### Patch Changes
 
 - 0f1603a: Fix bugs
-  - fumadocs-core@14.4.2
+  - nopends-core@14.4.2
 
 ## 14.4.1
 
@@ -629,7 +637,7 @@
 
 - 07474cb: fix codeblock paddings
 - 48a2c15: Control page styles from layouts
-  - fumadocs-core@14.4.1
+  - nopends-core@14.4.1
 
 ## 14.4.0
 
@@ -637,20 +645,20 @@
 
 - 5fd4e2f: Make TOC collapse to a popover on `lg` screen size instead of `md`
 - 5fd4e2f: Support better table styles for Typography plugin
-- 8a3f5b0: Make `neutral` the default theme of Fumadocs UI
+- 8a3f5b0: Make `neutral` the default theme of Nopends UI
 
 ### Patch Changes
 
 - 5145123: Fix sidebar footer issues
-- 64defe0: Support `fumadocs-ui/layouts/notebook` layout
-  - fumadocs-core@14.4.0
+- 64defe0: Support `nopends-ui/layouts/notebook` layout
+  - nopends-core@14.4.0
 
 ## 14.3.1
 
 ### Patch Changes
 
 - e7443d7: Fix development errors
-  - fumadocs-core@14.3.1
+  - nopends-core@14.3.1
 
 ## 14.3.0
 
@@ -661,7 +669,7 @@
 ### Patch Changes
 
 - 80655b3: Improve padding of sidebar tabs and expose it to sidebar
-  - fumadocs-core@14.3.0
+  - nopends-core@14.3.0
 
 ## 14.2.1
 
@@ -669,7 +677,7 @@
 
 - 2949da3: Show 'ctrl' for windows in search toggle
 - Updated dependencies [ca94bfd]
-  - fumadocs-core@14.2.1
+  - nopends-core@14.2.1
 
 ## 14.2.0
 
@@ -681,14 +689,14 @@
 ### Patch Changes
 
 - Updated dependencies [e248a0f]
-  - fumadocs-core@14.2.0
+  - nopends-core@14.2.0
 
 ## 14.1.1
 
 ### Patch Changes
 
 - Updated dependencies [1573d63]
-  - fumadocs-core@14.1.1
+  - nopends-core@14.1.1
 
 ## 14.1.0
 
@@ -699,21 +707,21 @@
 - Updated dependencies [4a643ff]
 - Updated dependencies [b262d99]
 - Updated dependencies [90725c1]
-  - fumadocs-core@14.1.0
+  - nopends-core@14.1.0
 
 ## 14.0.2
 
 ### Patch Changes
 
 - bfc2bf2: Fix navbar issues
-  - fumadocs-core@14.0.2
+  - nopends-core@14.0.2
 
 ## 14.0.1
 
 ### Patch Changes
 
 - 1a7d78a: Pass props to replaced layout components via Radix UI `<Slot />`
-  - fumadocs-core@14.0.1
+  - nopends-core@14.0.1
 
 ## 14.0.0
 
@@ -724,52 +732,52 @@
   **migrate:** Use
 
   ```ts
-  import { DocsLayout } from 'fumadocs-ui/layouts/docs';
+  import { DocsLayout } from 'nopends-ui/layouts/docs';
 
-  import { HomeLayout } from 'fumadocs-ui/layouts/home';
+  import { HomeLayout } from 'nopends-ui/layouts/home';
 
-  import { BaseLayoutProps } from 'fumadocs-ui/layouts/shared';
+  import { BaseLayoutProps } from 'nopends-ui/layouts/shared';
   ```
 
   Instead of
 
   ```ts
-  import { DocsLayout } from 'fumadocs-ui/layout';
+  import { DocsLayout } from 'nopends-ui/layout';
 
-  import { HomeLayout } from 'fumadocs-ui/home-layout';
+  import { HomeLayout } from 'nopends-ui/home-layout';
 
-  import { HomeLayoutProps } from 'fumadocs-ui/home-layout';
+  import { HomeLayoutProps } from 'nopends-ui/home-layout';
   ```
 
-- 9a10262: **Move Twoslash UI components to `fumadocs-twoslash`**
+- 9a10262: **Move Twoslash UI components to `nopends-twoslash`**
 
-  **why:** Isolate logic from Fumadocs UI
+  **why:** Isolate logic from Nopends UI
 
   **migrate:**
 
   Before:
 
   ```ts
-  import 'fumadocs-ui/twoslash.css';
+  import 'nopends-ui/twoslash.css';
 
-  import { Popup } from 'fumadocs-ui/twoslash/popup';
+  import { Popup } from 'nopends-ui/twoslash/popup';
   ```
 
   After:
 
   ```ts
-  import 'fumadocs-twoslash/twoslash.css';
+  import 'nopends-twoslash/twoslash.css';
 
-  import { Popup } from 'fumadocs-twoslash/ui';
+  import { Popup } from 'nopends-twoslash/ui';
   ```
 
   **Tailwind CSS is now required for Twoslash integration.**
 
-- d9e908e: **Remove `getImageMeta` from `fumadocs-ui/og`**
+- d9e908e: **Remove `getImageMeta` from `nopends-ui/og`**
 
-  **migrate:** Use Metadata API from `fumadocs-core/server`
+  **migrate:** Use Metadata API from `nopends-core/server`
 
-- d9e908e: Replace `fumadocs-core/search/shared` with `fumadocs-core/server`
+- d9e908e: Replace `nopends-core/search/shared` with `nopends-core/server`
 - be53a0e: **`DocsCategory` now accept `from` prop instead of `pages` prop.**
 
   **why:** This allows sharing the order of items with page tree.
@@ -779,7 +787,7 @@
 
   ```tsx
   import { source } from '@/lib/source';
-  import { DocsCategory } from 'fumadocs-ui/page';
+  import { DocsCategory } from 'nopends-ui/page';
 
   const page = source.getPage(params.slug);
 
@@ -823,7 +831,7 @@
 - Updated dependencies [15781f0]
 - Updated dependencies [be820c4]
 - Updated dependencies [d9e908e]
-  - fumadocs-core@14.0.0
+  - nopends-core@14.0.0
 
 ## 13.4.10
 
@@ -831,7 +839,7 @@
 
 - 4cb74d5: Expose more props to Image Zoom
 - Updated dependencies [6231ad3]
-  - fumadocs-core@13.4.10
+  - nopends-core@13.4.10
 
 ## 13.4.9
 
@@ -839,7 +847,7 @@
 
 - bcf51a6: Improve banner rainbow variant
 - Updated dependencies [083f04a]
-  - fumadocs-core@13.4.9
+  - nopends-core@13.4.9
 
 ## 13.4.8
 
@@ -848,7 +856,7 @@
 - 5581733: Add center to root toggle
 - 1a327cc: Fix props types of Root Toggle
 - Updated dependencies [78e59e7]
-  - fumadocs-core@13.4.8
+  - nopends-core@13.4.8
 
 ## 13.4.7
 
@@ -857,7 +865,7 @@
 - 6e1923e: Fix ocean present background repeat
 - 6e1923e: Introduce `rainbow` variant on Banner component
 - Updated dependencies [6e1923e]
-  - fumadocs-core@13.4.7
+  - nopends-core@13.4.7
 
 ## 13.4.6
 
@@ -868,27 +876,27 @@
 - 6bcd263: Fix Banner component z-index
 - Updated dependencies [afb697e]
 - Updated dependencies [daa66d2]
-  - fumadocs-core@13.4.6
+  - nopends-core@13.4.6
 
 ## 13.4.5
 
 ### Patch Changes
 
 - d46a3f1: Improve search dialog
-  - fumadocs-core@13.4.5
+  - nopends-core@13.4.5
 
 ## 13.4.4
 
 ### Patch Changes
 
 - Updated dependencies [729928e]
-  - fumadocs-core@13.4.4
+  - nopends-core@13.4.4
 
 ## 13.4.3
 
 ### Patch Changes
 
-- fumadocs-core@13.4.3
+- nopends-core@13.4.3
 
 ## 13.4.2
 
@@ -900,14 +908,14 @@
 - Updated dependencies [7dabbc1]
 - Updated dependencies [0c251e5]
 - Updated dependencies [3b56170]
-  - fumadocs-core@13.4.2
+  - nopends-core@13.4.2
 
 ## 13.4.1
 
 ### Patch Changes
 
 - Updated dependencies [95dbba1]
-  - fumadocs-core@13.4.1
+  - nopends-core@13.4.1
 
 ## 13.4.0
 
@@ -917,14 +925,14 @@
 
 ### Patch Changes
 
-- fumadocs-core@13.4.0
+- nopends-core@13.4.0
 
 ## 13.3.3
 
 ### Patch Changes
 
 - Updated dependencies [f8cc167]
-  - fumadocs-core@13.3.3
+  - nopends-core@13.3.3
 
 ## 13.3.2
 
@@ -932,14 +940,14 @@
 
 - 17746a6: Support built-in edit on github button
 - Updated dependencies [0e0ef8c]
-  - fumadocs-core@13.3.2
+  - nopends-core@13.3.2
 
 ## 13.3.1
 
 ### Patch Changes
 
 - 7258c4b: Fix thumb not rendered on initial render
-  - fumadocs-core@13.3.1
+  - nopends-core@13.3.1
 
 ## 13.3.0
 
@@ -959,7 +967,7 @@
 - Updated dependencies [fd46eb6]
 - Updated dependencies [9aae448]
 - Updated dependencies [c542561]
-  - fumadocs-core@13.3.0
+  - nopends-core@13.3.0
 
 ## 13.2.2
 
@@ -967,14 +975,14 @@
 
 - Updated dependencies [36b771b]
 - Updated dependencies [61b91fa]
-  - fumadocs-core@13.2.2
+  - nopends-core@13.2.2
 
 ## 13.2.1
 
 ### Patch Changes
 
 - Updated dependencies [17fa173]
-  - fumadocs-core@13.2.1
+  - nopends-core@13.2.1
 
 ## 13.2.0
 
@@ -988,7 +996,7 @@
 - 96c9dda: Change Heading scroll margins
 - 96c9dda: Hide TOC Popover on full mode
 - Updated dependencies [96c9dda]
-  - fumadocs-core@13.2.0
+  - nopends-core@13.2.0
 
 ## 13.1.0
 
@@ -1003,7 +1011,7 @@
 - c8910c4: Fix empty space on search dialog
 - 6c42960: Improve TOC design
 - Updated dependencies [f280191]
-  - fumadocs-core@13.1.0
+  - nopends-core@13.1.0
 
 ## 13.0.7
 
@@ -1011,48 +1019,48 @@
 
 - e7c52f2: Fix code styles in headings
 - Updated dependencies [37bbfff]
-  - fumadocs-core@13.0.7
+  - nopends-core@13.0.7
 
 ## 13.0.6
 
 ### Patch Changes
 
 - 1622e36: Fix bug breaking Tailwind CSS IntelliSense VSCode Extension
-  - fumadocs-core@13.0.6
+  - nopends-core@13.0.6
 
 ## 13.0.5
 
 ### Patch Changes
 
 - Updated dependencies [2cf65f6]
-  - fumadocs-core@13.0.5
+  - nopends-core@13.0.5
 
 ## 13.0.4
 
 ### Patch Changes
 
 - Updated dependencies [5355391]
-  - fumadocs-core@13.0.4
+  - nopends-core@13.0.4
 
 ## 13.0.3
 
 ### Patch Changes
 
 - Updated dependencies [978342f]
-  - fumadocs-core@13.0.3
+  - nopends-core@13.0.3
 
 ## 13.0.2
 
 ### Patch Changes
 
 - Updated dependencies [4819820]
-  - fumadocs-core@13.0.2
+  - nopends-core@13.0.2
 
 ## 13.0.1
 
 ### Patch Changes
 
-- fumadocs-core@13.0.1
+- nopends-core@13.0.1
 
 ## 13.0.0
 
@@ -1065,7 +1073,7 @@
   **migrate:** Rename the option.
 
   ```js
-  import { createPreset } from 'fumadocs-ui/tailwind-plugin';
+  import { createPreset } from 'nopends-ui/tailwind-plugin';
 
   /** @type {import('tailwindcss').Config} */
   export default {
@@ -1086,7 +1094,7 @@
   Enable `keepBackground` on `<CodeBlock />`, and remove deprecated usage.
 
   ```tsx
-  import { Pre, CodeBlock } from 'fumadocs-ui/components/codeblock';
+  import { Pre, CodeBlock } from 'nopends-ui/components/codeblock';
 
   <MDX
     components={{
@@ -1112,9 +1120,9 @@
   **migrate:**
 
   ```tsx
-  import { RootProvider } from 'fumadocs-ui/provider';
+  import { RootProvider } from 'nopends-ui/provider';
   import type { ReactNode } from 'react';
-  import { I18nProvider } from 'fumadocs-ui/i18n';
+  import { I18nProvider } from 'nopends-ui/i18n';
 
   export default function Layout({
     params: { lang },
@@ -1179,20 +1187,20 @@
 
   **migrate:** Use ESM syntax in your Tailwind CSS config.
 
-- c901e6b: **Remove deprecated `fumadocs-ui/components/api` components**
+- c901e6b: **Remove deprecated `nopends-ui/components/api` components**
 
   **why:** The new OpenAPI integration has its own UI implementation.
 
   **migrate:** Update to latest OpenAPI integration.
 
-- 89190ae: **Add `fd-` prefix to all Fumadocs UI colors, animations and utilities**
+- 89190ae: **Add `fd-` prefix to all Nopends UI colors, animations and utilities**
 
   **why:** The added Tailwind CSS colors may conflict with the existing colors of codebases.
 
   **migrate:** Enable `addGlobalColors` on Tailwind CSS Plugin or add the `fd-` prefix to class names.
 
   ```js
-  import { createPreset } from 'fumadocs-ui/tailwind-plugin';
+  import { createPreset } from 'nopends-ui/tailwind-plugin';
 
   /** @type {import('tailwindcss').Config} */
   export default {
@@ -1214,7 +1222,7 @@
   This also includes class names, change your custom styles if necessary.
 
   ```tsx
-  import { Pre, CodeBlock } from 'fumadocs-ui/components/codeblock';
+  import { Pre, CodeBlock } from 'nopends-ui/components/codeblock';
 
   <MDX
     components={{
@@ -1232,9 +1240,9 @@
 
 - 4373231: **Remove `RollButton` component**
 
-  **why:** `RollButton` was created because there were no "Table Of Contents" on mobile viewports. Now users can use the TOC Popover to switch between headings, `RollButton` is no longer a suitable design for Fumadocs UI.
+  **why:** `RollButton` was created because there were no "Table Of Contents" on mobile viewports. Now users can use the TOC Popover to switch between headings, `RollButton` is no longer a suitable design for Nopends UI.
 
-  **migrate:** Remove usages, you may copy the [last implementation of `RollButton`](https://github.com/fuma-nama/fumadocs/blob/fumadocs-ui%4012.5.6/packages/ui/src/components/roll-button.tsx).
+  **migrate:** Remove usages, you may copy the [last implementation of `RollButton`](https://github.com/nopends/nopends/blob/nopends-ui%4012.5.6/packages/ui/src/components/roll-button.tsx).
 
 ### Minor Changes
 
@@ -1247,21 +1255,21 @@
 - Updated dependencies [09c3103]
 - Updated dependencies [c714eaa]
 - Updated dependencies [b02eebf]
-  - fumadocs-core@13.0.0
+  - nopends-core@13.0.0
 
 ## 12.5.6
 
 ### Patch Changes
 
 - a332bee: Support `undefined` state of `defaultOpen` in folder nodes
-  - fumadocs-core@12.5.6
+  - nopends-core@12.5.6
 
 ## 12.5.5
 
 ### Patch Changes
 
 - 3519e6c: Fix TOC overflow problems
-  - fumadocs-core@12.5.5
+  - nopends-core@12.5.5
 
 ## 12.5.4
 
@@ -1270,14 +1278,14 @@
 - fccdfdb: Improve TOC Popover design
 - Updated dependencies [fccdfdb]
 - Updated dependencies [2ffd5ea]
-  - fumadocs-core@12.5.4
+  - nopends-core@12.5.4
 
 ## 12.5.3
 
 ### Patch Changes
 
 - 5d963f4: Support to disable prefetching links on sidebar
-  - fumadocs-core@12.5.3
+  - nopends-core@12.5.3
 
 ## 12.5.2
 
@@ -1285,7 +1293,7 @@
 
 - a5c34f0: Support specifying the url of root node when breadcrumbs have `includeRoot` enabled
 - Updated dependencies [a5c34f0]
-  - fumadocs-core@12.5.2
+  - nopends-core@12.5.2
 
 ## 12.5.1
 
@@ -1293,21 +1301,21 @@
 
 - c5d20d0: Fix wrong padding
 - 3d8f6cf: Add data attributes to certain components to improve CSS targeting
-  - fumadocs-core@12.5.1
+  - nopends-core@12.5.1
 
 ## 12.5.0
 
 ### Minor Changes
 
 - b9fa99d: Support tag filters in search dialog
-- a4bcaa7: Rename `Layout` in `fumadocs-ui/layout` to `HomeLayout` in `fumadocs-ui/home-layout`
+- a4bcaa7: Rename `Layout` in `nopends-ui/layout` to `HomeLayout` in `nopends-ui/home-layout`
 
 ### Patch Changes
 
 - d1c7405: Optimize performance
 - Updated dependencies [b9fa99d]
 - Updated dependencies [525925b]
-  - fumadocs-core@12.5.0
+  - nopends-core@12.5.0
 
 ## 12.4.2
 
@@ -1315,13 +1323,13 @@
 
 - 503e8e9: Improve Object Collaspible
 - Updated dependencies [503e8e9]
-  - fumadocs-core@12.4.2
+  - nopends-core@12.4.2
 
 ## 12.4.1
 
 ### Patch Changes
 
-- fumadocs-core@12.4.1
+- nopends-core@12.4.1
 
 ## 12.4.0
 
@@ -1335,20 +1343,20 @@
 ### Patch Changes
 
 - 33ffa99: Improve design details
-  - fumadocs-core@12.4.0
+  - nopends-core@12.4.0
 
 ## 12.3.6
 
 ### Patch Changes
 
 - 4cc5782: Adding secondary custom links
-  - fumadocs-core@12.3.6
+  - nopends-core@12.3.6
 
 ## 12.3.5
 
 ### Patch Changes
 
-- fumadocs-core@12.3.5
+- nopends-core@12.3.5
 
 ## 12.3.4
 
@@ -1356,7 +1364,7 @@
 
 - fbfd050: Improve the default theme
 - eefa75d: Reduce the navbar height
-  - fumadocs-core@12.3.4
+  - nopends-core@12.3.4
 
 ## 12.3.3
 
@@ -1364,21 +1372,21 @@
 
 - 90d51cb: Fix problem with I18n middleware & language toggle
 - Updated dependencies [90d51cb]
-  - fumadocs-core@12.3.3
+  - nopends-core@12.3.3
 
 ## 12.3.2
 
 ### Patch Changes
 
 - Updated dependencies [ca7d0f4]
-  - fumadocs-core@12.3.2
+  - nopends-core@12.3.2
 
 ## 12.3.1
 
 ### Patch Changes
 
 - Updated dependencies [cf852f6]
-  - fumadocs-core@12.3.1
+  - nopends-core@12.3.1
 
 ## 12.3.0
 
@@ -1386,21 +1394,21 @@
 
 - Updated dependencies [ce3c8ad]
 - Updated dependencies [ce3c8ad]
-  - fumadocs-core@12.3.0
+  - nopends-core@12.3.0
 
 ## 12.2.5
 
 ### Patch Changes
 
 - 7c23f7e: No longer set a default size for SVG elements in title
-  - fumadocs-core@12.2.5
+  - nopends-core@12.2.5
 
 ## 12.2.4
 
 ### Patch Changes
 
 - ffb9026: Fix `cmdk` upstream dependency problems
-  - fumadocs-core@12.2.4
+  - nopends-core@12.2.4
 
 ## 12.2.3
 
@@ -1409,14 +1417,14 @@
 - b4824fa: Updated `<APIInfo />` component, so method name appears vertically centered.
 - e120e0f: Improve `<Banner/>` component
 - 3970b55: Support custom type link items
-  - fumadocs-core@12.2.3
+  - nopends-core@12.2.3
 
 ## 12.2.2
 
 ### Patch Changes
 
 - 72c7991: Improve sidebar
-  - fumadocs-core@12.2.2
+  - nopends-core@12.2.2
 
 ## 12.2.1
 
@@ -1424,7 +1432,7 @@
 
 - c428a60: Revert the height of docs navbar to 64px
 - 018dbd9: Support `Banner` component
-  - fumadocs-core@12.2.1
+  - nopends-core@12.2.1
 
 ## 12.2.0
 
@@ -1439,7 +1447,7 @@
 - bcc9f91: Added a new colors for API info badge, so POST, PATCH requests are different from PUT.
 - 2f2d9cf: Improve OpenAPI styles
 - Updated dependencies [b70ff06]
-  - fumadocs-core@12.2.0
+  - nopends-core@12.2.0
 
 ## 12.1.3
 
@@ -1448,17 +1456,17 @@
 - 2a5db91: Add timeout for hovering after collapsed the sidebar
 - 3e98d7d: Support `full` mode on pages
 - d06c92a: Support `transparentMode` on secondary (docs) navbar
-- 3bdc786: Support Fumadocs OpenAPI 3.1.0
+- 3bdc786: Support Nopends OpenAPI 3.1.0
 - d06c92a: Fix hot keys order
-  - fumadocs-core@12.1.3
+  - nopends-core@12.1.3
 
 ## 12.1.2
 
 ### Patch Changes
 
-- 284a571: Support Fumadocs OpenAPI v3
+- 284a571: Support Nopends OpenAPI v3
 - Updated dependencies [b4856d1]
-  - fumadocs-core@12.1.2
+  - nopends-core@12.1.2
 
 ## 12.1.1
 
@@ -1466,7 +1474,7 @@
 
 - 1c3a127: Redesign Tabs component
 - Updated dependencies [a39dbcb]
-  - fumadocs-core@12.1.1
+  - nopends-core@12.1.1
 
 ## 12.1.0
 
@@ -1496,14 +1504,14 @@
 - 5f86faa: Improve multi-line code blocks
 - Updated dependencies [0a377a9]
 - Updated dependencies [0a377a9]
-  - fumadocs-core@12.1.0
+  - nopends-core@12.1.0
 
 ## 12.0.7
 
 ### Patch Changes
 
 - 51441d3: Fix `RollButton` component problems on Safari
-  - fumadocs-core@12.0.7
+  - nopends-core@12.0.7
 
 ## 12.0.6
 
@@ -1512,14 +1520,14 @@
 - 056bad5: Improve default values
 - Updated dependencies [7a29b79]
 - Updated dependencies [b0c1242]
-  - fumadocs-core@12.0.6
+  - nopends-core@12.0.6
 
 ## 12.0.5
 
 ### Patch Changes
 
 - 4455d58: Fix `bannerProps` being ignored
-  - fumadocs-core@12.0.5
+  - nopends-core@12.0.5
 
 ## 12.0.4
 
@@ -1530,7 +1538,7 @@
 - 51ca944: Support including separators in breadcrumbs
 - Updated dependencies [72dbaf1]
 - Updated dependencies [51ca944]
-  - fumadocs-core@12.0.4
+  - nopends-core@12.0.4
 
 ## 12.0.3
 
@@ -1538,14 +1546,14 @@
 
 - 18928af: Improve mobile experience on Safari
 - Updated dependencies [053609d]
-  - fumadocs-core@12.0.3
+  - nopends-core@12.0.3
 
 ## 12.0.2
 
 ### Patch Changes
 
 - Show TOC on mobile devices
-  - fumadocs-core@12.0.2
+  - nopends-core@12.0.2
 
 ## 12.0.1
 
@@ -1553,7 +1561,7 @@
 
 - 21fe244: Redesign roll button
 - 547a61a: Use Menu for link items
-  - fumadocs-core@12.0.1
+  - nopends-core@12.0.1
 
 ## 12.0.0
 
@@ -1579,7 +1587,7 @@
   Remove your `<LanguageSelect />` component from the layout. Enable the new language toggle with:
 
   ```tsx
-  import { DocsLayout } from 'fumadocs-ui/layout';
+  import { DocsLayout } from 'nopends-ui/layout';
 
   export default function Layout({ children }: { children: React.ReactNode }) {
     return <DocsLayout i18n>{children}</DocsLayout>;
@@ -1599,7 +1607,7 @@
 - Updated dependencies [d88dfa6]
 - Updated dependencies [ba20694]
 - Updated dependencies [57eb762]
-  - fumadocs-core@12.0.0
+  - nopends-core@12.0.0
 
 ## 11.3.2
 
@@ -1607,14 +1615,14 @@
 
 - 1b8e12b: Use `display: grid` for codeblocks
 - Updated dependencies [1b8e12b]
-  - fumadocs-core@11.3.2
+  - nopends-core@11.3.2
 
 ## 11.3.1
 
 ### Patch Changes
 
 - 10ab3e9: Fix sidebar opened by default
-  - fumadocs-core@11.3.1
+  - nopends-core@11.3.1
 
 ## 11.3.0
 
@@ -1627,7 +1635,7 @@
 - 2a1211e: Support customising search dialog hotkeys
 - 9de31e6: Support `withArticle` for MDX Pages
 - Updated dependencies [917d87f]
-  - fumadocs-core@11.3.0
+  - nopends-core@11.3.0
 
 ## 11.2.2
 
@@ -1635,14 +1643,14 @@
 
 - dd0feb2: Support customising sidebar background with opacity
 - 72096c3: Support customising theme options from root provider
-  - fumadocs-core@11.2.2
+  - nopends-core@11.2.2
 
 ## 11.2.1
 
 ### Patch Changes
 
 - 8074920: Fix sidebar background width on dynamic sidebar
-  - fumadocs-core@11.2.1
+  - nopends-core@11.2.1
 
 ## 11.2.0
 
@@ -1652,7 +1660,7 @@
 
 ### Patch Changes
 
-- fumadocs-core@11.2.0
+- nopends-core@11.2.0
 
 ## 11.1.3
 
@@ -1663,7 +1671,7 @@
 - Updated dependencies [88008b1]
 - Updated dependencies [944541a]
 - Updated dependencies [07a9312]
-  - fumadocs-core@11.1.3
+  - nopends-core@11.1.3
 
 ## 11.1.2
 
@@ -1671,7 +1679,7 @@
 
 - 58adab1: Improve theme & styles
 - ae88793: Improve page footer design
-  - fumadocs-core@11.1.2
+  - nopends-core@11.1.2
 
 ## 11.1.1
 
@@ -1683,7 +1691,7 @@
 - Updated dependencies [8ef2b68]
 - Updated dependencies [26f464d]
 - Updated dependencies [26f464d]
-  - fumadocs-core@11.1.1
+  - nopends-core@11.1.1
 
 ## 11.1.0
 
@@ -1693,21 +1701,21 @@
 
 ### Patch Changes
 
-- fumadocs-core@11.1.0
+- nopends-core@11.1.0
 
 ## 11.0.8
 
 ### Patch Changes
 
 - Updated dependencies [98258b5]
-  - fumadocs-core@11.0.8
+  - nopends-core@11.0.8
 
 ## 11.0.7
 
 ### Patch Changes
 
 - Updated dependencies [f7c2c5c]
-  - fumadocs-core@11.0.7
+  - nopends-core@11.0.7
 
 ## 11.0.6
 
@@ -1716,36 +1724,36 @@
 - 8e0ef4b: Support disable search functionality including shortcuts
 - Updated dependencies [5653d5d]
 - Updated dependencies [5653d5d]
-  - fumadocs-core@11.0.6
+  - nopends-core@11.0.6
 
 ## 11.0.5
 
 ### Patch Changes
 
 - c8ea344: Support disabling search bar
-  - fumadocs-core@11.0.5
+  - nopends-core@11.0.5
 
 ## 11.0.4
 
 ### Patch Changes
 
-- 7b61b2f: Migrate `fumadocs-ui` to fully ESM, adding support for ESM `tailwind.config` file
+- 7b61b2f: Migrate `nopends-ui` to fully ESM, adding support for ESM `tailwind.config` file
 - Updated dependencies [7b61b2f]
-  - fumadocs-core@11.0.4
+  - nopends-core@11.0.4
 
 ## 11.0.3
 
 ### Patch Changes
 
 - c11e6ce: New color preset: `catppuccin`
-  - fumadocs-core@11.0.3
+  - nopends-core@11.0.3
 
 ## 11.0.2
 
 ### Patch Changes
 
 - 6470d6d: Fix collapse button on smaller viewports
-  - fumadocs-core@11.0.2
+  - nopends-core@11.0.2
 
 ## 11.0.1
 
@@ -1754,7 +1762,7 @@
 - 1136e02: Support modifying css with color presets
 - 1136e02: New color preset `neutral`
 - f6b4797: Improve Sidebar footer
-  - fumadocs-core@11.0.1
+  - nopends-core@11.0.1
 
 ## 11.0.0
 
@@ -1798,7 +1806,7 @@
 - Updated dependencies [92cb12f]
 - Updated dependencies [f75287d]
 - Updated dependencies [2d8df75]
-  - fumadocs-core@11.0.0
+  - nopends-core@11.0.0
 
 ## 10.1.3
 
@@ -1807,7 +1815,7 @@
 - 6ace206: Support opening Twoslash popup on mobile
 - d0288d1: New theme dusk
 - Updated dependencies [bbad52f]
-  - fumadocs-core@10.1.3
+  - nopends-core@10.1.3
 
 ## 10.1.2
 
@@ -1815,7 +1823,7 @@
 
 - 0facc07: Replace navbar links with secondary links
 - fd38022: Improve sidebar collapse
-  - fumadocs-core@10.1.2
+  - nopends-core@10.1.2
 
 ## 10.1.1
 
@@ -1825,7 +1833,7 @@
 - Updated dependencies [779c599]
 - Updated dependencies [0c01300]
 - Updated dependencies [779c599]
-  - fumadocs-core@10.1.1
+  - nopends-core@10.1.1
 
 ## 10.1.0
 
@@ -1835,20 +1843,20 @@
 
 ### Patch Changes
 
-- fumadocs-core@10.1.0
+- nopends-core@10.1.0
 
 ## 10.0.5
 
 ### Patch Changes
 
 - Updated dependencies [e47c62f]
-  - fumadocs-core@10.0.5
+  - nopends-core@10.0.5
 
 ## 10.0.4
 
 ### Patch Changes
 
-- fumadocs-core@10.0.4
+- nopends-core@10.0.4
 
 ## 10.0.3
 
@@ -1856,7 +1864,7 @@
 
 - b27091f: Support passing search dialog `options` from root provider
 - Updated dependencies [6f321e5]
-  - fumadocs-core@10.0.3
+  - nopends-core@10.0.3
 
 ## 10.0.2
 
@@ -1864,7 +1872,7 @@
 
 - 10e099a: Add scrollbar to TOC
 - Updated dependencies [10e099a]
-  - fumadocs-core@10.0.2
+  - nopends-core@10.0.2
 
 ## 10.0.1
 
@@ -1874,21 +1882,21 @@
 - Updated dependencies [c9b7763]
 - Updated dependencies [0e78dc8]
 - Updated dependencies [d8483a8]
-  - fumadocs-core@10.0.1
+  - nopends-core@10.0.1
 
 ## 10.0.0
 
 ### Major Changes
 
-- 321d1e1f: **Move Typescript integrations to `fumadocs-typescript`**
+- 321d1e1f: **Move Typescript integrations to `nopends-typescript`**
 
   why: It is now a stable feature
 
-  migrate: Use `fumadocs-typescript` instead.
+  migrate: Use `nopends-typescript` instead.
 
   ```diff
-  - import { AutoTypeTable } from "fumadocs-ui/components/auto-type-table"
-  + import { AutoTypeTable } from "fumadocs-typescript/ui"
+  - import { AutoTypeTable } from "nopends-ui/components/auto-type-table"
+  + import { AutoTypeTable } from "nopends-typescript/ui"
   ```
 
 ### Patch Changes
@@ -1896,7 +1904,7 @@
 - de7ed150: Hide external items from navigation footer
 - Updated dependencies [b5d16938]
 - Updated dependencies [321d1e1f]
-  - fumadocs-core@10.0.0
+  - nopends-core@10.0.0
 
 ## 9.1.0
 
@@ -1910,7 +1918,7 @@
 - Updated dependencies [909b0e35]
 - Updated dependencies [691f12aa]
 - Updated dependencies [1c388ca5]
-  - fumadocs-core@9.1.0
+  - nopends-core@9.1.0
 
 ## 9.0.0
 
@@ -1938,20 +1946,20 @@
 
 - 2b355907: **Remove controlled usage for Accordion**
 
-  Why: Components in Fumadocs UI should not be used outside of MDX.
+  Why: Components in Nopends UI should not be used outside of MDX.
 
   Migrate: Remove `value` and `onValueChange` props.
 
 ### Patch Changes
 
-- fumadocs-core@9.0.0
+- nopends-core@9.0.0
 
 ## 8.3.0
 
 ### Minor Changes
 
 - b0003d44: Add `purple` theme
-- 9bdb49dd: Add `Folder` export to `fumadocs-ui/components/files`
+- 9bdb49dd: Add `Folder` export to `nopends-ui/components/files`
 - 99d66d2d: Rename `title` prop to `name` in `File` and `Folder` component
 
 ### Patch Changes
@@ -1959,7 +1967,7 @@
 - 5e314eee: Deprecate `input` color and `medium` font size from Tailwind CSS preset
 - 52d578d0: Set `darkMode` to `class` by default
 - 84667d2f: Improve Accordions
-  - fumadocs-core@8.3.0
+  - nopends-core@8.3.0
 
 ## 8.2.0
 
@@ -1971,14 +1979,14 @@
 
 - 09bdf63: Separate stylesheet with Image Zoom component
 - Updated dependencies [5c24659]
-  - fumadocs-core@8.2.0
+  - nopends-core@8.2.0
 
 ## 8.1.1
 
 ### Patch Changes
 
 - 153ceaf: Fix typo
-  - fumadocs-core@8.1.1
+  - nopends-core@8.1.1
 
 ## 8.1.0
 
@@ -1989,11 +1997,11 @@
 
 ### Patch Changes
 
-- 6c5a39a: Rename Git repository to `fumadocs`
+- 6c5a39a: Rename Git repository to `nopends`
 - Updated dependencies [6c5a39a]
 - Updated dependencies [eb028b4]
 - Updated dependencies [054ec60]
-  - fumadocs-core@8.1.0
+  - nopends-core@8.1.0
 
 ## 8.0.0
 
@@ -2022,7 +2030,7 @@
   migrate: Use `createPreset` instead
 
   ```js
-  const { createPreset } = require('fumadocs-ui/tailwind-plugin');
+  const { createPreset } = require('nopends-ui/tailwind-plugin');
 
   /** @type {import('tailwindcss').Config} */
   module.exports = {
@@ -2030,7 +2038,7 @@
       './components/**/*.{ts,tsx}',
       './app/**/*.{ts,tsx}',
       './content/**/*.mdx',
-      './node_modules/fumadocs-ui/dist/**/*.js',
+      './node_modules/nopends-ui/dist/**/*.js',
     ],
     presets: [createPreset()],
   };
@@ -2043,7 +2051,7 @@
   Before:
 
   ```tsx
-  import { CodeBlock, Pre } from 'fumadocs-ui/mdx/pre';
+  import { CodeBlock, Pre } from 'nopends-ui/mdx/pre';
 
   <Pre title={title} allowCopy {...props} />;
   ```
@@ -2051,7 +2059,7 @@
   After:
 
   ```tsx
-  import { CodeBlock, Pre } from 'fumadocs-ui/components/codeblock';
+  import { CodeBlock, Pre } from 'nopends-ui/components/codeblock';
 
   <CodeBlock title={title} allowCopy>
     <Pre {...props} />
@@ -2065,27 +2073,27 @@
   migrate:
 
   ```diff
-  - import { Card, Cards } from "fumadocs-ui/mdx/card"
-  + import { Card, Cards } from "fumadocs-ui/components/card"
+  - import { Card, Cards } from "nopends-ui/mdx/card"
+  + import { Card, Cards } from "nopends-ui/components/card"
 
-  - import { Heading } from "fumadocs-ui/mdx/heading"
-  + import { Heading } from "fumadocs-ui/components/heading"
+  - import { Heading } from "nopends-ui/mdx/heading"
+  + import { Heading } from "nopends-ui/components/heading"
 
-  - import { Codeblock, Pre } from "fumadocs-ui/mdx/pre"
-  + import { Codeblock, Pre } from "fumadocs-ui/components/codeblock"
+  - import { Codeblock, Pre } from "nopends-ui/mdx/pre"
+  + import { Codeblock, Pre } from "nopends-ui/components/codeblock"
   ```
 
-- 2b11c20: **Rename to Fumadocs**
+- 2b11c20: **Rename to Nopends**
 
-  `next-docs-zeta` -> `fumadocs-core`
+  `next-docs-zeta` -> `nopends-core`
 
-  `next-docs-ui` -> `fumadocs-ui`
+  `next-docs-ui` -> `nopends-ui`
 
-  `next-docs-mdx` -> `fumadocs-mdx`
+  `next-docs-mdx` -> `nopends-mdx`
 
-  `@fuma-docs/openapi` -> `fumadocs-openapi`
+  `@fuma-docs/openapi` -> `nopends-openapi`
 
-  `create-next-docs-app` -> `create-fumadocs-app`
+  `create-next-docs-app` -> `create-nopends-app`
 
 - 60db195: **Remove Nav component export**
 
@@ -2094,8 +2102,8 @@
   migration: Use the Layout component for sharing the navbar across pages
 
   ```diff
-  - import { Nav } from "fumadocs-ui/nav"
-  + import { Layout } from "fumadocs-ui/layout"
+  - import { Nav } from "nopends-ui/nav"
+  + import { Layout } from "nopends-ui/layout"
   ```
 
 ### Minor Changes
@@ -2109,7 +2117,7 @@
 - Updated dependencies [cdff313]
 - Updated dependencies [1a346a1]
 - Updated dependencies [2b11c20]
-  - fumadocs-core@8.0.0
+  - nopends-core@8.0.0
 
 ## 7.1.2
 

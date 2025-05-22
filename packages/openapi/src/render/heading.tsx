@@ -1,5 +1,5 @@
 import type { ReactNode } from 'react';
-import { Heading } from 'fumadocs-ui/components/heading';
+import { Heading } from 'nopends-ui/components/heading';
 import type { RenderContext } from '@/types';
 
 export function heading(

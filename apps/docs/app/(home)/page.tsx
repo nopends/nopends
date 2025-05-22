@@ -17,7 +17,7 @@ import {
   Terminal,
   TimerIcon,
 } from 'lucide-react';
-import { File, Files, Folder } from 'fumadocs-ui/components/files';
+import { File, Files, Folder } from 'nopends-ui/components/files';
 import Link from 'next/link';
 import type { HTMLAttributes, ReactNode } from 'react';
 import Image from 'next/image';
@@ -33,7 +33,7 @@ import {
   WhyInteractive,
 } from './page.client';
 import { NetlifyLogo, VercelLogo } from './icons';
-import { TypeTable } from 'fumadocs-ui/components/type-table';
+import { TypeTable } from 'nopends-ui/components/type-table';
 import { owner, repo } from '@/lib/github';
 import { Marquee } from '@/app/(home)/marquee';
 import ArchImg from './arch.png';
@@ -101,7 +101,7 @@ function Architecture() {
         </p>
         <h2 className="text-2xl font-semibold mb-4">A breakable framework.</h2>
         <p className="text-fd-muted-foreground mb-6">
-          Fumadocs makes it easy to build beautiful docs, write content, and
+          Nopends makes it easy to build beautiful docs, write content, and
           transform content into data for your React.js framework.
         </p>
       </div>
@@ -139,7 +139,7 @@ async function Why() {
           <CodeBlock
             lang="ts"
             code={`import { source } from '@/lib/source';
-import { createFromSource } from 'fumadocs-core/search/server';
+import { createFromSource } from 'nopends-core/search/server';
  
 export const { GET } = createFromSource(source);`}
           />
@@ -148,14 +148,14 @@ export const { GET } = createFromSource(source);`}
           <CodeBlock
             lang="css"
             code={`@import 'tailwindcss';
-@import 'fumadocs-ui/css/neutral.css';
-@import 'fumadocs-ui/css/preset.css';`}
+@import 'nopends-ui/css/neutral.css';
+@import 'nopends-ui/css/preset.css';`}
           />
         }
         codeblockInteractive={
           <CodeBlock
             lang="tsx"
-            code={`import { File, Folder, Files } from 'fumadocs-ui/components/files';
+            code={`import { File, Folder, Files } from 'nopends-ui/components/files';
  
 <Files>
   <Folder name="app" defaultOpen>
@@ -241,7 +241,7 @@ function End() {
             Read docs
           </Link>
           <a
-            href="https://stackblitz.com/~/github.com/fuma-nama/fumadocs-ui-template"
+            href="https://stackblitz.com/~/github.com/nopends/nopends-ui-template"
             rel="noreferrer noopener"
             className={cn(
               buttonVariants({
@@ -378,7 +378,7 @@ function Hero() {
         Build excellent documentation site with less effort
       </h1>
       <p className="mb-8 text-fd-muted-foreground md:max-w-[80%] md:text-xl">
-        Fumadocs is a beautiful documentation framework for Developers, flexible
+        Nopends is a beautiful documentation framework for Developers, flexible
         and performant, with everything from Next.js.
       </p>
       <div className="inline-flex items-center gap-3 max-md:mx-auto">
@@ -391,7 +391,7 @@ function Hero() {
           Getting Started
         </Link>
         <a
-          href="https://stackblitz.com/~/github.com/fuma-nama/fumadocs-ui-template"
+          href="https://stackblitz.com/~/github.com/nopends/nopends-ui-template"
           target="_blank"
           rel="noreferrer noopener"
           className={cn(
@@ -417,7 +417,7 @@ const feedback = [
     role: 'Creator of Shadcn UI',
     message: `You know how you end up rebuilding a full docs site every time you start a new project? 
 
-Fumadocs fixes this by giving you all the right blocks that you compose together.
+Nopends fixes this by giving you all the right blocks that you compose together.
 
 Like headless docs to build exactly what you need.`,
   },
@@ -425,13 +425,13 @@ Like headless docs to build exactly what you need.`,
     avatar: 'https://avatars.githubusercontent.com/u/35677084',
     user: 'Anthony Shew',
     role: 'Turbo DX at Vercel',
-    message: `Major shoutout to @fuma_nama for making fumadocs, a gorgeous documentation framework that composes beautifully into the App Router.`,
+    message: `Major shoutout to @fuma_nama for making nopends, a gorgeous documentation framework that composes beautifully into the App Router.`,
   },
   {
     user: 'Aiden Bai',
     avatar: 'https://avatars.githubusercontent.com/u/38025074',
     role: 'Creator of Million.js',
-    message: 'fumadocs is the best Next.js docs framework',
+    message: 'nopends is the best Next.js docs framework',
   },
   {
     avatar: 'https://avatars.githubusercontent.com/u/10645823',
@@ -552,7 +552,7 @@ function Contributing() {
         Made Possible by You.
       </h2>
       <p className="mb-4 text-fd-muted-foreground">
-        Fumadocs is 100% powered by passion and open source community.
+        Nopends is 100% powered by passion and open source community.
       </p>
       <div className="mb-8 flex flex-row items-center gap-2">
         <Link
@@ -562,7 +562,7 @@ function Contributing() {
           Sponsors
         </Link>
         <a
-          href="https://github.com/fuma-nama/fumadocs/graphs/contributors"
+          href="https://github.com/nopends/nopends/graphs/contributors"
           rel="noreferrer noopener"
           className={cn(buttonVariants({ variant: 'ghost' }))}
         >
@@ -587,7 +587,7 @@ function Features() {
               Designed to integrate with any content source:{' '}
             </span>
             <span>
-              Fumadocs works on MDX, Content Collections, and even your own CMS.
+              Nopends works on MDX, Content Collections, and even your own CMS.
             </span>
           </>
         }
@@ -600,7 +600,7 @@ function Features() {
         <div className="mt-8 flex flex-col">
           <div className="flex flex-row w-fit bg-fd-secondary border rounded-full *:rounded-full">
             <a
-              href="https://github.com/fuma-nama/fumadocs-basehub"
+              href="https://github.com/nopends/nopends-basehub"
               rel="noreferrer noopener"
               target="_blank"
               className={cn(buttonVariants({ variant: 'outline' }))}
@@ -608,7 +608,7 @@ function Features() {
               BaseHub CMS example
             </a>
             <a
-              href="https://github.com/fuma-nama/fumadocs-sanity"
+              href="https://github.com/nopends/nopends-sanity"
               rel="noreferrer noopener"
               target="_blank"
               className={cn(buttonVariants({ variant: 'ghost' }))}
@@ -656,9 +656,9 @@ function Features() {
       </Feature>
       <Feature
         icon={Terminal}
-        subheading="Fumadocs CLI"
+        subheading="Nopends CLI"
         heading="The Shadcn UI for docs"
-        description="Fumadocs CLI creates interactive components for your docs, offering a rich experience to your users."
+        description="Nopends CLI creates interactive components for your docs, offering a rich experience to your users."
       >
         <div className="relative">
           <div className="grid grid-cols-[1fr_2fr_1fr] h-[220px] *:border-fd-foreground/50 *:border-dashed mask-radial-circle mask-radial-from-white">
@@ -676,7 +676,7 @@ function Features() {
           </div>
           <code className="absolute inset-0 flex items-center justify-center">
             <code className="text-sm text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-fd-foreground font-medium">
-              npx @fumadocs/cli add
+              npx @nopends/cli add
             </code>
           </code>
         </div>
@@ -694,9 +694,9 @@ function Features() {
           >
             <div className="rounded-[inherit] bg-fd-background bg-gradient-to-br from-transparent via-fd-primary/10 p-4 transition-colors hover:bg-fd-muted">
               <LayoutIcon />
-              <h3 className="font-semibold">Fumadocs UI</h3>
+              <h3 className="font-semibold">Nopends UI</h3>
               <p className="text-sm text-fd-muted-foreground">
-                Default theme of Fumadocs with many useful components.
+                Default theme of Nopends with many useful components.
               </p>
             </div>
           </Link>

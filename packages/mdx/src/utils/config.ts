@@ -9,7 +9,7 @@ import { type GlobalConfig } from '@/config/types';
 import type { ProcessorOptions } from '@mdx-js/mdx';
 import { pathToFileURL } from 'node:url';
 import { buildConfig } from '@/config/build';
-import type { MDXOptions as RemoteMdxOptions } from '@fumadocs/mdx-remote';
+import type { MDXOptions as RemoteMdxOptions } from '@nopends/mdx-remote';
 
 export function findConfigFile(): string {
   return path.resolve('source.config.ts');

@@ -1,4 +1,4 @@
-import type { Source, VirtualFile } from 'fumadocs-core/source';
+import type { Source, VirtualFile } from 'nopends-core/source';
 import type { BaseDocsData, BaseMetaData } from '@/types';
 
 export function createMDXSource<

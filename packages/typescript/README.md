@@ -1,3 +1,3 @@
-# Fumadocs Typescript
+# Nopends Typescript
 
-Typescript Integration for Fumadocs.
+Typescript Integration for Nopends.

@@ -3,9 +3,9 @@
 import {
   type AlgoliaOptions,
   useDocsSearch,
-} from 'fumadocs-core/search/client';
+} from 'nopends-core/search/client';
 import { type ReactNode, useState } from 'react';
-import { useOnChange } from 'fumadocs-core/utils/use-on-change';
+import { useOnChange } from 'nopends-core/utils/use-on-change';
 import {
   SearchDialog,
   type SharedProps,

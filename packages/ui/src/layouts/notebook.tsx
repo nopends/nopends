@@ -26,7 +26,7 @@ import {
   SidebarLinkItem,
   type SidebarOptions,
 } from '@/layouts/docs/shared';
-import type { PageTree } from 'fumadocs-core/server';
+import type { PageTree } from 'nopends-core/server';
 import {
   LayoutTab,
   LayoutTabs,
@@ -39,7 +39,7 @@ import {
   StylesProvider,
 } from '@/contexts/layout';
 import { type Option, RootToggle } from '@/components/layout/root-toggle';
-import Link from 'fumadocs-core/link';
+import Link from 'nopends-core/link';
 import {
   LargeSearchToggle,
   SearchToggle,

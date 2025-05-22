@@ -1,14 +1,14 @@
 ---
 title: Global Options
-description: Customise Fumadocs MDX
+description: Customise Nopends MDX
 ---
 
 ## Global Options
 
-Shared options of Fumadocs MDX.
+Shared options of Nopends MDX.
 
 ```ts title="source.config.ts"
-import { defineConfig } from 'fumadocs-mdx/config';
+import { defineConfig } from 'nopends-mdx/config';
 
 export default defineConfig({
   // global options
@@ -22,7 +22,7 @@ export default defineConfig({
 Customise the MDX processor options for MDX files.
 
 ```ts title="source.config.ts"
-import { defineConfig } from 'fumadocs-mdx/config';
+import { defineConfig } from 'nopends-mdx/config';
 import rehypeKatex from 'rehype-katex';
 import remarkMath from 'remark-math';
 
@@ -35,4 +35,4 @@ export default defineConfig({
 });
 ```
 
-Some default options are applied by Fumadocs MDX, see [Extended MDX Options](/docs/mdx/mdx#extended) for available options.
+Some default options are applied by Nopends MDX, see [Extended MDX Options](/docs/mdx/mdx#extended) for available options.

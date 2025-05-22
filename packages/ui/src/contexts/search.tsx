@@ -7,7 +7,7 @@ import {
   useState,
 } from 'react';
 import type { SearchLink, SharedProps } from '@/components/dialog/search';
-import { createContext } from 'fumadocs-core/framework';
+import { createContext } from 'nopends-core/framework';
 
 interface HotKey {
   display: ReactNode;

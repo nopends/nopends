@@ -1,4 +1,4 @@
-import { DocsLayout } from 'fumadocs-ui/layouts/docs';
+import { DocsLayout } from 'nopends-ui/layouts/docs';
 import type { ReactNode } from 'react';
 import pageTree from '@/content/docs/page-tree';
 

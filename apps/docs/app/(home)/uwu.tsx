@@ -15,7 +15,7 @@ export function UwuHero() {
       />
 
       <p className="mb-6 h-fit p-2 text-lg text-fd-muted-foreground md:max-w-[80%] md:text-xl">
-        Fumadocs is the framework for building documentation with{' '}
+        Nopends is the framework for building documentation with{' '}
         <b className="font-medium text-fd-foreground">
           anime and fuwa fuwa power
         </b>
@@ -31,7 +31,7 @@ export function UwuHero() {
           Getting Started
         </Link>
         <a
-          href="https://stackblitz.com/~/github.com/fuma-nama/fumadocs-ui-template"
+          href="https://stackblitz.com/~/github.com/nopends/nopends-ui-template"
           className={cn(
             buttonVariants({
               size: 'lg',

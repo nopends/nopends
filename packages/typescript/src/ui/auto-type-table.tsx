@@ -1,7 +1,7 @@
-import { TypeTable } from 'fumadocs-ui/components/type-table';
+import { TypeTable } from 'nopends-ui/components/type-table';
 import { type Jsx, toJsxRuntime } from 'hast-util-to-jsx-runtime';
 import * as runtime from 'react/jsx-runtime';
-import defaultMdxComponents from 'fumadocs-ui/mdx';
+import defaultMdxComponents from 'nopends-ui/mdx';
 import { renderMarkdownToHast } from '@/markdown';
 import 'server-only';
 import type { ReactNode } from 'react';

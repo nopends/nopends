@@ -8,9 +8,9 @@
     "start": "next start"
   },
   "dependencies": {
-    "@fumadocs/content-collections": "workspace:*",
-    "fumadocs-core": "workspace:*",
-    "fumadocs-ui": "workspace:*",
+    "@nopends/content-collections": "workspace:*",
+    "nopends-core": "workspace:*",
+    "nopends-ui": "workspace:*",
     "next": "^15.3.2",
     "react": "19.1.0",
     "react-dom": "19.1.0"

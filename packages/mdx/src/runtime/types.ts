@@ -1,6 +1,6 @@
 import type { BaseCollectionEntry, FileInfo, MarkdownProps } from '@/config';
 import type { StandardSchemaV1 } from '@standard-schema/spec';
-import type { MetaData, PageData, Source } from 'fumadocs-core/source';
+import type { MetaData, PageData, Source } from 'nopends-core/source';
 import type { LoadedConfig } from '@/utils/config';
 
 export interface RuntimeFile {
@@ -71,7 +71,7 @@ export interface Runtime {
         docs: DocOut<DocSchema>[];
         meta: MetaOut<MetaSchema>[];
 
-        toFumadocsSource: () => Source<{
+        toNopendsSource: () => Source<{
           pageData: DocOut<DocSchema> extends PageData
             ? DocOut<DocSchema>
             : never;
@@ -128,7 +128,7 @@ export interface RuntimeAsync {
     ? {
         docs: AsyncDocOut<DocSchema>[];
         meta: MetaOut<MetaSchema>[];
-        toFumadocsSource: () => Source<{
+        toNopendsSource: () => Source<{
           pageData: AsyncDocOut<DocSchema> extends PageData
             ? AsyncDocOut<DocSchema>
             : never;

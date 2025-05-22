@@ -2,7 +2,7 @@ import type { ReactNode } from 'react';
 import type { LinkItemType } from '@/layouts/links';
 import type { NavProviderProps } from '@/contexts/layout';
 import { Slot } from '@radix-ui/react-slot';
-import type { I18nConfig } from 'fumadocs-core/i18n';
+import type { I18nConfig } from 'nopends-core/i18n';
 
 export interface NavOptions extends NavProviderProps {
   enabled: boolean;

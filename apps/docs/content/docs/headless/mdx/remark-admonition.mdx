@@ -1,6 +1,6 @@
 ---
 title: Remark Admonition
-description: Use Admonition in Fumadocs
+description: Use Admonition in Nopends
 ---
 
 In Docusaurus, there's an [Admonition syntax](https://docusaurus.io/docs/markdown-features/admonitions).
@@ -9,9 +9,9 @@ For people migrating from Docusaurus, you can enable this remark plugin to suppo
 
 ## Usage
 
-```ts title="source.config.ts" tab="Fumadocs MDX"
-import { remarkAdmonition } from 'fumadocs-core/mdx-plugins';
-import { defineConfig } from 'fumadocs-mdx/config';
+```ts title="source.config.ts" tab="Nopends MDX"
+import { remarkAdmonition } from 'nopends-core/mdx-plugins';
+import { defineConfig } from 'nopends-mdx/config';
 
 export default defineConfig({
   mdxOptions: {
@@ -22,7 +22,7 @@ export default defineConfig({
 
 ```ts tab="MDX Compiler"
 import { compile } from '@mdx-js/mdx';
-import { remarkAdmonition } from 'fumadocs-core/mdx-plugins';
+import { remarkAdmonition } from 'nopends-core/mdx-plugins';
 
 await compile('...', {
   remarkPlugins: [remarkAdmonition],

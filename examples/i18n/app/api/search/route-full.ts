@@ -1,5 +1,5 @@
 import { source } from '@/lib/source';
-import { createI18nSearchAPI } from 'fumadocs-core/search/server';
+import { createI18nSearchAPI } from 'nopends-core/search/server';
 import { i18n } from '@/lib/i18n';
 
 export const { GET } = createI18nSearchAPI('advanced', {

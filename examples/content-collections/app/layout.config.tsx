@@ -1,4 +1,4 @@
-import { BaseLayoutProps } from 'fumadocs-ui/layouts/shared';
+import { BaseLayoutProps } from 'nopends-ui/layouts/shared';
 
 export const baseOptions: BaseLayoutProps = {
   nav: {

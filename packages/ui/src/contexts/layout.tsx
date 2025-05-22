@@ -1,6 +1,6 @@
 'use client';
 import { type ReactNode, useEffect, useMemo, useState } from 'react';
-import { createContext } from 'fumadocs-core/framework';
+import { createContext } from 'nopends-core/framework';
 
 export interface PageStyles {
   tocNav?: string;

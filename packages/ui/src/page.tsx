@@ -1,6 +1,6 @@
-import type { TableOfContents } from 'fumadocs-core/server';
+import type { TableOfContents } from 'nopends-core/server';
 import { type ComponentProps, forwardRef, lazy, type ReactNode } from 'react';
-import { AnchorProvider, type AnchorProviderProps } from 'fumadocs-core/toc';
+import { AnchorProvider, type AnchorProviderProps } from 'nopends-core/toc';
 import { slot } from '@/layouts/shared';
 import { cn } from './utils/cn';
 import {

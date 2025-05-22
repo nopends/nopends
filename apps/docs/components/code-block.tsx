@@ -1,5 +1,5 @@
-import * as Base from 'fumadocs-ui/components/codeblock';
-import { highlight } from 'fumadocs-core/highlight';
+import * as Base from 'nopends-ui/components/codeblock';
+import { highlight } from 'nopends-core/highlight';
 
 export interface CodeBlockProps {
   code: string;

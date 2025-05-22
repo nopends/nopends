@@ -1,8 +1,8 @@
 import { App, Octokit } from 'octokit';
 import type { Feedback } from '@/components/rate';
 
-export const repo = 'fumadocs';
-export const owner = 'fuma-nama';
+export const repo = 'nopends';
+export const owner = 'nopends';
 export const DocsCategory = 'Docs Feedback';
 
 let instance: Octokit | undefined;
@@ -97,7 +97,7 @@ export async function onRateAction(url: string, feedback: Feedback) {
     };
   } = await octokit.graphql(`
           query {
-            search(type: DISCUSSION, query: ${JSON.stringify(`${title} in:title repo:fuma-nama/fumadocs author:@me`)}, first: 1) {
+            search(type: DISCUSSION, query: ${JSON.stringify(`${title} in:title repo:nopends/nopends author:@me`)}, first: 1) {
               nodes {
                 ... on Discussion { id }
               }

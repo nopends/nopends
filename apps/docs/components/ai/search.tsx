@@ -11,15 +11,15 @@ import {
   useState,
 } from 'react';
 import { Loader2, RefreshCw, Send, X } from 'lucide-react';
-import defaultMdxComponents from 'fumadocs-ui/mdx';
+import defaultMdxComponents from 'nopends-ui/mdx';
 import { cn } from '@/lib/cn';
 import { buttonVariants } from '../../../../packages/ui/src/components/ui/button';
 import type { Processor } from './markdown-processor';
-import Link from 'fumadocs-core/link';
+import Link from 'nopends-core/link';
 import {
   ScrollArea,
   ScrollViewport,
-} from 'fumadocs-ui/components/ui/scroll-area';
+} from 'nopends-ui/components/ui/scroll-area';
 import {
   Dialog,
   DialogClose,
@@ -215,7 +215,7 @@ const map = new Map<string, ReactNode>();
 
 const roleName: Record<string, string> = {
   user: 'you',
-  assistant: 'fumadocs',
+  assistant: 'nopends',
 };
 
 function Message({ message }: { message: Message }) {

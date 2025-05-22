@@ -1,4 +1,4 @@
-import { type Registry } from '@fumadocs/cli/build';
+import { type Registry } from '@nopends/cli/build';
 import * as ui from '../../../packages/ui/src/_registry';
 import { fileURLToPath } from 'node:url';
 import * as path from 'node:path';
@@ -33,10 +33,10 @@ export const registry: Registry = {
     },
   ],
   dependencies: {
-    'fumadocs-core': {
+    'nopends-core': {
       type: 'runtime',
     },
-    'fumadocs-ui': {
+    'nopends-ui': {
       type: 'runtime',
     },
     next: {

@@ -1,11 +1,11 @@
 ---
 title: Built-in Search
-description: Built-in document search of Fumadocs
+description: Built-in document search of Nopends
 ---
 
-Fumadocs supports searching document based on Orama.
+Nopends supports searching document based on Orama.
 
-As the built-in search of Fumadocs, It is the default but also recommended
+As the built-in search of Nopends, It is the default but also recommended
 option since it's easier to setup and totally free.
 
 ## Search Server
@@ -29,7 +29,7 @@ Pass search indexes to the function.
 <Tab>
 
 Each index needs a `structuredData` field.
-Usually, it is provided by your content source (e.g. Fumadocs MDX). You can also extract it from Markdown/MDX document using the [Remark Structure](/docs/headless/mdx/structure) plugin.
+Usually, it is provided by your content source (e.g. Nopends MDX). You can also extract it from Markdown/MDX document using the [Remark Structure](/docs/headless/mdx/structure) plugin.
 
 <include cwd meta='title="app/api/search/route.ts"'>
   ../../examples/next-mdx/app/api/search/route-full.ts
@@ -43,7 +43,7 @@ Index with the raw content of document (unrecommended).
 
 ```ts title="app/api/search/route.ts"
 import { allDocs } from 'content-collections';
-import { createSearchAPI } from 'fumadocs-core/search/server';
+import { createSearchAPI } from 'nopends-core/search/server';
 
 export const { GET } = createSearchAPI('simple', {
   indexes: allDocs.map((docs) => ({
@@ -68,7 +68,7 @@ If your language is not on the Orama [Supported Languages](https://docs.orama.co
 
 ```ts title="app/api/search/route.ts" tab="Without I18n"
 import { source } from '@/lib/source';
-import { createFromSource } from 'fumadocs-core/search/server';
+import { createFromSource } from 'nopends-core/search/server';
 import { createTokenizer } from '@orama/tokenizers/mandarin';
 
 // example for Mandarin
@@ -89,18 +89,18 @@ See [Orama Docs](https://docs.orama.com/open-source/supported-languages/using-ch
 
 You can search documents using:
 
-- **Fumadocs UI**: The built-in [Search UI](/docs/ui/search) supports it out-of-the-box.
+- **Nopends UI**: The built-in [Search UI](/docs/ui/search) supports it out-of-the-box.
 - **Search Client**:
 
   ```ts twoslash
-  import { useDocsSearch } from 'fumadocs-core/search/client';
+  import { useDocsSearch } from 'nopends-core/search/client';
 
   const client = useDocsSearch({
     type: 'fetch',
   });
   ```
 
-  <auto-type-table type='Extract<import("fumadocs-core/search/client").Client, { type: "fetch" }>' />
+  <auto-type-table type='Extract<import("nopends-core/search/client").Client, { type: "fetch" }>' />
 
 ### Tag Filter
 
@@ -112,13 +112,13 @@ Support filtering by tag, it's useful for implementing multi-docs similar to thi
 
 and update your search client:
 
-- **Fumadocs UI**:
+- **Nopends UI**:
   Configure [Tag Filter](/docs/ui/search#tag-filter) on Search UI.
 - **Search Client**:
   pass a tag to the hook.
 
   ```ts
-  import { useDocsSearch } from 'fumadocs-core/search/client';
+  import { useDocsSearch } from 'nopends-core/search/client';
 
   // Pass `tag` in your custom search dialog
   const client = useDocsSearch(
@@ -134,7 +134,7 @@ and update your search client:
 
 ```ts title="lib/source.ts" tab="createFromSource"
 import { i18n } from '@/lib/i18n';
-import { loader } from 'fumadocs-core/source';
+import { loader } from 'nopends-core/source';
 
 // You only need i18n option on source object.
 export const source = loader({
@@ -148,8 +148,8 @@ export const source = loader({
 
 ### Update Search Client
 
-<Callout type="info" title="For Fumadocs UI">
-  You can ignore this, Fumadocs UI handles this when you have i18n configured
+<Callout type="info" title="For Nopends UI">
+  You can ignore this, Nopends UI handles this when you have i18n configured
   correctly.
 </Callout>
 
@@ -170,7 +170,7 @@ To work with Next.js static export, use `staticGET` from search server.
 
 ```ts title="app/api/search/route.ts"
 import { source } from '@/lib/source';
-import { createFromSource } from 'fumadocs-core/search/server';
+import { createFromSource } from 'nopends-core/search/server';
 
 // it should be cached forever
 export const revalidate = false;
@@ -182,21 +182,21 @@ export const { staticGET: GET } = createFromSource(source);
 
 and update your search clients:
 
-- **Fumadocs UI**: See [Static Export](/docs/ui/static-export#built-in-search) guide.
+- **Nopends UI**: See [Static Export](/docs/ui/static-export#built-in-search) guide.
 
 - **Search Client**:
 
   On your search client, use `static` instead of `fetch`.
 
   ```ts
-  import { useDocsSearch } from 'fumadocs-core/search/client';
+  import { useDocsSearch } from 'nopends-core/search/client';
 
   const client = useDocsSearch({
     type: 'static',
   });
   ```
 
-  <AutoTypeTable type='Extract<import("fumadocs-core/search/client").Client, { type: "static" }>' />
+  <AutoTypeTable type='Extract<import("nopends-core/search/client").Client, { type: "static" }>' />
 
 <Callout type='warn' title="Be Careful">
 
@@ -213,7 +213,7 @@ and update your search clients:
 You can host the search server on other backend such as Express and Elysia.
 
 ```ts
-import { initAdvancedSearch } from 'fumadocs-core/search/server';
+import { initAdvancedSearch } from 'nopends-core/search/server';
 
 const server = initAdvancedSearch({
   // you still have to pass indexes

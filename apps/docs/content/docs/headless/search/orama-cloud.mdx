@@ -41,12 +41,12 @@ REST API integration requires your docs to upload the indexes.
 
 ### Search Client
 
-To search documents on the client side, use [Fumadocs UI Search Dialog](/docs/ui/search#orama-cloud), or make your own implementation.
+To search documents on the client side, use [Nopends UI Search Dialog](/docs/ui/search#orama-cloud), or make your own implementation.
 
-In addition, the headless search client of Fumadocs can handle state management for React.
+In addition, the headless search client of Nopends can handle state management for React.
 
 ```ts
-import { useDocsSearch } from 'fumadocs-core/search/client';
+import { useDocsSearch } from 'nopends-core/search/client';
 import { OramaClient } from '@oramacloud/client';
 
 const client = new OramaClient();
@@ -70,7 +70,7 @@ const { search, setSearch, query } = useDocsSearch({
 Same as REST API integration, but make sure to set `index` to `crawler`.
 
 ```ts
-import { useDocsSearch } from 'fumadocs-core/search/client';
+import { useDocsSearch } from 'nopends-core/search/client';
 import { OramaClient } from '@oramacloud/client';
 
 const client = new OramaClient({
@@ -88,14 +88,14 @@ const { search, setSearch, query } = useDocsSearch({
 });
 ```
 
-It's same for Fumadocs UI:
+It's same for Nopends UI:
 
 ```tsx
 'use client';
 
 import { OramaClient } from '@oramacloud/client';
-import type { SharedProps } from 'fumadocs-ui/components/dialog/search';
-import SearchDialog from 'fumadocs-ui/components/dialog/search-orama';
+import type { SharedProps } from 'nopends-ui/components/dialog/search';
+import SearchDialog from 'nopends-ui/components/dialog/search-orama';
 
 const client = new OramaClient({
   endpoint: '<endpoint_url>',

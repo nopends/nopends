@@ -1,13 +1,13 @@
 {
-  "name": "fumadocs-mdx",
-  "version": "11.6.5",
-  "description": "The built-in source for Fumadocs",
+  "name": "nopends-mdx",
+  "version": "11.6.6-alpha.0",
+  "description": "The built-in source for Nopends",
   "keywords": [
     "NextJs",
     "Docs"
   ],
-  "homepage": "https://fumadocs.vercel.app",
-  "repository": "github:fuma-nama/fumadocs",
+  "homepage": "https://docs.nopends.com",
+  "repository": "github:nopends/nopends",
   "license": "MIT",
   "author": "Fuma Nama",
   "type": "module",
@@ -64,14 +64,14 @@
     "zod": "^3.25.7"
   },
   "devDependencies": {
-    "@fumadocs/mdx-remote": "workspace:*",
+    "@nopends/mdx-remote": "workspace:*",
     "@types/cross-spawn": "^6.0.6",
     "@types/js-yaml": "^4.0.9",
     "@types/mdast": "^4.0.3",
     "@types/mdx": "^2.0.13",
     "@types/react": "^19.1.4",
     "eslint-config-custom": "workspace:*",
-    "fumadocs-core": "workspace:*",
+    "nopends-core": "workspace:*",
     "mdast-util-mdx-jsx": "^3.2.0",
     "next": "^15.3.2",
     "tsconfig": "workspace:*",
@@ -80,12 +80,12 @@
     "webpack": "^5.99.9"
   },
   "peerDependencies": {
-    "@fumadocs/mdx-remote": "^1.2.0",
-    "fumadocs-core": "^14.0.0 || ^15.0.0",
+    "@nopends/mdx-remote": "^1.2.0",
+    "nopends-core": "^14.0.0 || ^15.0.0",
     "next": "^15.3.0"
   },
   "peerDependenciesMeta": {
-    "@fumadocs/mdx-remote": {
+    "@nopends/mdx-remote": {
       "optional": true
     }
   },

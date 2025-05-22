@@ -16,7 +16,7 @@ export default [
   {
     rules: {
       'no-console': 'off',
-      // for Fumadocs CLI
+      // for Nopends CLI
       'import/no-relative-packages': 'off',
     },
   },

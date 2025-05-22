@@ -1,11 +1,11 @@
 ---
 title: Static Export
-description: Enable static export with Fumadocs
+description: Enable static export with Nopends
 ---
 
 ## Overview
 
-Fumadocs is fully compatible with Next.js static export, allowing you to export the app as a static HTML site without a Node.js server.
+Nopends is fully compatible with Next.js static export, allowing you to export the app as a static HTML site without a Node.js server.
 
 ```js title="next.config.mjs"
 /**
@@ -38,7 +38,7 @@ You need to:
 2. Enable static mode on search client from Root Provider:
 
    ```tsx title="app/layout.tsx"
-   import { RootProvider } from 'fumadocs-ui/provider';
+   import { RootProvider } from 'nopends-ui/provider';
    import type { ReactNode } from 'react';
 
    export default function RootLayout({ children }: { children: ReactNode }) {

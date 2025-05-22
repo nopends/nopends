@@ -1,6 +1,6 @@
 'use client';
-import Link from 'fumadocs-core/link';
-import { usePathname } from 'fumadocs-core/framework';
+import Link from 'nopends-core/link';
+import { usePathname } from 'nopends-core/framework';
 import {
   type AnchorHTMLAttributes,
   forwardRef,

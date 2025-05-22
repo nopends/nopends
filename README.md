@@ -1,8 +1,8 @@
 ![banner](./apps/docs/public/banner.png)
 
-The framework for building documentation websites in Next.js.
+The framework for building websites in Next.js.
 
-📘 Learn More: [Documentation](https://fumadocs.vercel.app).
+📘 Learn More: [Documentation](https://docs.nopends.com).
 
 ## Compatibility
 

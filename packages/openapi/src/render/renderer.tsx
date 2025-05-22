@@ -1,6 +1,6 @@
 import type { ComponentType, ReactNode } from 'react';
-import { Tab, Tabs } from 'fumadocs-ui/components/tabs';
-import { Accordion, Accordions } from 'fumadocs-ui/components/accordion';
+import { Tab, Tabs } from 'nopends-ui/components/tabs';
+import { Accordion, Accordions } from 'nopends-ui/components/accordion';
 import {
   API,
   APIExample,
@@ -102,7 +102,7 @@ export function createRenders(): Renderer {
     ),
     APIExample,
     Responses: (props) => (
-      <Tabs {...props} groupId="fumadocs_openapi_responses" />
+      <Tabs {...props} groupId="nopends_openapi_responses" />
     ),
     Response: Tab,
     ResponseTypes: (props) => (
@@ -120,7 +120,7 @@ export function createRenders(): Renderer {
     Property,
     ObjectCollapsible,
     Requests: (props) => (
-      <Tabs groupId="fumadocs_openapi_requests" {...props} />
+      <Tabs groupId="nopends_openapi_requests" {...props} />
     ),
 
     CodeExampleSelector,

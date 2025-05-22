@@ -4,7 +4,7 @@ import {
   remarkGfm,
   rehypeCode,
   type RehypeCodeOptions,
-} from 'fumadocs-core/mdx-plugins';
+} from 'nopends-core/mdx-plugins';
 import remarkRehype from 'remark-rehype';
 
 const processor = remark()

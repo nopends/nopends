@@ -4,8 +4,8 @@ import {
   remarkGfm,
   remarkImage,
   type RehypeCodeOptions,
-} from 'fumadocs-core/mdx-plugins';
-import defaultMdxComponents from 'fumadocs-ui/mdx';
+} from 'nopends-core/mdx-plugins';
+import defaultMdxComponents from 'nopends-ui/mdx';
 import { remark } from 'remark';
 import remarkRehype from 'remark-rehype';
 import { toJsxRuntime, type Jsx } from 'hast-util-to-jsx-runtime';

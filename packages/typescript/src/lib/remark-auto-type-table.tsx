@@ -87,7 +87,7 @@ export interface RemarkAutoTypeTableOptions {
 }
 
 /**
- * Compile `auto-type-table` into Fumadocs UI compatible TypeTable
+ * Compile `auto-type-table` into Nopends UI compatible TypeTable
  *
  * MDX is required to use this plugin.
  */
