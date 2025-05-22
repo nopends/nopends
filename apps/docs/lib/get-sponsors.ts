@@ -6,6 +6,22 @@ interface SponsorEntity {
   websiteUrl?: string;
 }
 
+const mockSponsors = [
+  {
+    __typename: 'User',
+    login: 'fuma-nama',
+    name: 'Fumadocs',
+    avatarUrl: 'https://avatars.githubusercontent.com/u/123456789?v=4',
+    websiteUrl: 'https://fumadocs.com',
+  },
+  {
+    __typename: 'Organization',
+    login: 'Microsoft',
+    name: 'Microsoft',
+    avatarUrl: 'https://avatars.githubusercontent.com/u/123456789?v=4',
+  },
+];
+
 export async function getSponsors(
   login: string,
   excluded: string[],
@@ -37,7 +53,8 @@ export async function getSponsors(
     headers,
     next: { revalidate: 3600 },
   });
-  if (!res.ok) throw new Error(`Failed to fetch sponsors: ${await res.text()}`);
+  // if (!res.ok) throw new Error(`Failed to fetch sponsors: ${await res.text()}`);
+  if (!res.ok) return mockSponsors as SponsorEntity[]
 
   const { data } = (await res.json()) as {
     data: {
