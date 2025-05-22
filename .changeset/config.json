@@ -5,7 +5,7 @@
   "fixed": [["nopends-core", "nopends-ui", "create-nopends-app"]],
   "linked": [],
   "access": "restricted",
-  "baseBranch": "dev",
+  "baseBranch": "canary",
   "updateInternalDependencies": "patch",
   "privatePackages": { "version": false },
   "bumpVersionsWithWorkspaceProtocolOnly": true,
