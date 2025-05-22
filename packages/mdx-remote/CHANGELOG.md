@@ -1,5 +1,13 @@
 # @nopends/mdx-remote
 
+## 1.3.3-alpha.0
+
+### Patch Changes
+
+- 9667375: add alpha
+- Updated dependencies [9667375]
+  - nopends-core@15.3.5-alpha.0
+
 ## 1.3.2
 
 ### Patch Changes

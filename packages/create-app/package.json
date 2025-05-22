@@ -1,6 +1,6 @@
 {
   "name": "create-nopends-app",
-  "version": "15.3.4",
+  "version": "15.3.5-alpha.0",
   "description": "Create a new documentation site with Nopends",
   "keywords": [
     "NextJs",

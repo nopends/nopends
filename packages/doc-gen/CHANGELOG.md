@@ -1,5 +1,11 @@
 # nopends-docgen
 
+## 2.0.1-alpha.0
+
+### Patch Changes
+
+- 9667375: add alpha
+
 ## 2.0.0
 
 ### Major Changes

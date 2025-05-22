@@ -1,5 +1,11 @@
 # create-next-docs-app
 
+## 15.3.5-alpha.0
+
+### Patch Changes
+
+- 9667375: add alpha
+
 ## 15.3.4
 
 ### Patch Changes
