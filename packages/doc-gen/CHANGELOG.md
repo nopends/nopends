@@ -1,5 +1,11 @@
 # nopends-docgen
 
+## 2.0.1-canary.0
+
+### Patch Changes
+
+- 0b5043a: start canary
+
 ## 2.0.0
 
 ### Major Changes

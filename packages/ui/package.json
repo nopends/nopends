@@ -1,6 +1,6 @@
 {
   "name": "nopends-ui",
-  "version": "15.3.4",
+  "version": "15.3.5-canary.0",
   "description": "The framework for building a documentation website in Next.js",
   "keywords": [
     "NextJs",
