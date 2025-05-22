@@ -27,7 +27,7 @@ export const metadata = createMetadata({
   title: 'Showcase',
   description: 'Some cool websites using Nopends',
   openGraph: {
-    url: 'https://nopends.dev/showcase',
+    url: 'https://docs.nopends.com/showcase',
   },
 });
 

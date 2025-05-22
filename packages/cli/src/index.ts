@@ -78,7 +78,7 @@ program
   });
 
 const dirShortcuts: Record<string, string> = {
-  ':dev': 'https://preview.nopends.dev/registry',
+  ':dev': 'https://preview.docs.nopends.com/registry',
   ':localhost': 'http://localhost:3000/registry',
 };
 
@@ -139,7 +139,7 @@ program
   );
 
 function getResolverFromDir(
-  dir: string = 'https://nopends.dev/registry',
+  dir: string = 'https://docs.nopends.com/registry',
 ): Resolver {
   if (dir in dirShortcuts) dir = dirShortcuts[dir];
 

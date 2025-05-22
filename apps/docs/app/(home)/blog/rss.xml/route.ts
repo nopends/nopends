@@ -7,12 +7,12 @@ export const revalidate = false;
 export function GET() {
   const feed = new Feed({
     title: 'Nopends Blog',
-    id: 'https://nopends.dev',
-    link: 'https://nopends.dev',
+    id: 'https://docs.nopends.com',
+    link: 'https://docs.nopends.com',
     language: 'en',
 
-    image: 'https://nopends.dev/banner.png',
-    favicon: 'https://nopends.dev/icon.png',
+    image: 'https://docs.nopends.com/banner.png',
+    favicon: 'https://docs.nopends.com/icon.png',
     copyright: 'All rights reserved 2025, Fuma Nama',
   });
 
