@@ -5,13 +5,13 @@ description: A shared convention for organizing your documents
 
 <Callout title='Before reading'>
 
-    This guide only applies for content sources that uses `loader()` API, such as Fumadocs MDX.
+    This guide only applies for content sources that uses `loader()` API, such as Nopends MDX.
 
 </Callout>
 
 ## Overview
 
-While Next.js handles routing, Fumadocs generates **page slugs** and **sidebar items** (page tree) from your content directory using [`loader()`](/docs/headless/source-api).
+While Next.js handles routing, Nopends generates **page slugs** and **sidebar items** (page tree) from your content directory using [`loader()`](/docs/headless/source-api).
 
 You can define folders and pages similar to the file-system based routing of Next.js.
 
@@ -42,9 +42,9 @@ full: true
 | `title`       | The title of page                                  |
 | `description` | The description of page                            |
 | `icon`        | The name of icon, see [Icons](#icons)              |
-| `full`        | Fill all available space on the page (Fumadocs UI) |
+| `full`        | Fill all available space on the page (Nopends UI) |
 
-<Callout title='Fumadocs MDX'>
+<Callout title='Nopends MDX'>
 
     You can use the [`schema`](/docs/mdx/collections#schema-1) option to add frontmatter properties.
 
@@ -155,7 +155,7 @@ Use the syntax `[Text](url)` to insert links, or `[Icon][Text](url)` to add icon
 
 ## Icons
 
-Since Fumadocs doesn't include an icon library, you have to convert the icon names to JSX elements in runtime, and render it as a component.
+Since Nopends doesn't include an icon library, you have to convert the icon names to JSX elements in runtime, and render it as a component.
 
 You can add an [`icon` handler](/docs/headless/source-api#icons) to `loader()`.
 
@@ -187,9 +187,9 @@ For example, when you are opening a root folder `framework`, the other folders (
   </Folder>
 </Files>
 
-<Callout title='Fumadocs UI'>
+<Callout title='Nopends UI'>
 
-    Fumadocs UI renders root folders as [Sidebar Tabs](/docs/ui/navigation/sidebar#sidebar-tabs), which allows user to switch between them.
+    Nopends UI renders root folders as [Sidebar Tabs](/docs/ui/navigation/sidebar#sidebar-tabs), which allows user to switch between them.
 
 </Callout>
 

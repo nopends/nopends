@@ -6,7 +6,7 @@ export const revalidate = false;
 
 export function GET() {
   const feed = new Feed({
-    title: 'Fumadocs Blog',
+    title: 'Nopends Blog',
     id: 'https://nopends.dev',
     link: 'https://nopends.dev',
     language: 'en',

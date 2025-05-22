@@ -18,7 +18,7 @@ export default function Home() {
       }}
     >
       <div className="py-12">
-        <h1 className="text-xl font-bold mb-2">Fumadocs on React Router.</h1>
+        <h1 className="text-xl font-bold mb-2">Nopends on React Router.</h1>
         <p className="text-fd-muted-foreground mb-8">
           The truly flexible docs framework on React.js.
         </p>

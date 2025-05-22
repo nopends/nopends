@@ -26,7 +26,7 @@ const program = new Command().option('--config <string>');
 
 program
   .name('nopends')
-  .description('CLI to setup Fumadocs, init a config ')
+  .description('CLI to setup Nopends, init a config ')
   .version(packageJson.version)
   .action(async () => {
     if (await initConfig()) {
@@ -39,7 +39,7 @@ program
 program
   .command('customise')
   .alias('customize')
-  .description('simple way to customise layouts with Fumadocs UI')
+  .description('simple way to customise layouts with Nopends UI')
   .option('--dir <string>', 'the root url or directory to resolve registry')
   .action(async (options: { config?: string; dir?: string }) => {
     const resolver = getResolverFromDir(options.dir);

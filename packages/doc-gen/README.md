@@ -1,3 +1,3 @@
-# Fumadocs Doc Gen
+# Nopends Doc Gen
 
 Remark plugins & Docs Generator utilities.

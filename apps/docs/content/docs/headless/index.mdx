@@ -6,7 +6,7 @@ icon: Album
 
 ## What is this?
 
-Fumadocs Core offers server-side functions and headless components to build docs on any React.js frameworks like Next.js.
+Nopends Core offers server-side functions and headless components to build docs on any React.js frameworks like Next.js.
 
 - Search (built-in: Orama, Algolia Search)
 - Breadcrumb, Sidebar, TOC Components
@@ -15,9 +15,9 @@ Fumadocs Core offers server-side functions and headless components to build docs
 
 <Callout title="Tip">
 
-    It can be used without Fumadocs UI, in other words, it's headless.
+    It can be used without Nopends UI, in other words, it's headless.
 
-    For beginners and normal usages, use [Fumadocs UI](/docs/ui).
+    For beginners and normal usages, use [Nopends UI](/docs/ui).
 
 </Callout>
 
@@ -36,7 +36,7 @@ import type { ReactNode } from 'react';
 import { NextProvider } from 'nopends-core/framework/next';
 
 export function RootLayout({ children }: { children: ReactNode }) {
-  // or if you're using Fumadocs UI, use `<RootProvider />`
+  // or if you're using Nopends UI, use `<RootProvider />`
   return <NextProvider>{children}</NextProvider>;
 }
 ```

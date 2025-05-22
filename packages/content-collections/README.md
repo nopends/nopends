@@ -1,3 +1,3 @@
-# Fumadocs Content Collections
+# Nopends Content Collections
 
-The Content Collections adapter for Fumadocs.
+The Content Collections adapter for Nopends.

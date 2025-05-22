@@ -147,7 +147,7 @@ test('Breadcrumbs', () => {
       },
       {
         type: 'page',
-        name: 'Fumadocs',
+        name: 'Nopends',
         url: '/docs/test2',
       },
       {

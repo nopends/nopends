@@ -70,7 +70,7 @@ export function _renderHighlight(hast: Root, options?: HighlightOptions) {
 }
 
 /**
- * Get Shiki highlighter instance of Fumadocs (mostly for internal use, don't recommend you to use it).
+ * Get Shiki highlighter instance of Nopends (mostly for internal use, don't recommend you to use it).
  *
  * @param engineType - engine type, the engine specified in `options` will only be effective when this is set to `custom`.
  * @param options - Shiki options.

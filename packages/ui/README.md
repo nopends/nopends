@@ -1,4 +1,4 @@
-# Fumadocs UI
+# Nopends UI
 
 The Next.js framework for building documentation website.
 

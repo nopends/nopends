@@ -7,7 +7,7 @@ import type { InferPageType } from 'nopends-core/source';
 
 const processor = remark()
   .use(remarkMdx)
-  // needed for Fumadocs MDX
+  // needed for Nopends MDX
   .use(remarkInclude)
   .use(remarkGfm);
 

@@ -33,7 +33,7 @@
 
 ### Patch Changes
 
-- 6493817: Load plugins conditionally for current Fumadocs version
+- 6493817: Load plugins conditionally for current Nopends version
 - Updated dependencies [c5add28]
 - Updated dependencies [f3cde4f]
 - Updated dependencies [7c8a690]
@@ -54,7 +54,7 @@
 
 ### Patch Changes
 
-- a89d6e0: Support Fumadocs v15
+- a89d6e0: Support Nopends v15
 - Updated dependencies [5b8cca8]
 - Updated dependencies [a763058]
 - Updated dependencies [581f4a5]
@@ -94,7 +94,7 @@
 
 - 82ff9ec: **Remove GitHub remote integration**
 
-  **why:** It should be equivalent to `next-mdx-remote` but include extra functionalities by Fumadocs, like built-in MDX plugins, table of contents and frontmatter parsing.
+  **why:** It should be equivalent to `next-mdx-remote` but include extra functionalities by Nopends, like built-in MDX plugins, table of contents and frontmatter parsing.
 
   **migrate:** Implement your own content source, or see our Sanity/BaseHub examples for CMS usages.
 
@@ -149,7 +149,7 @@
 
 ### Patch Changes
 
-- 758013f: Use Fumadocs Remark Image instead of `rehype-img-size`
+- 758013f: Use Nopends Remark Image instead of `rehype-img-size`
 - Updated dependencies [36b771b]
 - Updated dependencies [61b91fa]
   - nopends-core@13.2.2

@@ -97,7 +97,7 @@ export function remarkStructure({
     const data: StructuredData = { contents: [], headings: [] };
     let lastHeading: string | undefined = '';
 
-    // Fumadocs OpenAPI Generated Structured Data
+    // Nopends OpenAPI Generated Structured Data
     if (file.data.frontmatter) {
       const frontmatter = file.data.frontmatter as {
         _openapi?: {

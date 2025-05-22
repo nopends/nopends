@@ -19,7 +19,7 @@ writeFileSync(
   `export const versions = ${JSON.stringify(versions)}`,
 );
 
-console.log('Create-Fumadocs-App: versions.json updated');
+console.log('Create-Nopends-App: versions.json updated');
 
 export default defineConfig({
   entry: ['./src/index.ts', './src/create-app.ts'],

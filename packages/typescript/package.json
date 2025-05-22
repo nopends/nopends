@@ -1,7 +1,7 @@
 {
   "name": "nopends-typescript",
   "version": "4.0.5",
-  "description": "Typescript Integration for Fumadocs",
+  "description": "Typescript Integration for Nopends",
   "keywords": [
     "NextJs",
     "nopends",

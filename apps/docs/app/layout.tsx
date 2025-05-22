@@ -10,8 +10,8 @@ import { Geist, Geist_Mono } from 'next/font/google';
 
 export const metadata = createMetadata({
   title: {
-    template: '%s | Fumadocs',
-    default: 'Fumadocs',
+    template: '%s | Nopends',
+    default: 'Nopends',
   },
   description: 'The Next.js framework for building documentation sites',
   metadataBase: baseUrl,

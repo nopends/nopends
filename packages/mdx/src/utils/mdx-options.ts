@@ -66,7 +66,7 @@ export function getDefaultMDXOptions({
         },
       ],
       remarkImageOptions !== false && [plugins.remarkImage, remarkImageOptions],
-      // Fumadocs 14 compatibility
+      // Nopends 14 compatibility
       'remarkCodeTab' in plugins &&
         remarkCodeTabOptions !== false && [
           plugins.remarkCodeTab,

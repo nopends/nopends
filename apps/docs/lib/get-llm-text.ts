@@ -16,10 +16,10 @@ const processor = remark()
 export async function getLLMText(page: Page) {
   const category =
     {
-      ui: 'Fumadocs Framework',
-      headless: 'Fumadocs Core (core library of framework)',
-      mdx: 'Fumadocs MDX (the built-in content source)',
-      cli: 'Fumadocs CLI (the CLI tool for automating Fumadocs apps)',
+      ui: 'Nopends Framework',
+      headless: 'Nopends Core (core library of framework)',
+      mdx: 'Nopends MDX (the built-in content source)',
+      cli: 'Nopends CLI (the CLI tool for automating Nopends apps)',
     }[page.slugs[0]] ?? page.slugs[0];
 
   const processed = await processor.process({

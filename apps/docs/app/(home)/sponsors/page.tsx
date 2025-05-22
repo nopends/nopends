@@ -58,11 +58,11 @@ export default async function Page() {
         </defs>
       </svg>
       <h1 className="bg-gradient-to-b from-fd-foreground from-50% to-fd-muted bg-clip-text text-4xl font-bold text-transparent">
-        Support Fumadocs
+        Support Nopends
       </h1>
       <p className="mt-4 text-sm">
         Your sponsorship means a lot to open-source projects, including
-        Fumadocs.
+        Nopends.
       </p>
       <a
         href="https://github.com/sponsors/nopends"
@@ -184,7 +184,7 @@ export default async function Page() {
           fontWeight="400"
           fill="rgba(70,70,86,0.9)"
         >
-          Fumadocs
+          Nopends
         </text>
       </svg>
       <h2 className="mt-12 font-mono text-xs">Organization Sponsors</h2>

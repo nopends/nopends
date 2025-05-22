@@ -1,37 +1,37 @@
 ---
 title: Quick Start
-description: Getting Started with Fumadocs
+description: Getting Started with Nopends
 icon: Album
 ---
 
 ## Introduction
 
-Fumadocs <span className='text-fd-muted-foreground text-sm'>(Foo-ma docs)</span> is a **documentation framework** based on Next.js, designed to be fast, flexible,
+Nopends <span className='text-fd-muted-foreground text-sm'>(Foo-ma docs)</span> is a **documentation framework** based on Next.js, designed to be fast, flexible,
 and composes seamlessly into Next.js App Router.
 
-Fumadocs has different parts:
+Nopends has different parts:
 
 <Cards>
 
-<Card icon={<CpuIcon className="text-purple-300" />} title='Fumadocs Core'>
+<Card icon={<CpuIcon className="text-purple-300" />} title='Nopends Core'>
 
 Handles most of the logic, including document search, content source adapters, and Markdown extensions.
 
 </Card>
 
-<Card icon={<PanelsTopLeft className="text-blue-300" />} title='Fumadocs UI'>
+<Card icon={<PanelsTopLeft className="text-blue-300" />} title='Nopends UI'>
 
-The default theme of Fumadocs offers a beautiful look for documentation sites and interactive components.
+The default theme of Nopends offers a beautiful look for documentation sites and interactive components.
 
 </Card>
 
 <Card icon={<Database />} title='Content Source'>
 
-The source of your content, can be a CMS or local data layers like [Fumadocs MDX](/docs/mdx) (the official content source).
+The source of your content, can be a CMS or local data layers like [Nopends MDX](/docs/mdx) (the official content source).
 
 </Card>
 
-<Card icon={<Terminal />} title='Fumadocs CLI'>
+<Card icon={<Terminal />} title='Nopends CLI'>
 
 A command line tool to install UI components and automate things, useful for customizing layouts.
 
@@ -40,12 +40,12 @@ A command line tool to install UI components and automate things, useful for cus
 </Cards>
 
 <Callout title="Want to learn more?">
-  Read our in-depth [What is Fumadocs](/docs/ui/what-is-nopends) introduction.
+  Read our in-depth [What is Nopends](/docs/ui/what-is-nopends) introduction.
 </Callout>
 
 ### Terminology
 
-**Markdown/MDX:** Markdown is a markup language for creating formatted text. Fumadocs supports Markdown and MDX (superset of Markdown) out-of-the-box.
+**Markdown/MDX:** Markdown is a markup language for creating formatted text. Nopends supports Markdown and MDX (superset of Markdown) out-of-the-box.
 
 Although not required, some basic knowledge of Next.js App Router would be useful for further customisations.
 
@@ -53,7 +53,7 @@ Although not required, some basic knowledge of Next.js App Router would be usefu
 
 A minimum version of Node.js 18 required, note that Node.js 23.1 might have problems with Next.js production build.
 
-<Tabs groupId='package-manager' persist items={['npm', 'pnpm', 'yarn', 'bun']} label='Initialize Fumadocs'>
+<Tabs groupId='package-manager' persist items={['npm', 'pnpm', 'yarn', 'bun']} label='Initialize Nopends'>
 
 ```bash tab="npm"
 npm create nopends-app
@@ -112,7 +112,7 @@ Some common questions you may encounter.
     <Accordion id='change-base-url' title="How to change the base route of /docs?">
 
 You can change the base route of docs (e.g. from `/docs/page` to `/info/page`).
-Since Fumadocs uses Next.js App Router, you can simply rename the route:
+Since Nopends uses Next.js App Router, you can simply rename the route:
 
 <Files>
   <Folder name="app/docs" defaultOpen className="opacity-50" disabled>
@@ -123,7 +123,7 @@ Since Fumadocs uses Next.js App Router, you can simply rename the route:
   </Folder>
 </Files>
 
-And tell Fumadocs to use the new route in `source.ts`:
+And tell Nopends to use the new route in `source.ts`:
 
 ```ts title="lib/source.ts"
 import { loader } from 'nopends-core/source';
@@ -190,7 +190,7 @@ For authoring docs, make sure to read:
 
 <Cards>
   <Card href="/docs/ui/markdown" title="Markdown">
-    Fumadocs has some additional features for authoring content.
+    Nopends has some additional features for authoring content.
   </Card>
   <Card href="/docs/ui/navigation" title="Navigation">
     Learn how to customise navigation links and sidebar items.
@@ -221,7 +221,7 @@ For authoring docs, make sure to read:
   <Card
     href="/docs/ui/theme"
     title="Color Themes"
-    description="Add themes to Fumadocs UI"
+    description="Add themes to Nopends UI"
   />
   <Card
     href="/docs/ui/customisation"

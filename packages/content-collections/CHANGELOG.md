@@ -24,7 +24,7 @@
 
 ### Patch Changes
 
-- a89d6e0: Support Fumadocs v15
+- a89d6e0: Support Nopends v15
 - Updated dependencies [5b8cca8]
 - Updated dependencies [a763058]
 - Updated dependencies [581f4a5]
@@ -83,7 +83,7 @@
 
 ### Patch Changes
 
-- 758013f: Use Fumadocs Remark Image instead of `rehype-img-size`
+- 758013f: Use Nopends Remark Image instead of `rehype-img-size`
 - Updated dependencies [36b771b]
 - Updated dependencies [61b91fa]
   - nopends-core@13.2.2
@@ -92,7 +92,7 @@
 
 ### Patch Changes
 
-- c7aa090: Improve Fumadocs OpenAPI support
+- c7aa090: Improve Nopends OpenAPI support
 - Updated dependencies [17fa173]
   - nopends-core@13.2.1
 

@@ -1198,7 +1198,7 @@
 
 ### Patch Changes
 
-- 61b91fa: Improve Fumadocs OpenAPI support
+- 61b91fa: Improve Nopends OpenAPI support
 - Updated dependencies [36b771b]
 - Updated dependencies [61b91fa]
   - nopends-core@13.2.2
@@ -1266,7 +1266,7 @@
   ```
 
   - Markdown/MDX content is still supported, but will be processed in the server component (during runtime) instead.
-  - Your Remark/Rehype plugins (e.g. Rehype Code) configured in Fumadocs MDX or other source providers, will **not** be shared. Fumadocs OpenAPI uses a separate MDX processor instance.
+  - Your Remark/Rehype plugins (e.g. Rehype Code) configured in Nopends MDX or other source providers, will **not** be shared. Nopends OpenAPI uses a separate MDX processor instance.
   - `APIPage` component will fetch the OpenAPI Schema when being rendered. **On Vercel**, if it relies on the file system, ensure the page **will not** be re-rendered after build.
 
   Please refer to documentation for the new usage.
@@ -1332,7 +1332,7 @@
 
 - 5acebdd: Support grouping output by folders (per operation)
 - 744bd24: Support accessing context information on custom frontmatter
-- 6bb9d2d: Support integration with Fumadocs Source API
+- 6bb9d2d: Support integration with Nopends Source API
 
 ### Patch Changes
 
@@ -1697,7 +1697,7 @@
 
 ### Major Changes
 
-- 2b11c20: **Rename to Fumadocs**
+- 2b11c20: **Rename to Nopends**
 
   `next-docs-zeta` -> `nopends-core`
 

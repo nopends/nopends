@@ -128,7 +128,7 @@
 
 ### Minor Changes
 
-- 979896f: Support generating Tabs with `persist` enabled (Fumadocs UI only)
+- 979896f: Support generating Tabs with `persist` enabled (Nopends UI only)
 
 ### Patch Changes
 

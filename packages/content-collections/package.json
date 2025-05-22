@@ -1,7 +1,7 @@
 {
   "name": "@nopends/content-collections",
   "version": "1.2.0",
-  "description": "The Content Collections adapter for Fumadocs",
+  "description": "The Content Collections adapter for Nopends",
   "keywords": [
     "NextJs",
     "Docs",
