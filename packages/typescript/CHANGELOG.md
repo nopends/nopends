@@ -1,5 +1,11 @@
 # nopends-typescript
 
+## 4.0.6-alpha.0
+
+### Patch Changes
+
+- 9667375: add alpha
+
 ## 4.0.5
 
 ### Patch Changes

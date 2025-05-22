@@ -1,6 +1,6 @@
 {
   "name": "nopends-python",
-  "version": "0.0.2",
+  "version": "0.0.3-alpha.0",
   "description": "The built-in Python docgen for Nopends",
   "keywords": [
     "NextJs",
