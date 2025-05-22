@@ -104,6 +104,10 @@ export const registry: Registry = {
       name: 'codeblock',
       files: ['components/codeblock.tsx'],
     },
+    {
+      name: 'productblock',
+      files: ['components/productblock.tsx'],
+    },
     { name: 'files', files: ['components/files.tsx'] },
     { name: 'heading', files: ['components/heading.tsx'] },
     {
